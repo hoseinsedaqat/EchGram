@@ -1,4 +1,4 @@
-# echgram
+# EchGram
 
 ## Project setup
 ```
