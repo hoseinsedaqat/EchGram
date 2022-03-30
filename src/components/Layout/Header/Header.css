@@ -1,0 +1,11 @@
+.hlb {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.container{
+    max-width: 1000px !important;
+}
+
+.pyh{
+    padding: 0.8rem 0;
+}
