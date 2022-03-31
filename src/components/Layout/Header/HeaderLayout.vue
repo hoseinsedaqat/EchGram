@@ -36,9 +36,11 @@ export default Vue.extend({
   <header class="bg-white py-1 hlb">
     <div class="container">
       <div class="row mt-1">
+        <!-- Logo -->
         <div class="col-md-4 align-self-center">
           <img src="@/assets/Images/Header/735145cfe0a4.png" alt="EchGram Logo" />
         </div> 
+        <!-- Header Input -->
         <div class="col-md-4 align-self-center">
           <div>
           <input type="text" name="search" id="search" class="hin" placeholder="Search"/>
@@ -47,6 +49,7 @@ export default Vue.extend({
           </label>
           </div>
         </div>
+        <!-- Icons Route -->
         <div class="col-md-4 hmti">
           <div>
             <ul class="d-flex align-items-end justify-content-around">
