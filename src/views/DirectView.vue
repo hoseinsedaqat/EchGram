@@ -1,15 +1,15 @@
 <template>
-  <div>
-      Direct
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">Direct</div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    name:"DirectView"
-}
+  name: "DirectView",
+};
 </script>
 
-<style>
-
-</style>
+<style></style>
