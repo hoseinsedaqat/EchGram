@@ -17,7 +17,7 @@
           <div>
             <ul class="d-flex align-items-end justify-content-around">
             <router-link to="/" class="mr-3">
-            <svg aria-label="Home" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M9.005 16.545a2.997 2.997 0 012.997-2.997h0A2.997 2.997 0 0115 16.545V22h7V11.543L12 2 2 11.543V22h7.005z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+              <home-svg></home-svg>
             </router-link>
             <router-link to="/direct/inbox" class="mr-3">
               <svg class="_8-yf5 router-link-active router-link-exact-active" aria-label="Direct" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
@@ -52,10 +52,12 @@
 <script lang="ts">
 import Vue from 'vue'
 import MagnifireSvg from './Components/MagnifireSvg.vue'
+import HomeSvg from './Components/HomeSvg.vue'
 export default Vue.extend({
   name: "HeaderLayout",
   components:{
-    MagnifireSvg
+    MagnifireSvg,
+    HomeSvg
   }
 });
 </script>
