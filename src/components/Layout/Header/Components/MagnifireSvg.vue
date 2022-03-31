@@ -14,7 +14,9 @@
 </template>
 
 <script lang="ts">
-export default {
-    name:"MagnifireSvg"
-};
+import Vue from "vue";
+
+export default Vue.extend({
+  name: "MagnifireSvg",
+});
 </script>

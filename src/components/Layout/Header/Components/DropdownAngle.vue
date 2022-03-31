@@ -24,7 +24,9 @@
 </template>
 
 <script lang="ts">
-export default {
-    name:'DropdownAngle'
-};
+import Vue from "vue";
+
+export default Vue.extend({
+  name: "DropdownAngle",
+});
 </script>
