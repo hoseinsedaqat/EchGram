@@ -48,3 +48,7 @@
 .hddm {
     margin-top: 2.5rem !important;
 }
+
+.hlcp {
+    cursor: pointer;
+}
