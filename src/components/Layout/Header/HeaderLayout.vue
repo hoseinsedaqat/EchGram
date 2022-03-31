@@ -11,6 +11,7 @@ import ProfileSvg from './Components/ProfileSvg.vue'
 import SaveSvg from './Components/SaveSvg.vue'
 import SettingSvg from './Components/SettingSvg.vue'
 import SwitchSvg from './Components/SwitchSvg.vue'
+import DropdownAngle from './Components/DropdownAngle.vue'
 
 export default Vue.extend({
   name: "HeaderLayout",
@@ -24,7 +25,8 @@ export default Vue.extend({
     ProfileSvg,
     SaveSvg,
     SettingSvg,
-    SwitchSvg
+    SwitchSvg,
+    DropdownAngle
   }
 });
 </script>
@@ -67,19 +69,7 @@ export default Vue.extend({
               <div class="dropdown">
                 <img type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false" src="@/assets/Images/Header/HoseinSedaqat.jpg" width="24px" height="24px" style="border-radius:50%;" alt="">
                   <div class="dropdown-menu dropdown-menu-right mt-3" aria-labelledby="dropdownMenuButton">
-                    <svg style="position:absolute;top:-12px;left:180px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="15" height="15" viewBox="0 0 1280.000000 640.000000"
- preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.15, written by Peter Selinger 2001-2017
-</metadata>
-<g transform="translate(0.000000,640.000000) scale(0.100000,-0.100000)"
-fill="#e9e9e9" stroke="none">
-<path d="M3198 3205 c-1759 -1756 -3198 -3196 -3198 -3199 0 -3 2880 -6 6400
--6 3520 0 6400 3 6400 7 0 7 -6388 6387 -6399 6390 -3 1 -1445 -1435 -3203
--3192z"/>
-</g>
-</svg>
+                    <dropdown-angle></dropdown-angle>
                     <router-link to="/" class="dropdown-item hlcp">
                       <div class="d-flex align-self-center align-items-center">
                         <profile-svg></profile-svg>
