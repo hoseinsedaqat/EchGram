@@ -36,19 +36,6 @@
     margin-top: 0.5rem !important;
 }
 
-.dropdown-menu-center {
-    width: 230px !important;
-    right: auto !important;
-    left: 50% !important;
-    -webkit-transform: translate(-50%, 0) !important;
-    -o-transform: translate(-50%, 0) !important;
-    transform: translate(-50%, 0) !important;
-}
-
-.hddm {
-    margin-top: 2.5rem !important;
-}
-
 .hlcp {
     cursor: pointer;
 }
