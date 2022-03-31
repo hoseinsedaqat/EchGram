@@ -34,7 +34,7 @@
             <li class="mr-3">
               <div class="dropdown">
                 <img type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false" src="@/assets/Images/Header/HoseinSedaqat.jpg" width="24px" height="24px" style="border-radius:50%;" alt="">
-                  <div class="dropdown-menu dropdown-menu-right mt-3" aria-labelledby="dropdownMenuButton">
+                  <div class="dropdown-menu dropdown-menu-center hddm" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
