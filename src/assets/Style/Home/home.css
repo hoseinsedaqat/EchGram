@@ -1,6 +1,11 @@
+:root {
+    --ho_cp: pointer;
+    --ho_ps: sticky;
+}
+
 .ho_ps {
     width: 100%;
-    position: sticky;
+    position: var(--ho_ps);
     top: 120px;
 }
 
@@ -17,5 +22,5 @@
 }
 
 .ho_cp {
-    cursor: pointer;
+    cursor: var(--ho_cp);
 }
