@@ -1,5 +1,9 @@
+:root {
+    --body-color:#fafafa;
+}
+
 body {
-    background-color: #fafafa;
+    background-color: var(--body-color);
 }
 
 ul {

@@ -1,17 +1,17 @@
 <script lang="ts">
 
-import Vue from 'vue'
-import MagnifireSvg from './Components/MagnifireSvg.vue'
-import HomeSvg from './Components/HomeSvg.vue'
-import DirectSvg from './Components/DirectSvg.vue'
-import FileSvg from './Components/FileSvg.vue'
-import ExploreSvg from './Components/ExploreSvg.vue'
-import ActivitySvg from './Components/ActivitySvg.vue'
-import ProfileSvg from './Components/ProfileSvg.vue'
-import SaveSvg from './Components/SaveSvg.vue'
-import SettingSvg from './Components/SettingSvg.vue'
-import SwitchSvg from './Components/SwitchSvg.vue'
-import DropdownAngle from './Components/DropdownAngle.vue'
+import Vue from 'vue';
+import MagnifireSvg from './Components/MagnifireSvg.vue';
+import HomeSvg from './Components/HomeSvg.vue';
+import DirectSvg from './Components/DirectSvg.vue';
+import FileSvg from './Components/FileSvg.vue';
+import ExploreSvg from './Components/ExploreSvg.vue';
+import ActivitySvg from './Components/ActivitySvg.vue';
+import ProfileSvg from './Components/ProfileSvg.vue';
+import SaveSvg from './Components/SaveSvg.vue';
+import SettingSvg from './Components/SettingSvg.vue';
+import SwitchSvg from './Components/SwitchSvg.vue';
+import DropdownAngle from './Components/DropdownAngle.vue';
 
 export default Vue.extend({
   name: "HeaderLayout",
