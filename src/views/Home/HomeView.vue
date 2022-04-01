@@ -11,7 +11,7 @@ export default Vue.extend({
     <div class="container">
       <div class="row">
         <main class="d-flex col-md-12">
-          <div class="col-md-8">
+          <div class="col-md-8 mt-3">
             <div class="card mt-4">
               <div class="card-body">
                 <p>swiper story</p>
