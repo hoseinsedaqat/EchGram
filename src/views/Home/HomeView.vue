@@ -12,7 +12,7 @@ export default Vue.extend({
       <div class="row">
         <main class="d-flex col-md-12">
           <div class="col-md-8 mt-3">
-            <div class="card mt-4">
+            <div class="card mt-4 py-2">
               <div class="card-body">
                 <p>swiper story</p>
               </div>
@@ -23,6 +23,7 @@ export default Vue.extend({
               </div>
             </div>
           </div>
+          <!-- After Change Class Just Content Shuold Use Sticky Nav -->
           <div class="col-md-4 ho_ps">
             <div class="ho_ps">
               <!-- Suggestion and Profile some data -->
@@ -37,18 +38,19 @@ export default Vue.extend({
                 <a href="#" class="ho_pdfz font-weight-bold">Switch</a>
               </div>
               <!-- Suggestion Header -->
-              <div class="mt-4 d-flex flex-row justify-content-between">
+              <div class="mt-3 d-flex flex-row justify-content-between">
                 <p class="ho_pdfz text-muted">
                   Suggestions For You
                 </p>
                 <a href="#" class="ho_pdfz font-weight-bold">See All</a>
               </div>
               <!-- You Should Follows -->
-              <div class="d-flex flex-row align-items-center justify-content-between mt-3">
+              <div class="d-flex flex-row align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
                   <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="35px" style="border-radius:50%;">
                 <span class="d-flex flex-column ho_pdfz">
                   <span>Hosein Sedaqat</span>
+                  <span class="text-muted">Followed by Zoheir</span>
                 </span>
                 </div>
                 <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
@@ -58,9 +60,54 @@ export default Vue.extend({
                   <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="35px" style="border-radius:50%;">
                 <span class="d-flex flex-column ho_pdfz">
                   <span>Hosein Sedaqat</span>
+                  <span class="text-muted">Followed by Zoheir</span>
                 </span>
                 </div>
                 <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
+              </div>
+              <div class="d-flex flex-row align-items-center justify-content-between mt-3">
+                <div class="d-flex align-items-center">
+                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="35px" style="border-radius:50%;">
+                <span class="d-flex flex-column ho_pdfz">
+                  <span>Hosein Sedaqat</span>
+                  <span class="text-muted">Followed by Zoheir</span>
+                </span>
+                </div>
+                <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
+              </div>
+              <div class="d-flex flex-row align-items-center justify-content-between mt-3">
+                <div class="d-flex align-items-center">
+                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="35px" style="border-radius:50%;">
+                <span class="d-flex flex-column ho_pdfz">
+                  <span>Hosein Sedaqat</span>
+                  <span class="text-muted">Followed by Zoheir</span>
+                </span>
+                </div>
+                <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
+              </div>
+              <div class="d-flex flex-row align-items-center justify-content-between mt-3">
+                <div class="d-flex align-items-center">
+                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="35px" style="border-radius:50%;">
+                <span class="d-flex flex-column ho_pdfz">
+                  <span>Hosein Sedaqat</span>
+                  <span class="text-muted">Followed by Zoheir</span>
+                </span>
+                </div>
+                <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
+              </div>
+              <!-- Footer -->
+              <div class="mt-4 d-flex flex-wrap align-items-start w-100">
+                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
+                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
+                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
+                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
+                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
+                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
+                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
+                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
+                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
+                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
+                <span class="ho_ffs text-muted">About</span>
               </div>
             </div>
           </div>
