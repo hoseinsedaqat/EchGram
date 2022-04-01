@@ -28,7 +28,7 @@ export default Vue.extend({
               <!-- Suggestion and Profile some data -->
               <div class="d-flex flex-row align-items-center justify-content-between">
                 <div class="d-flex align-items-center">
-                  <img src="../../assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="60px" style="border-radius:50%;">
+                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="60px" style="border-radius:50%;">
                 <span class="d-flex flex-column ho_pdfz">
                   <router-link to="/">HoseinSedaqat</router-link>
                   <span class="text-muted">Hosein Sedaqat</span>
@@ -46,7 +46,7 @@ export default Vue.extend({
               <!-- You Should Follows -->
               <div class="d-flex flex-row align-items-center justify-content-between mt-3">
                 <div class="d-flex align-items-center">
-                  <img src="../../assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="35px" style="border-radius:50%;">
+                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="35px" style="border-radius:50%;">
                 <span class="d-flex flex-column ho_pdfz">
                   <span>Hosein Sedaqat</span>
                 </span>
@@ -55,7 +55,7 @@ export default Vue.extend({
               </div>
               <div class="d-flex flex-row align-items-center justify-content-between mt-3">
                 <div class="d-flex align-items-center">
-                  <img src="../../assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="35px" style="border-radius:50%;">
+                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="35px" style="border-radius:50%;">
                 <span class="d-flex flex-column ho_pdfz">
                   <span>Hosein Sedaqat</span>
                 </span>
