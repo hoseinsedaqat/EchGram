@@ -76,7 +76,6 @@ export default Vue.extend({
     width: 100%;
     position: sticky;
     top: 120px;
-    bottom: 300px;
 }
 
 .ho_pdfz {
