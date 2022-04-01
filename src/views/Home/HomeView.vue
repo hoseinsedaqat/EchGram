@@ -96,18 +96,19 @@ export default Vue.extend({
                 <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
               </div>
               <!-- Footer -->
-              <div class="mt-4 d-flex flex-wrap align-items-start w-100">
-                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
-                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
-                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
-                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
-                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
-                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
-                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
-                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
-                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
-                <span class="ho_ffs text-muted">About <small>&#9679;</small></span>
-                <span class="ho_ffs text-muted">About</span>
+              <div class="mt-4 ">
+                <span class="ho_ffs text-muted mx-1 ho_cp">About </span> 
+                <span class="ho_ffs text-muted mx-1 ho_cp">Help </span>
+                <span class="ho_ffs text-muted mx-1 ho_cp">Press </span>
+                <span class="ho_ffs text-muted mx-1 ho_cp">API </span>
+                <span class="ho_ffs text-muted mx-1 ho_cp">Jobs </span>
+                <span class="ho_ffs text-muted mx-1 ho_cp">Privacy </span>
+                <span class="ho_ffs text-muted mx-1 ho_cp">Terms </span>
+                <span class="ho_ffs text-muted mx-1 ho_cp">Locations </span>
+                <span class="ho_ffs text-muted mx-1 ho_cp">Top Accounts </span>
+                <span class="ho_ffs text-muted mx-1 ho_cp">Hashtags </span>
+                <span class="ho_ffs text-muted mx-1 ho_cp">Languages</span>
+                <p class="ho_ffsc mx-1 mt-2">&copy;  2022 INSTAGRAM Design By Hosein Sedaqat</p>
               </div>
             </div>
           </div>

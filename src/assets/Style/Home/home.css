@@ -9,5 +9,13 @@
 }
 
 .ho_ffs {
+    font-size: 11px;
+}
+
+.ho_ffsc {
     font-size: 12px;
+}
+
+.ho_cp {
+    cursor: pointer;
 }
