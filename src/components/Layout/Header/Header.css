@@ -6,7 +6,7 @@
 
 
 
-.hlb {
+.h_lb {
     border-bottom: 1px solid var(--bbc);
 }
 
@@ -14,11 +14,11 @@
     max-width: 1000px !important;
 }
 
-.hpy {
+.h_py {
     padding: 0.8rem 0;
 }
 
-.hin {
+.h_in {
     position: relative;
     min-width: 268px;
     height: 36px;
@@ -29,26 +29,26 @@
     padding: 3px 35px;
 }
 
-.hin:focus {
+.h_in:focus {
     outline: none;
 }
 
-.hinp {
+.h_inp {
     color: var(--hinp);
     position: absolute;
     top: 3.5px;
     left: 25px;
 }
 
-.hmti {
+.h_mti {
     margin-top: 0.5rem !important;
 }
 
-.hlcp {
+.h_lcp {
     cursor: pointer;
 }
 
-#hbh {
+#h_bh {
     position: sticky;
     top: 0;
     width: 100%;
