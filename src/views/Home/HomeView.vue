@@ -36,6 +36,13 @@ export default Vue.extend({
                 </div>
                 <a href="#" class="ho_pdfz font-weight-bold">Switch</a>
               </div>
+              <!-- Suggestion Header -->
+              <div class="mt-4 d-flex flex-row justify-content-between">
+                <p class="ho_pdfz text-muted">
+                  Suggestions For You
+                </p>
+                <a href="#" class="ho_pdfz font-weight-bold">See All</a>
+              </div>
             </div>
           </div>
         </main>
