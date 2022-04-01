@@ -24,9 +24,19 @@ export default Vue.extend({
             </div>
           </div>
           <div class="col-md-4 ho_ps">
-            <p class="ho_ps">
-              Write Porfile and Some Suggestion
-            </p>
+            <div class="ho_ps">
+              <!-- Suggestion and Profile some data -->
+              <div class="d-flex flex-row align-items-center justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img src="../../assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqatMain" class="border border-secondary mr-4" width="60px" style="border-radius:50%;">
+                <span class="d-flex flex-column ho_pdfz">
+                  <router-link to="/">HoseinSedaqat</router-link>
+                  <span class="text-muted">Hosein Sedaqat</span>
+                </span>
+                </div>
+                <a href="#" class="ho_pdfz font-weight-bold">Switch</a>
+              </div>
+            </div>
           </div>
         </main>
       </div>

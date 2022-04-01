@@ -1,6 +1,10 @@
 .ho_ps {
     width: 100%;
     position: sticky;
-    top: 100px;
+    top: 50px;
     bottom: 300px;
+}
+
+.ho_pdfz {
+    font-size: 14px;
 }
