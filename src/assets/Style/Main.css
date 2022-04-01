@@ -13,3 +13,7 @@ ul {
 .container {
     max-width: 1000px !important;
 }
+
+
+@import url('./Home/home.css');
+@import url('./Header/header.css');

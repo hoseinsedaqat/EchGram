@@ -69,16 +69,3 @@ export default Vue.extend({
     </div>
   </section>
 </template>
-
-<style scoped>
-/* @import url("./Home.css"); */
-.ho_ps {
-    width: 100%;
-    position: sticky;
-    top: 120px;
-}
-
-.ho_pdfz {
-    font-size: 14px;
-}
-</style>
