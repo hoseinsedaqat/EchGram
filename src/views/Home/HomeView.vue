@@ -31,7 +31,7 @@ export default Vue.extend({
     <div class="container">
       <div class="row">
         <main class="d-flex col-md-12">
-          <div class="col-md-8 mt-3">
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 mt-3">
             <div class="card mt-4">
               <!-- Swiper Story -->
               <div>
@@ -88,14 +88,14 @@ export default Vue.extend({
                   <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="Post" width="100%" height="100%">
                 </div>
                 <!-- Like Comment and Saved -->
-                <div>
+                <div class="m-2">
                   Hi
                 </div>
               </div>
             </div>
           </div>
           <!-- After Change Class Just Content Shuold Use Sticky Nav -->
-          <div class="col-md-4 ho_ps">
+          <div class="col-lg-4 col-md-4 ho_ps">
             <div class="ho_ps">
               <!-- Suggestion and Profile some data -->
               <div class="d-flex flex-row align-items-center justify-content-between">
