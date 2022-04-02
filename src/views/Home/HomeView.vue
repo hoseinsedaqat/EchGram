@@ -108,10 +108,10 @@ export default Vue.extend({
                   <small class="text-muted ml-2">View All Comments</small>
                   <div class="mx-2 d-flex align-items-center justify-content-between">
                     <div>
-                    <span class="mr-2 mt-1" style="font-size:12px;">
+                    <span class="mr-1 mt-1 font-weight-bold ho_ffsc">
                       HoseinSedaqat
                     </span>
-                    <span class="mt-1" style="font-size:10px;">
+                    <span class="mt-1 ho_ffs">
                               خیلی خوشگل شدی حسین جون 😃✌                      
                     </span>
                     </div>
