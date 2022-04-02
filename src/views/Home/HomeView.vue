@@ -1,8 +1,28 @@
 <script lang="ts">
 import Vue from "vue";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import "swiper/css/swiper.css";
 
 export default Vue.extend({
   name: "HomeView",
+  data() {
+    return {
+      swiperOption: {
+        slidesPerView: 5,
+        spaceBetween: 5,
+        loop: false,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
+    };
+  },
+  components: {
+    Swiper,
+    SwiperSlide,
+  }
 });
 </script>
 
@@ -12,9 +32,33 @@ export default Vue.extend({
       <div class="row">
         <main class="d-flex col-md-12">
           <div class="col-md-8 mt-3">
-            <div class="card mt-4 py-2">
-              <div class="card-body">
-                <p>swiper story</p>
+            <div class="card mt-4">
+              <div>
+                <swiper class="swiper" :options="swiperOption">
+                  <swiper-slide>
+                    <img src="../../assets/logo.png" alt="" width="50px" style="border-radius:;">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../../assets/logo.png" alt="" width="50px" style="border-radius:;">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../../assets/logo.png" alt="" width="50px" style="border-radius:;">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../../assets/logo.png" alt="" width="50px" style="border-radius:;">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../../assets/logo.png" alt="" width="50px" style="border-radius:;">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../../assets/logo.png" alt="" width="50px">
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img src="../../assets/logo.png" alt="" width="50px">
+                  </swiper-slide>
+                  <div class="swiper-button-prev" slot="button-prev"></div>
+                  <div class="swiper-button-next" slot="button-next"></div>
+                </swiper>
               </div>
             </div>
             <div class="card mt-4">
@@ -117,3 +161,56 @@ export default Vue.extend({
     </div>
   </section>
 </template>
+
+<style scoped>
+.swiper {
+  height: 100px;
+  width: 100%;
+}
+.swiper-wrapper {
+  width: 100% !important;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.swiper-button-next {
+  left: 1;
+  top: 35px;
+  padding: 2.5rem 0.2rem;
+  color: #333;
+  transition: all 0.4s ease;
+}
+.swiper-button-next:hover {
+  transform: translate(-2px);
+}
+.swiper-button-next::after {
+  font-size: 10px;
+  background-color: #f9f9f9;
+  padding: 0.4rem;
+  border-radius: 100%;
+}
+.swiper-button-prev {
+  right: 1;
+  top: 35px;
+  padding: 2.5rem 0.2rem;
+  color: #333;
+  transition: all 0.4s ease;
+}
+.swiper-button-prev:hover {
+  transform: translate(2px);
+}
+.swiper-button-prev::after {
+  font-size: 10px;
+  background-color: #f9f9f9;
+  padding: 0.4rem;
+  border-radius: 100%;
+}
+</style>
