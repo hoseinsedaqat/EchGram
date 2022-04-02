@@ -36,7 +36,7 @@ export default Vue.extend({
               <div>
                 <swiper class="swiper" :options="swiperOption">
                   <swiper-slide>
-                    <img class="ho_cp" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%; border:1px solid rgb(63, 114, 155);">
+                    <img class="ho_cp bbc" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
                   </swiper-slide>
                   <swiper-slide>
                     <img src="@/assets/logo.png" alt="" width="50px" style="border-radius:;">
@@ -163,6 +163,9 @@ export default Vue.extend({
 </template>
 
 <style scoped>
+.bbc{
+  border: 2px solid rgb(193, 53, 132);
+}
 .swiper {
   height: 100px;
   width: 100%;
