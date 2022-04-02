@@ -36,7 +36,9 @@ export default Vue.extend({
               <div>
                 <swiper class="swiper" :options="swiperOption">
                   <swiper-slide>
+                    <router-link to="/test">
                     <img class="ho_cp bbc" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
+                    </router-link>
                   </swiper-slide>
                   <swiper-slide>
                     <img class="ho_cp bbc" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
