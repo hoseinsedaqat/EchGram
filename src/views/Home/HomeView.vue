@@ -8,7 +8,7 @@ export default Vue.extend({
   data() {
     return {
       swiperOption: {
-        slidesPerView: 5,
+        slidesPerView: 6,
         spaceBetween: 2,
         loop: false,
         loopFillGroupWithBlank: true,
@@ -39,22 +39,22 @@ export default Vue.extend({
                     <img class="ho_cp bbc" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="@/assets/logo.png" alt="" width="50px" style="border-radius:;">
+                    <img class="ho_cp bbc" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="@/assets/logo.png" alt="" width="50px" style="border-radius:;">
+                    <img class="ho_cp bbc" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="@/assets/logo.png" alt="" width="50px" style="border-radius:;">
+                    <img class="ho_cp bbc" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="@/assets/logo.png" alt="" width="50px" style="border-radius:;">
+                    <img class="ho_cp bbc" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="@/assets/logo.png" alt="" width="50px">
+                    <img class="ho_cp bbc" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="@/assets/logo.png" alt="" width="50px">
+                    <img class="ho_cp bbc" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
                   </swiper-slide>
                   <div class="swiper-button-prev" slot="button-prev"></div>
                   <div class="swiper-button-next" slot="button-next"></div>
