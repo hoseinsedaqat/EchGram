@@ -38,7 +38,11 @@
 }
 
 .ho_iw {
-    width: 90.5% !important;
+    width: 90% !important;
+}
+
+.ho_bw{
+    width: 10% !important;
 }
 
 .ho_btnfc {
@@ -52,5 +56,8 @@
     }
     .ho_iw {
         width: 80% !important;
+    }
+    .ho_bw{
+        width: 20% !important;
     }
 }
