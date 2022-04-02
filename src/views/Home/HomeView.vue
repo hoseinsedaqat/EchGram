@@ -101,13 +101,18 @@ export default Vue.extend({
                 </div>
                 <div class="m-2 d-flex flex-column">
                   <small class="text-muted">View All Comments</small>
-                  <div class="d-flex align-items-center">
-                    <span class="mr-2 mt-1">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <span class="mr-2 mt-1">
                       HoseinSedaqat
                     </span>
                     <span class="ho_ffsc mt-1">
                               خیلی خوشگل شدی حسین جون 😃✌                      
                     </span>
+                    </div>
+                    <div>
+                      <i class="fa fa-heart ho_ffs"></i>
+                    </div>
                   </div>
                 </div>
               </div>
