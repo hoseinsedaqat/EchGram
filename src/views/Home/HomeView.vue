@@ -119,10 +119,10 @@ export default Vue.extend({
                       <i class="fa fa-heart ho_ffs text-secondary ho_cp" ></i>
                     </div>
                   </div>
-                   <div class="mx-2 my-1">
+                   <div class="mx-2">
                       <small class="text-muted">3 Hours Ago</small>
                   </div>
-                  <div style="border-top:1px solid #999999;" class="p-2">
+                  <div style="border-top:1px solid #999999;" class="p-2 mt-3">
                     <div class="mx-2">
                       <input type="text" placeholder="Add a commnet..." class="ho_bfc ho_iw">
                       <button class="text-primary ho_btnfc" @click="test()">Post</button>
