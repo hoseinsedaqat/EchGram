@@ -24,3 +24,7 @@
 .ho_cp {
     cursor: var(--ho_cp);
 }
+
+.ho_bcs {
+    border: 2px solid rgb(193, 53, 132);
+}
