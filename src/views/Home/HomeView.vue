@@ -27,7 +27,7 @@ export default Vue.extend({
 </script>
 
 <template>
-  <section>
+  <section id="HomeLayout">
     <div class="container">
       <div class="row">
         <main class="d-flex col-md-12">
@@ -98,6 +98,17 @@ export default Vue.extend({
                   <span>
                     <svg aria-label="Save" class="_8-yf5 ho_cp" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
                   </span>
+                </div>
+                <div class="m-2 d-flex flex-column">
+                  <small class="text-muted">View All Comments</small>
+                  <div class="d-flex align-items-center">
+                    <span class="mr-1">
+                      HoseinSedaqat
+                    </span>
+                    <span class="ho_ffsc mt-1">
+                      Wow Man You Look Great 😃✌
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
