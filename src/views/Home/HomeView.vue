@@ -9,7 +9,7 @@ export default Vue.extend({
     return {
       swiperOption: {
         slidesPerView: 5,
-        spaceBetween: 5,
+        spaceBetween: 2,
         loop: false,
         loopFillGroupWithBlank: true,
         navigation: {
@@ -36,25 +36,25 @@ export default Vue.extend({
               <div>
                 <swiper class="swiper" :options="swiperOption">
                   <swiper-slide>
-                    <img src="../../assets/logo.png" alt="" width="50px" style="border-radius:;">
+                    <img class="ho_cp" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%; border:1px solid rgb(63, 114, 155);">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="../../assets/logo.png" alt="" width="50px" style="border-radius:;">
+                    <img src="@/assets/logo.png" alt="" width="50px" style="border-radius:;">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="../../assets/logo.png" alt="" width="50px" style="border-radius:;">
+                    <img src="@/assets/logo.png" alt="" width="50px" style="border-radius:;">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="../../assets/logo.png" alt="" width="50px" style="border-radius:;">
+                    <img src="@/assets/logo.png" alt="" width="50px" style="border-radius:;">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="../../assets/logo.png" alt="" width="50px" style="border-radius:;">
+                    <img src="@/assets/logo.png" alt="" width="50px" style="border-radius:;">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="../../assets/logo.png" alt="" width="50px">
+                    <img src="@/assets/logo.png" alt="" width="50px">
                   </swiper-slide>
                   <swiper-slide>
-                    <img src="../../assets/logo.png" alt="" width="50px">
+                    <img src="@/assets/logo.png" alt="" width="50px">
                   </swiper-slide>
                   <div class="swiper-button-prev" slot="button-prev"></div>
                   <div class="swiper-button-next" slot="button-next"></div>
@@ -193,7 +193,7 @@ export default Vue.extend({
 }
 .swiper-button-next::after {
   font-size: 10px;
-  background-color: #f9f9f9;
+  background-color: #e9e9e9;
   padding: 0.4rem;
   border-radius: 100%;
 }
@@ -209,7 +209,7 @@ export default Vue.extend({
 }
 .swiper-button-prev::after {
   font-size: 10px;
-  background-color: #f9f9f9;
+  background-color: #e9e9e9;
   padding: 0.4rem;
   border-radius: 100%;
 }
