@@ -22,6 +22,11 @@ export default Vue.extend({
   components: {
     Swiper,
     SwiperSlide,
+  },
+  methods: {
+    test(){
+      alert('New Comment!😃')
+    }
   }
 });
 </script>
@@ -99,9 +104,9 @@ export default Vue.extend({
                     <svg aria-label="Save" class="_8-yf5 ho_cp" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
                   </span>
                 </div>
-                <div class="m-2 d-flex flex-column">
-                  <small class="text-muted">View All Comments</small>
-                  <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-column">
+                  <small class="text-muted ml-2">View All Comments</small>
+                  <div class="mx-2 d-flex align-items-center justify-content-between">
                     <div>
                       <span class="mr-2 mt-1">
                       HoseinSedaqat
@@ -111,7 +116,16 @@ export default Vue.extend({
                     </span>
                     </div>
                     <div>
-                      <i class="fa fa-heart ho_ffs"></i>
+                      <i class="fa fa-heart ho_ffs text-secondary ho_cp" ></i>
+                    </div>
+                  </div>
+                   <div class="mx-2 my-1">
+                      <small class="text-muted">3 Hours Ago</small>
+                  </div>
+                  <div style="border-top:1px solid #999999;" class="p-2">
+                    <div class="mx-2">
+                      <input type="text" placeholder="Add a commnet..." class="ho_bfc ho_iw">
+                      <button class="text-primary ho_btnfc" @click="test()">Post</button>
                     </div>
                   </div>
                 </div>

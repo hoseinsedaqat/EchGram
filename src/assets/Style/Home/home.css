@@ -29,8 +29,28 @@
     border: 2px solid rgb(193, 53, 132);
 }
 
+.ho_bfc {
+    border: none;
+}
+
+.ho_bfc:focus {
+    outline: none;
+}
+
+.ho_iw {
+    width: 90.5% !important;
+}
+
+.ho_btnfc {
+    border: none;
+    background-color: #fff;
+}
+
 @media(max-width:760px) {
     .ho_ps {
         display: none;
+    }
+    .ho_iw {
+        width: 89% !important;
     }
 }
