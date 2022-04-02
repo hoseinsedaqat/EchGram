@@ -29,8 +29,8 @@
     border: 2px solid rgb(193, 53, 132);
 }
 
-/* @media(max-width:760px) {
+@media(max-width:760px) {
     .ho_ps {
         display: none;
     }
-} */
+}
