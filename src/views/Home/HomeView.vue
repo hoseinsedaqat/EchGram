@@ -102,11 +102,11 @@ export default Vue.extend({
                 <div class="m-2 d-flex flex-column">
                   <small class="text-muted">View All Comments</small>
                   <div class="d-flex align-items-center">
-                    <span class="mr-1">
+                    <span class="mr-2 mt-1">
                       HoseinSedaqat
                     </span>
                     <span class="ho_ffsc mt-1">
-                      Wow Man You Look Great 😃✌
+                              خیلی خوشگل شدی حسین جون 😃✌                      
                     </span>
                   </div>
                 </div>
