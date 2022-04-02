@@ -228,7 +228,7 @@ export default Vue.extend({
 }
 .swiper-button-next::after {
   font-size: 10px;
-  background-color: #e9e9e9;
+  background-color: #fff;
   padding: 0.4rem;
   border-radius: 50%;
 }
@@ -244,7 +244,7 @@ export default Vue.extend({
 }
 .swiper-button-prev::after {
   font-size: 10px;
-  background-color: #e9e9e9;
+  background-color: #fff;
   padding: 0.4rem;
   border-radius: 50%;
 }
