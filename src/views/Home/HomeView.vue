@@ -1,14 +1,15 @@
 <script lang="ts">
 import Vue from "vue";
 import SwiperStory from "./Components/SwiperStory.vue";
-import PostLayout from './Components/PostLayout.vue';
-import HomeStickyNav from './Components/HomeStickyNav.vue';
+import PostLayout from "./Components/PostLayout.vue";
+import HomeStickyNav from "./Components/HomeStickyNav.vue";
+
 export default Vue.extend({
-  components: { 
+  components: {
     SwiperStory,
     PostLayout,
-    HomeStickyNav 
-    },
+    HomeStickyNav,
+  },
   name: "HomeView",
 });
 </script>
@@ -31,5 +32,3 @@ export default Vue.extend({
     </div>
   </section>
 </template>
-
-
