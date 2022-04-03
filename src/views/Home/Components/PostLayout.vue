@@ -48,7 +48,7 @@ export default Vue.extend({
                       HoseinSedaqat
                     </span>
                     <span class="mt-1 ho_ffs">
-                              خیلی خوشگل شدی حسین جون 😃✌                      
+                        You Look Beautiful Hosein                      
                     </span>
                     </div>
                     <div>
