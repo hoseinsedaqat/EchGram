@@ -1,11 +1,18 @@
-:root{
-    --d_bc:#eeee;
+:root {
+    --d_bc: #eeee;
+    --d_ph: #f9f9f9;
 }
 
-.d_bp{
-    border:1px solid var(--d_bc);
+.d_bp {
+    border: 1px solid var(--d_bc);
 }
-.d_of{
+
+.d_of {
     overflow-y: scroll;
     height: 75vh;
+}
+
+.d_ph:hover {
+    background-color: var(--d_ph);
+    cursor: pointer;
 }
