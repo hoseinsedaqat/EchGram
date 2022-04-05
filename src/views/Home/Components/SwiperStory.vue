@@ -100,9 +100,12 @@ export default Vue.extend({
   transform: translate(-2px);
 }
 .swiper-button-next::after {
-  font-size: 10px;
+  font-size: 9px;
+  font-weight: bold;
   background-color: #fff;
-  padding: 0.4rem;
+  padding: 0.4rem 0.5rem;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
 }
 .swiper-button-prev {
@@ -112,13 +115,16 @@ export default Vue.extend({
   color: #333;
   transition: all 0.4s ease;
 }
-.swiper-button-prev:hover {
+/* .swiper-button-prev:hover {
   transform: translate(2px);
-}
+} */
 .swiper-button-prev::after {
-  font-size: 10px;
+  font-size: 9px;
+  font-weight: bold;
   background-color: #fff;
-  padding: 0.4rem;
+  padding: 0.4rem 0.5rem;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
 }
 </style>
