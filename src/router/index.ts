@@ -21,7 +21,7 @@ const routes: Array<RouteConfig> = [
   {
     path:'/direct/inbox',
     name:'DirectView',
-    component: () => import('@/views/DirectView.vue')
+    component: () => import('@/views/Direct/DirectView.vue')
   }
 ]
 
