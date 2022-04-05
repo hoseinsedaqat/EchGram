@@ -93,7 +93,7 @@
             <div class="d-flex flex-column align-items-center justify-content-center">
             <h3 class="d_echl">Echgram</h3>
             <p class="h4">Your Messages</p>
-            <span>
+            <span class="text-muted">
               Send private photos and messages to a friend or group.
             </span>
             <button class="btn btn-primary w-50 my-3">Send Message</button>
