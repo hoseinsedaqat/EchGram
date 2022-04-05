@@ -96,9 +96,9 @@ export default Vue.extend({
   color: #333;
   transition: all 0.4s ease;
 }
-.swiper-button-next:hover {
+/* .swiper-button-next:hover {
   transform: translate(-2px);
-}
+} */
 .swiper-button-next::after {
   font-size: 9px;
   font-weight: bold;
