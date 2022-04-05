@@ -19,7 +19,7 @@
                   <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
                 </span>
                 <span class="d-flex flex-column mx-2">
-                  <span>Hosein</span>
+                  <span class="font-weight-bold">Hosein</span>
                   <span class="text-muted">Liked a message . 1d</span>
                 </span>
             </div>
@@ -92,7 +92,7 @@
           <div class="d_bp d-flex w-100 h-100 align-items-center justify-content-center text-center">
             <div class="d-flex flex-column align-items-center justify-content-center">
             <h3 class="d_echl">Echgram</h3>
-            <p class="h4">Your Messages</p>
+            <p class="h5">Your Messages</p>
             <span class="text-muted">
               Send private photos and messages to a friend or group.
             </span>
