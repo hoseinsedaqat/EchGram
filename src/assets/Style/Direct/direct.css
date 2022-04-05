@@ -1,4 +1,10 @@
+:root{
+    --d_bc:#eeee;
+}
 
+.d_bp{
+    border:1px solid var(--d_bc);
+}
 .d_of{
     overflow-y: scroll;
     height: 75vh;
