@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row my-3 bg-white no-gutters">
         <!-- Define my Id -->
-        <div class="col-md-4 d_hvh">
+        <div class="col-md-4 d_hvh w-100 h-100">
           <div class="d_bp d-flex flex-align-center justify-content-around p-3">
             <div></div>
             <div>
@@ -89,8 +89,15 @@
           </div>
         </div>
         <div class="col-md-8">
-          <div class="d_bp">
-            <p>Messages</p>
+          <div class="d_bp d-flex w-100 h-100 align-items-center justify-content-center text-center">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+            <h3 class="d_echl">Echgram</h3>
+            <p class="h4">Your Messages</p>
+            <span>
+              Send private photos and messages to a friend or group.
+            </span>
+            <button class="btn btn-primary w-50 my-3">Send Message</button>
+            </div>
           </div>
         </div>
     </div>
