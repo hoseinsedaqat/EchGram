@@ -146,7 +146,7 @@ export default Vue.extend({
                 </span>
               </div> -->
               </div>
-              <div class="w-100 h-100 d_bp">
+              <div class="w-100 h-100 d_bt">
               <!-- Direct Msg Header -->
                 <div class="d-flex align-items-center justify-content-between d_mfhm mx-5">
                 <span>

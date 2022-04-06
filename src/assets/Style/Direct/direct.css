@@ -26,3 +26,7 @@
 .d_mfhm {
     margin: 0.85rem;
 }
+
+.d_bt {
+    border-top: 1px solid var(--d_bc);
+}
