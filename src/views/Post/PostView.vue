@@ -32,9 +32,9 @@ export default Vue.extend({
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="card my-5 p-2">
+          <div class="card my-5">
             <div class="card-body text-center">
-                <img :src="img" alt="Preview Image" v-if="img !== '' " width="300px" height="250px" class="mb-2">
+                <img :src="img" alt="Preview Image" v-if="img !== '' " style="border-radius:10px" width="300px" height="300px" class="mb-2">
               <form>
                 <div class="form-group text-center">
                   <label for="Image" class="po_ic">
