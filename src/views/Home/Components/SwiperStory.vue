@@ -101,7 +101,7 @@ export default Vue.extend({
 } */
 .swiper-button-next::after {
   font-size: 9px;
-  font-weight: bold;
+  font-weight: 500;
   background-color: #fff;
   padding: 0.4rem 0.5rem;
   width: 21px;
@@ -120,7 +120,7 @@ export default Vue.extend({
 } */
 .swiper-button-prev::after {
   font-size: 9px;
-  font-weight: bold;
+  font-weight: 500;
   background-color: #fff;
   padding: 0.4rem 0.5rem;
   width: 21px;
