@@ -5,10 +5,12 @@ export default Vue.extend({
   name: "PostView",
   data(){
       return {
-          img: "" as any
+        // eslint-disable-next-line
+        img: "" as any
       }
   },
   methods:{
+      // eslint-disable-next-line
       onFileChange(e: any) {
       try{
         var reader = new FileReader();
