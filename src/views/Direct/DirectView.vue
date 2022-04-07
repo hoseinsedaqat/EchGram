@@ -2,6 +2,7 @@
 import Vue from 'vue'
 import DirectLeftHeader from './Components/DirectLeftHeader.vue'
 import DirectLeftUsers from './Components/DirectLeftUsers.vue'
+import DirectRightNone from './Components/DirectRightNone.vue'
 
 export default Vue.extend({
   name: "DirectView",
@@ -13,7 +14,8 @@ export default Vue.extend({
   },
   components:{
     DirectLeftHeader,
-    DirectLeftUsers
+    DirectLeftUsers,
+    DirectRightNone
   },
   methods: {
     directUserOne(){
@@ -35,14 +37,7 @@ export default Vue.extend({
         <div class="col-md-8">
           <div class="d_bp w-100 h-100 text-center">
             <!-- When We are have no Direct Select -->
-            <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100" v-if="noneDirect">
-            <h3 class="d_echl">Echgram</h3>
-            <p class="h5">Your Messages</p>
-            <span class="text-muted">
-              Send private photos and messages to a friend or group.
-            </span>
-            <button class="btn btn-primary w-50 my-3">Send Message</button>
-            </div>
+            <direct-right-none></direct-right-none>
             <!-- When We are have Direct -->
             <div v-if="directOne">
               <div class="w-100 h-100 d_bp">
