@@ -1,6 +1,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import DirectLeftHeader from './Components/DirectLeftHeader.vue'
+import DirectLeftUsers from './Components/DirectLeftUsers.vue'
 
 export default Vue.extend({
   name: "DirectView",
@@ -11,7 +12,8 @@ export default Vue.extend({
     }
   },
   components:{
-    DirectLeftHeader
+    DirectLeftHeader,
+    DirectLeftUsers
   },
   methods: {
     directUserOne(){
@@ -28,80 +30,7 @@ export default Vue.extend({
         <!-- Define my Id -->
         <div class="col-md-4 d_hvh w-100 h-100">
           <direct-left-header></direct-left-header>
-          <div class="d_bp d_of">
-            <div class="d-flex py-3 d_ph" @click="directUserOne">
-                <span class="mx-2">
-                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
-                </span>
-                <span class="d-flex flex-column mx-2">
-                  <span class="font-weight-bold">Hosein</span>
-                  <span class="text-muted">Liked a message . 1d</span>
-                </span>
-            </div>
-            <div class="d-flex py-3 d_ph">
-                <span class="mx-2">
-                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
-                </span>
-                <span class="d-flex flex-column mx-2">
-                  <span>Hosein</span>
-                  <span class="text-muted">Liked a message . 1d</span>
-                </span>
-            </div>
-            <div class="d-flex py-3 d_ph">
-                <span class="mx-2">
-                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
-                </span>
-                <span class="d-flex flex-column mx-2">
-                  <span>Hosein</span>
-                  <span class="text-muted">Liked a message . 1d</span>
-                </span>
-            </div>
-            <div class="d-flex py-3 d_ph">
-                <span class="mx-2">
-                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
-                </span>
-                <span class="d-flex flex-column mx-2">
-                  <span>Hosein</span>
-                  <span class="text-muted">Liked a message . 1d</span>
-                </span>
-            </div>
-            <div class="d-flex py-3 d_ph">
-                <span class="mx-2">
-                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
-                </span>
-                <span class="d-flex flex-column mx-2">
-                  <span>Hosein</span>
-                  <span class="text-muted">Liked a message . 1d</span>
-                </span>
-            </div>
-            <div class="d-flex py-3 d_ph">
-                <span class="mx-2">
-                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
-                </span>
-                <span class="d-flex flex-column mx-2">
-                  <span>Hosein</span>
-                  <span class="text-muted">Liked a message . 1d</span>
-                </span>
-            </div>
-            <div class="d-flex py-3 d_ph">
-                <span class="mx-2">
-                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
-                </span>
-                <span class="d-flex flex-column mx-2">
-                  <span>Hosein</span>
-                  <span class="text-muted">Liked a message . 1d</span>
-                </span>
-            </div>
-            <div class="d-flex py-3 d_ph">
-                <span class="mx-2">
-                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
-                </span>
-                <span class="d-flex flex-column mx-2">
-                  <span>Hosein</span>
-                  <span class="text-muted">Liked a message . 1d</span>
-                </span>
-            </div>
-          </div>
+          <direct-left-users></direct-left-users>
         </div>
         <div class="col-md-8">
           <div class="d_bp w-100 h-100 text-center">
