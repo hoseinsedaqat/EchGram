@@ -4,6 +4,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  // this is simple and stupid for write vuex right so i refactor it later
   state: {
     noneDirect:true,
     directOne:false
@@ -11,9 +12,9 @@ export default new Vuex.Store({
   getters: {
   },
   mutations: {
-    showDirectTest:(state)=>{
+    showDirectTest:(state) => {
       state.noneDirect = false;
-      state.directOne = true
+      state.directOne = true;
     }
   },
   actions: {
