@@ -27,6 +27,10 @@ const routes: Array<RouteConfig> = [
     path:'/create/post',
     name:'PostView',
     component: () => import('@/views/Post/PostView.vue')
+  },{
+    path: '/explore',
+    name: 'ExploreView',
+    component: () => import('@/views/Explore/ExploreView.vue')
   }
 ]
 
