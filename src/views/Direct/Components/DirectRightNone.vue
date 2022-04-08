@@ -1,14 +1,18 @@
 <script>
 import Vue from 'vue'
+import {mapState} from 'vuex'
 
 export default Vue.extend({
-    name:"DirectRightNone"
+    name:"DirectRightNone",
+    computed:{
+    ...mapState(['noneDirect'])
+  },
 })
 
 </script>
 
 <template>
-  <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+  <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100" v-if="noneDirect">
             <h3 class="d_echl">Echgram</h3>
             <p class="h5">Your Messages</p>
             <span class="text-muted">

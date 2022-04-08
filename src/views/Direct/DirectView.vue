@@ -1,28 +1,20 @@
 <script lang="ts">
 import Vue from 'vue'
+import {mapState} from 'vuex'
 import DirectLeftHeader from './Components/DirectLeftHeader.vue'
 import DirectLeftUsers from './Components/DirectLeftUsers.vue'
 import DirectRightNone from './Components/DirectRightNone.vue'
 
 export default Vue.extend({
   name: "DirectView",
-  data(){
-    return {
-      noneDirect: true,
-      directOne: false
-    }
-  },
   components:{
     DirectLeftHeader,
     DirectLeftUsers,
     DirectRightNone
   },
-  methods: {
-    directUserOne(){
-      this.noneDirect = false;
-      this.directOne = true
-    }
-  }
+  computed:{
+    ...mapState(['directOne'])
+  },
 });
 </script>
 
