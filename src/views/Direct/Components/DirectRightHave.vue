@@ -40,7 +40,7 @@ export default Vue.extend({
               <div class="w-100 h-100 d_bt">
               <!-- Direct Msg Header -->
                 <div class="mx-5">
-                  <span class="d-flex align-items-center justify-content-center mt-2">
+                  <span class="d-flex align-items-center justify-content-center my-2">
                     <input type="text" class="" style="width:100%;border-radius:10px;border:1px solid #333;padding:0.5rem;" placeholder="Message...">
                   </span>
                 </div>
