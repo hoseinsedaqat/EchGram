@@ -32,8 +32,29 @@
 }
 
 .d_idm {
+    position: relative;
     width: 100%;
     border-radius: 10px;
     border: 1px solid #e1e1e1;
-    padding: 0.5rem;
+    padding: 0.5rem 3rem;
 }
+
+.d_idm:focus {
+    outline: none;
+}
+
+.d_ms {
+    position: absolute;
+    left: 65px;
+}
+
+/* .d_mg {
+    position: absolute;
+    left: 530px;
+}
+
+
+.d_mh {
+    position: absolute;
+    left: 560px;
+} */
