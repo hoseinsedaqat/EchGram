@@ -30,3 +30,10 @@
 .d_bt {
     border-top: 1px solid var(--d_bc);
 }
+
+.d_idm {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    padding: 0.5rem;
+}
