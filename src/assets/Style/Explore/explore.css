@@ -2,6 +2,10 @@
     width: 96.6%;
 }
 
+.ex_ih {
+    height: 49.3%;
+}
+
 
 @media(max-width:678px) {
     .ex_iw {
