@@ -19,13 +19,13 @@ export default Vue.extend({
          </div>
          <div class="row my-4">
              <div class="col-md-4">
-                 <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinExplore" class="img-fluid">
+                 <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinExplore" class="img-fluid w-100 mt-2">
              </div>
              <div class="col-md-4">
-                 <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinExplore" class=" img-fluid">
+                 <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinExplore" class=" img-fluid w-100 mt-2">
              </div>
              <div class="col-md-4">
-                 <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinExplore" class=" img-fluid">
+                 <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinExplore" class=" img-fluid w-100 mt-2">
              </div>
          </div>
     </div>
