@@ -25,6 +25,12 @@ export default Vue.extend({
     SwitchSvg,
     DropdownAngle,
   },
+    // now i think can change color of 
+  watch:{
+    $route (to, from){
+        console.log(to.path);
+    }
+} 
 });
 </script>
 

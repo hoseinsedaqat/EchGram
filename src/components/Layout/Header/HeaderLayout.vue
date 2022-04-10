@@ -11,7 +11,6 @@ export default Vue.extend({
   },
 });
 </script>
-HeaderIcons
 
 <template>
   <header class="bg-white py-1 h_lb" id="h_bh">
