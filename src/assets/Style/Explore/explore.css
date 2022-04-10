@@ -1,0 +1,11 @@
+.ex_iw {
+    width: 96.6%;
+}
+
+
+@media(max-width:678px) {
+    .ex_iw {
+        margin: 0.5rem 0 0 0;
+        width: 100%;
+    }
+}
