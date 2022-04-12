@@ -1,49 +1,10 @@
 <script lang="ts">
 import Vue from "vue";
-import HomeSvg from "./HomeSvg.vue";
-import DirectSvg from "./DirectSvg.vue";
-import FileSvg from "./FileSvg.vue";
-import ExploreSvg from "./ExploreSvg.vue";
-import ActivitySvg from "./ActivitySvg.vue";
-import ProfileSvg from "./ProfileSvg.vue";
-import SaveSvg from "./SaveSvg.vue";
-import SettingSvg from "./SettingSvg.vue";
-import SwitchSvg from "./SwitchSvg.vue";
-import DropdownAngle from "./DropdownAngle.vue";
-import HomeSvgDark from "./HomeSvgDark.vue";
-import DirectSvgDark from "./DirectSvgDark.vue";
-import FileSvgDark from "./FileSvgDark.vue";
-import ExploreSvgDark from "./ExploreSvgDark.vue";
-import ActivitySvgDark from "./ActivitySvgDark.vue";
 import { headerDarker } from "../Utils/HeaderDark";
 
 export default Vue.extend({
   name: "HeaderIcons",
-  components: {
-    HomeSvg,
-    DirectSvg,
-    FileSvg,
-    ExploreSvg,
-    ActivitySvg,
-    ProfileSvg,
-    SaveSvg,
-    SettingSvg,
-    SwitchSvg,
-    DropdownAngle,
-    HomeSvgDark,
-    DirectSvgDark,
-    FileSvgDark,
-    ExploreSvgDark,
-    ActivitySvgDark,
-  },
   mixins: [headerDarker],
-  // now i think can change color of
-  // watch: {
-
-  // },
-  // mounted() {
-  //   this.homeNav = false;
-  // },
 });
 </script>
 
