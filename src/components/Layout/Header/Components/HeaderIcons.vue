@@ -10,6 +10,7 @@ import SaveSvg from "./SaveSvg.vue";
 import SettingSvg from "./SettingSvg.vue";
 import SwitchSvg from "./SwitchSvg.vue";
 import DropdownAngle from "./DropdownAngle.vue";
+import {headerDarker} from '../Utils/HeaderDark'
 
 export default Vue.extend({
   name: "HeaderIcons",
@@ -25,61 +26,11 @@ export default Vue.extend({
     SwitchSvg,
     DropdownAngle,
   },
-  data() {
-    return {
-      homeNav: true,
-      directNav: true,
-      postNav:true,
-      exploreNav:true,
-      activityNav:true
-    };
-  },
+  mixins:[headerDarker],
   // now i think can change color of
-  watch: {
-    // eslint-disable-next-line
-    $route(to, from) {
-      switch (to.path) {
-        case "/":
-          this.homeNav = false
-          this.directNav = true
-          this.postNav = true
-          this.exploreNav = true
-          this.activityNav = true
-          break;
-        case "/direct/inbox":
-          this.homeNav = true
-          this.directNav = false
-          this.postNav = true
-          this.exploreNav = true
-          this.activityNav = true
-          break;
-        case "/create/post":
-          this.homeNav = true
-          this.directNav = true
-          this.postNav = false
-          this.exploreNav = true
-          this.activityNav = true
-          break
-        case "/explore":
-          this.homeNav = true
-          this.directNav = true
-          this.postNav = true
-          this.exploreNav = false
-          this.activityNav = true
-          break
-        case "/accounts/activity":
-          this.homeNav = true
-          this.directNav = true
-          this.postNav = true
-          this.exploreNav = true
-          this.activityNav = false
-          break
-      }
-    },
-  },
-  mounted() {
-    this.homeNav = false;
-  },
+  // watch: {
+    
+  // },
 });
 </script>
 

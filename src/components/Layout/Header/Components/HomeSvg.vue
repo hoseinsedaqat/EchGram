@@ -1,3 +1,11 @@
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  name: "HomeSvg",
+});
+</script>
+
 <template>
   <svg
     aria-label="Home"
@@ -18,11 +26,3 @@
     ></path>
   </svg>
 </template>
-
-<script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
-  name: "HomeSvg",
-});
-</script>
