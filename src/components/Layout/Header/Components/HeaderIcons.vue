@@ -13,6 +13,7 @@ import DropdownAngle from "./DropdownAngle.vue";
 import HomeSvgDark from './HomeSvgDark.vue';
 import DirectSvgDark from './DirectSvgDark.vue';
 import FileSvgDark from './FileSvgDark.vue';
+import ExploreSvgDark from './ExploreSvgDark.vue';
 import { headerDarker } from '../Utils/HeaderDark';
 
 export default Vue.extend({
@@ -30,7 +31,8 @@ export default Vue.extend({
     DropdownAngle,
     HomeSvgDark,
     DirectSvgDark,
-    FileSvgDark
+    FileSvgDark,
+    ExploreSvgDark
   },
   mixins:[headerDarker],
   // now i think can change color of
@@ -60,7 +62,7 @@ export default Vue.extend({
     </router-link>
     <router-link to="/explore" class="mr-3">
       <explore-svg  v-if="exploreNav"></explore-svg>
-      <svg v-if="!exploreNav" aria-label="Find People" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M13.173 13.164l1.491-3.829-3.83 1.49zM12.001.5a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012.001.5zm5.35 7.443l-2.478 6.369a1 1 0 01-.57.569l-6.36 2.47a1 1 0 01-1.294-1.294l2.48-6.369a1 1 0 01.57-.569l6.359-2.47a1 1 0 011.294 1.294z"></path></svg>
+      <explore-svg-dark v-if="!exploreNav"></explore-svg-dark>
     </router-link>
     <router-link to="/accounts/activity" class="mr-3">
       <activity-svg v-if="activityNav"></activity-svg>
