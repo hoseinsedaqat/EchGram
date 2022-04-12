@@ -10,8 +10,10 @@ import SaveSvg from "./SaveSvg.vue";
 import SettingSvg from "./SettingSvg.vue";
 import SwitchSvg from "./SwitchSvg.vue";
 import DropdownAngle from "./DropdownAngle.vue";
-import HomeSvgDark from './HomeSvgDark.vue'
-import { headerDarker } from '../Utils/HeaderDark'
+import HomeSvgDark from './HomeSvgDark.vue';
+import DirectSvgDark from './DirectSvgDark.vue';
+import FileSvgDark from './FileSvgDark.vue';
+import { headerDarker } from '../Utils/HeaderDark';
 
 export default Vue.extend({
   name: "HeaderIcons",
@@ -27,6 +29,8 @@ export default Vue.extend({
     SwitchSvg,
     DropdownAngle,
     HomeSvgDark,
+    DirectSvgDark,
+    FileSvgDark
   },
   mixins:[headerDarker],
   // now i think can change color of
@@ -48,26 +52,11 @@ export default Vue.extend({
     </router-link>
     <router-link to="/direct/inbox" class="mr-3">
       <direct-svg v-if="directNav"></direct-svg>
-      <svg
-        v-if="!directNav"
-        aria-label="Direct"
-        class="_8-yf5"
-        color="#262626"
-        fill="#262626"
-        height="24"
-        role="img"
-        viewBox="0 0 24 24"
-        width="24"
-      >
-        <path
-          d="M22.91 2.388a.69.69 0 00-.597-.347l-20.625.002a.687.687 0 00-.482 1.178L7.26 9.16a.686.686 0 00.778.128l7.612-3.657a.723.723 0 01.937.248.688.688 0 01-.225.932l-7.144 4.52a.69.69 0 00-.3.743l2.102 8.692a.687.687 0 00.566.518.655.655 0 00.103.008.686.686 0 00.59-.337L22.903 3.08a.688.688 0 00.007-.692"
-          fill-rule="evenodd"
-        ></path>
-      </svg>
+      <direct-svg-dark v-if="!directNav"></direct-svg-dark>
     </router-link>
     <router-link to="/create/post" class="mr-3">
       <file-svg v-if="postNav"></file-svg>
-      <svg v-if="!postNav" aria-label="New Post" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M12.003 5.545l-.117.006-.112.02a1 1 0 00-.764.857l-.007.117V11H6.544l-.116.007a1 1 0 00-.877.876L5.545 12l.007.117a1 1 0 00.877.876l.116.007h4.457l.001 4.454.007.116a1 1 0 00.876.877l.117.007.117-.007a1 1 0 00.876-.877l.007-.116V13h4.452l.116-.007a1 1 0 00.877-.876l.007-.117-.007-.117a1 1 0 00-.877-.876L17.455 11h-4.453l.001-4.455-.007-.117a1 1 0 00-.876-.877zM8.552.999h6.896c2.754 0 4.285.579 5.664 1.912 1.255 1.297 1.838 2.758 1.885 5.302L23 8.55v6.898c0 2.755-.578 4.286-1.912 5.664-1.298 1.255-2.759 1.838-5.302 1.885l-.338.003H8.552c-2.754 0-4.285-.579-5.664-1.912-1.255-1.297-1.839-2.758-1.885-5.302L1 15.45V8.551c0-2.754.579-4.286 1.912-5.664C4.21 1.633 5.67 1.05 8.214 1.002L8.552 1z"></path></svg>
+      <file-svg-dark v-if="!postNav"></file-svg-dark>
     </router-link>
     <router-link to="/explore" class="mr-3">
       <explore-svg  v-if="exploreNav"></explore-svg>
