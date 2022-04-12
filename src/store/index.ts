@@ -7,7 +7,8 @@ export default new Vuex.Store({
   // this is simple and stupid for write vuex right so i refactor it later
   state: {
     noneDirect:true,
-    directOne:false
+    directOne:false,
+    hosein:"Hosein Sedaqat"
   },
   getters: {
   },

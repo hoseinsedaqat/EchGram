@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { mapState } from 'vuex'
 
 export const headerDarker = Vue.extend({
     data() {
@@ -9,6 +10,9 @@ export const headerDarker = Vue.extend({
           exploreNav:true,
           activityNav:true
         };
+    },
+    computed:{
+      ...mapState(['hosein'])
     },
     watch:{
     // eslint-disable-next-line
@@ -54,5 +58,7 @@ export const headerDarker = Vue.extend({
     },
     mounted() {
         this.homeNav = false;
+        // Test Vuex
+        console.log(this.hosein);
     },
 })
