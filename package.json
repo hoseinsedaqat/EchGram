@@ -23,6 +23,7 @@
     "ts-loader": "^8.2.0",
     "vue": "^2.6.14",
     "vue-awesome-swiper": "^4.1.1",
+    "vue-progressbar": "^0.7.5",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
   },
