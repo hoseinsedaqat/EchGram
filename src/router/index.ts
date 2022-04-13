@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import HomeView from '../views/Home/HomeView.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +7,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'home',
-    component: HomeView,
+    component: () => import('@/views/Home/HomeView.vue'),
   },
   {
     path: '/about',
@@ -17,7 +16,7 @@ const routes: Array<RouteConfig> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    component: () => import(/* webpackChunkName: "about" */ '@/views/AboutView.vue'),
   },
   {
     path:'/direct/inbox',
@@ -33,6 +32,11 @@ const routes: Array<RouteConfig> = [
     path: '/explore',
     name: 'ExploreView',
     component: () => import('@/views/Explore/ExploreView.vue'),
+  },
+  {
+    path:'/accounts/activity',
+    name:'ActivityView',
+    component: () => import('@/views/Activity/ActivityView.vue')
   }
 ]
 

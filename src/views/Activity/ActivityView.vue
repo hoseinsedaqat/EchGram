@@ -10,6 +10,12 @@ export default Vue.extend({
 
 <template>
   <section id="activity">
-      
+      <div class="container">
+          <div class="row my-4">
+              <div class="col-md-8 mx-auto">
+                  Activity Pages 😀
+              </div>
+          </div>
+      </div>
   </section>
 </template>
