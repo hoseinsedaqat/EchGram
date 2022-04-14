@@ -1,5 +1,5 @@
 :root {
-    --body-color:#fafafa;
+    --body-color: #fafafa;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -16,6 +16,23 @@ ul {
 .container {
     max-width: 1000px !important;
 }
+
+/* Scroll Bar Design for Chrome */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #9999;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px
+}
+
+
 
 
 @import url('./Home/home.css');
