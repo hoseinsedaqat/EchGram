@@ -3,6 +3,18 @@ import VueRouter, { RouteConfig } from 'vue-router'
 
 Vue.use(VueRouter)
 
+
+// for responsive mobile design pages
+function testRouter(to:any,from:any,next:any){
+  if(innerWidth > 1000){
+    next({
+      path:'/'
+    })
+  }else{
+    next()
+  }
+}
+
 const routes: Array<RouteConfig> = [
   {
     path: '/',
@@ -36,6 +48,7 @@ const routes: Array<RouteConfig> = [
   {
     path:'/accounts/activity',
     name:'ActivityView',
+    beforeEnter:testRouter,
     component: () => import('@/views/Activity/ActivityView.vue')
   }
 ]
