@@ -28,10 +28,10 @@ export default Vue.extend({
       <explore-svg-dark v-if="!exploreNav"></explore-svg-dark>
     </router-link>
     <router-link to="/accounts/activity" class="mr-3">
-      <!-- <activity-svg v-if="activityNav" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false"></activity-svg> -->
+      <!-- <activity-svg v-if="activityNav" id="dropdownMenu2" data-toggle="dropdown2" aria-expanded="false"></activity-svg> -->
       <activity-svg-dark v-if="!activityNav"></activity-svg-dark>
       <div class="dropdown">
-    <activity-svg v-if="activityNav" @click="thisActivity" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false"></activity-svg>
+    <activity-svg v-if="activityNav" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false"></activity-svg>
   <div id="shows" class="dropdown-menu dropdown-menu-right mt-3" aria-labelledby="dropdownMenu2">
     <button class="dropdown-item" type="button">Action</button>
     <button class="dropdown-item" type="button">Another action</button>

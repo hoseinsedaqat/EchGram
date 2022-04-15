@@ -1,6 +1,6 @@
 <template>
   <svg
-    style="position: absolute; top: -12px; left: 180px"
+    style="position: absolute; top: -12px; left: 182px"
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
     width="15"

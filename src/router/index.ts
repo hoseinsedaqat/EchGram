@@ -13,8 +13,9 @@ function testRouter(to:any,from:any,next:any){
       path:'/'
     })
   }else{
-    document.getElementById('shows')!.style.display = 'none'
     next()
+    const test = (document.getElementById('dropdownMenu2')! as HTMLElement);
+    test.removeAttribute('data-toggle')
   }
 }
 
