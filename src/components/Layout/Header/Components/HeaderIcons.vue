@@ -30,6 +30,7 @@ export default Vue.extend({
     <router-link to="/accounts/activity" class="mr-3">
       <activity-svg v-if="activityNav"></activity-svg>
       <activity-svg-dark v-if="!activityNav"></activity-svg-dark>
+      <h3 id="shows" style="display:none;">Test</h3>
     </router-link>
     <li class="mr-3">
       <!-- Icons User Profile -->

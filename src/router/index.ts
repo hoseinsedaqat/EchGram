@@ -6,11 +6,18 @@ Vue.use(VueRouter)
 
 // for responsive mobile design pages
 // eslint-disable-next-line
+// test show activity for difrent devices
 function testRouter(to:any,from:any,next:any){
   if(innerWidth > 1000){
     next({
       path:'/'
     })
+    const test = document.getElementById('shows');
+    if(test!.style.display === 'none'){
+      test!.style.display = 'block'
+    }else{
+      test!.style.display = 'none'
+    }
   }else{
     next()
   }
