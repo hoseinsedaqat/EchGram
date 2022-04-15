@@ -62,9 +62,9 @@
 #ownDropDownContent {
     position: absolute;
     top: 15;
-    left: -280px;
+    left: -380px;
     background-color: #fff;
-    min-width: 300px;
+    min-width: 400px;
     height: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 1rem;
@@ -77,7 +77,7 @@
 
 
 
-@media(max-width:678px) {
+@media(max-width:800px) {
     #ownDropDownContent {
         display: none;
     }

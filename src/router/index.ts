@@ -8,7 +8,7 @@ Vue.use(VueRouter)
 // eslint-disable-next-line
 // test show activity for difrent devices
 function testRouter(to:any,from:any,next:any){
-  if(innerWidth > 1000){
+  if(innerWidth > 800){
     return
   }else{
     next()
