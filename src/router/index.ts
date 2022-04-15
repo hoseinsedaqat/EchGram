@@ -12,13 +12,8 @@ function testRouter(to:any,from:any,next:any){
     next({
       path:'/'
     })
-    const test = document.getElementById('shows');
-    if(test!.style.display === 'none'){
-      test!.style.display = 'block'
-    }else{
-      test!.style.display = 'none'
-    }
   }else{
+    document.getElementById('shows')!.style.display = 'none'
     next()
   }
 }

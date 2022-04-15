@@ -22,7 +22,8 @@ export const headerDarker = Vue.extend({
           directNav: true,
           postNav:true,
           exploreNav:true,
-          activityNav:true
+          activityNav:true,
+          forActivity:false,
         };
     },
     components: {
@@ -84,7 +85,17 @@ export const headerDarker = Vue.extend({
         }
       },
     },
+    methods:{
+      thisActivity(){
+        if(window.innerWidth > 1000){
+          this.forActivity = !this.forActivity
+        }
+      }
+    },
     mounted() {
         this.homeNav = false;
+        if(window.innerWidth < 800){
+          this.forActivity = false
+        }
     },
 })
