@@ -9,13 +9,11 @@ Vue.use(VueRouter)
 // test show activity for difrent devices
 function testRouter(to:any,from:any,next:any){
   if(innerWidth > 1000){
-    next({
-      path:'/'
-    })
+    return
   }else{
     next()
-    const test = (document.getElementById('dropdownMenu2')! as HTMLElement);
-    test.removeAttribute('data-toggle')
+    // const test = (document.getElementById('ownDropDownContent')! as HTMLElement);
+    // test.remove()
   }
 }
 

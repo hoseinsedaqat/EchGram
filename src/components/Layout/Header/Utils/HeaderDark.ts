@@ -23,6 +23,7 @@ export const headerDarker = Vue.extend({
           postNav:true,
           exploreNav:true,
           activityNav:true,
+          forActivity:false
         };
     },
     components: {
@@ -84,7 +85,13 @@ export const headerDarker = Vue.extend({
         }
       },
     },
+    methods:{
+      testActivity(){
+        this.forActivity = !this.forActivity
+      }
+    },
     mounted() {
         this.homeNav = false;
+        
     },
 })
