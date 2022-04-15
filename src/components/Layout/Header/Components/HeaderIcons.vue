@@ -33,7 +33,7 @@ export default Vue.extend({
       <div @click="testActivity" id="ownDropDown">
         <activity-svg v-if="activityNav"></activity-svg>
         <div v-if="forActivity" id="ownDropDownContent">
-          <h3>Hi</h3>
+          <p>Test</p>
         </div>
       </div>
     </router-link>

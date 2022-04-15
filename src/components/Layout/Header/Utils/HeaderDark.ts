@@ -88,10 +88,21 @@ export const headerDarker = Vue.extend({
     methods:{
       testActivity(){
         this.forActivity = !this.forActivity
+      },
+      close(e:any) {
+        if (!this.$el.contains(e.target)) {
+          this.forActivity = false
+        }
       }
     },
     mounted() {
         this.homeNav = false;
-        
+    },
+    created() {
+      window.addEventListener('click', this.close)
+    },
+  
+    beforeDestroy() {
+      window.removeEventListener('click', this.close)
     },
 })
