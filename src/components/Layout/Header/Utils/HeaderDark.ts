@@ -89,6 +89,7 @@ export const headerDarker = Vue.extend({
       testActivity(){
         this.forActivity = !this.forActivity
       },
+      // eslint-disable-next-line
       close(e:any) {
         if (!this.$el.contains(e.target)) {
           this.forActivity = false

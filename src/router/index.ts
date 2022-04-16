@@ -7,6 +7,7 @@ Vue.use(VueRouter)
 // for responsive mobile design pages
 // eslint-disable-next-line
 // test show activity for difrent devices
+// eslint-disable-next-line
 function testRouter(to:any,from:any,next:any){
   if(innerWidth > 800){
     return
