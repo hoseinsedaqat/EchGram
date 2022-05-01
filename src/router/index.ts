@@ -8,7 +8,7 @@ Vue.use(VueRouter)
 // eslint-disable-next-line
 // test show activity for difrent devices
 // eslint-disable-next-line
-function testRouter(to:any,from:any,next:any){
+function activityRouter(to:any,from:any,next:any){
   if(innerWidth > 800){
     return
   }else{
@@ -51,7 +51,7 @@ const routes: Array<RouteConfig> = [
   {
     path:'/accounts/activity',
     name:'ActivityView',
-    beforeEnter:testRouter,
+    beforeEnter:activityRouter,
     component: () => import('@/views/Activity/ActivityView.vue')
   }
 ]
