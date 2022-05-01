@@ -30,7 +30,7 @@ export default Vue.extend({
     <router-link to="/accounts/activity" class="mr-3">
       <!-- <activity-svg v-if="activityNav" id="dropdownMenu2" data-toggle="dropdown2" aria-expanded="false"></activity-svg> -->
       <activity-svg-dark v-if="!activityNav"></activity-svg-dark>
-      <div @click="testActivity" id="ownDropDown">
+      <div @click="navTrigger()" id="ownDropDown">
         <activity-svg v-if="activityNav"></activity-svg>
         <div v-if="forActivity" id="ownDropDownContent">
           <div class="d-flex align-items-center justify-content-between">

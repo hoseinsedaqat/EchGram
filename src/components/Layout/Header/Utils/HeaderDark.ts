@@ -86,7 +86,7 @@ export const headerDarker = Vue.extend({
       },
     },
     methods:{
-      testActivity(){
+      navTrigger(){
         this.forActivity = !this.forActivity
       },
       // eslint-disable-next-line
