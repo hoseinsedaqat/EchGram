@@ -46,3 +46,20 @@
     width:100%;
     height: 250px;
 }
+
+.p-footer {
+    display: flex;
+}
+
+.p-footer li {
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.p-footer li span {
+    font-size: 13px;
+}
+
+.p-footer-text {
+    font-size: 13px;
+}
