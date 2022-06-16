@@ -49,10 +49,15 @@ const routes: Array<RouteConfig> = [
     component: () => import('@/views/Explore/ExploreView.vue'),
   },
   {
-    path:'/accounts/activity',
+    path: '/accounts/activity',
     name:'ActivityView',
     beforeEnter:activityRouter,
     component: () => import('@/views/Activity/ActivityView.vue')
+  },
+  {
+    path: '/hoseinsedaqat',
+    name: 'ProfileView',
+    component: () => import('@/views/Profile/ProfileView.vue')
   }
 ]
 

@@ -1,0 +1,48 @@
+.p-main-image img {
+    width: 160px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.p-edit-profile {
+    border: 1px solid #9999;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.p-profile-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.p-profile-information div {
+    margin: 1.2rem 0 0 0;
+}
+
+.p-edit-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.p-edit-part div {
+    margin: 0 0.5rem;
+}
+
+.p-edit-part-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.p-edit-part-2 div {
+    margin: 0 1.4rem 0 0.5rem ;
+}
+
+.p-image-post{
+    width:100%;
+    height: 250px;
+}

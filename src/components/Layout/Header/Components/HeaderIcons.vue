@@ -116,7 +116,7 @@ export default Vue.extend({
           aria-labelledby="dropdownMenuButton"
         >
           <dropdown-angle></dropdown-angle>
-          <router-link to="/" class="dropdown-item h_lcp">
+          <router-link to="/hoseinsedaqat" class="dropdown-item h_lcp">
             <div class="d-flex align-self-center align-items-center">
               <profile-svg></profile-svg>
               <span class="align-self-center">Profile</span>
