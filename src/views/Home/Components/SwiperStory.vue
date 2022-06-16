@@ -69,12 +69,15 @@ export default Vue.extend({
               <div>
                 <swiper class="swiper" :options="swiperOption">
                   <swiper-slide>
-                    <router-link to="/test">
-                    <img class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                    </router-link>
+                    <!-- <router-link to="/test"> -->
+                    <img v-img:name class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
+                    <img v-img:name class="ho_cp ho_bcs d-none" src="../../../assets/Images/Main/PostEight.jpg" alt="" width="65px" style="border-radius:50%;">
+                    <!-- </router-link> -->
                   </swiper-slide>
                   <swiper-slide>
-                    <img class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
+                    <img v-img:nice class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
+                    <img v-img:nice class="ho_cp ho_bcs d-none" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
+                    <img v-img:nice class="ho_cp ho_bcs d-none" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
                   </swiper-slide>
                   <swiper-slide>
                     <img class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
