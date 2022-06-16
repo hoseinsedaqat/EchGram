@@ -52,6 +52,32 @@
     margin: 0.9rem 0;
 }
 
+.people-message-margin {
+    margin: 1.5rem 0.5rem;
+}
+
+.people-message {
+    border: 1px solid rgb(239, 239, 239);
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+    width: 250px;
+    text-align: justify;
+}
+
+.you-message {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(239, 239, 239);
+    display: inline-block;
+    width: 250px;
+    text-align: justify;
+}
+
+.you-message-margin {
+    margin: 0 0.5rem;
+}
+
 /* .d_mg {
     position: absolute;
     left: 530px;
