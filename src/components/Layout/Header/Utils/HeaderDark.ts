@@ -82,6 +82,12 @@ export const headerDarker = Vue.extend({
             this.exploreNav = true
             this.activityNav = false
             break
+          case "/hoseinsedaqat":
+            this.homeNav = true
+            this.directNav = true
+            this.postNav = true
+            this.exploreNav = true
+            this.activityNav = true
         }
       },
     },

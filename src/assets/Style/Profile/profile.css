@@ -46,6 +46,15 @@
     margin: 0 1.4rem 0 0.5rem;
 }
 
+.p-edit-part-3 div {
+    margin: 0 1.4rem 0 0.6em !important;
+}
+
+
+.p-edit-part-4 div {
+    margin: 0 1.4rem 0 0.6rem !important;
+}
+
 .p-image-post {
     width: 100%;
     height: 250px;
@@ -127,4 +136,4 @@
     width: 100%;
     padding: 0.7rem 0;
     cursor: pointer;
- }
+}

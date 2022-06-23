@@ -58,19 +58,19 @@ export default Vue.extend({
       </div>
     </div>
     <!-- Third Row -->
-    <div class="p-edit-part-2">
+    <div class="p-edit-part-3">
       <div>
         <p class="m-0 p-0 font-weight-bold">Hosein Sedaqat</p>
       </div>
     </div>
     <!-- Fourth Row -->
-    <div class="p-edit-part-2">
+    <div class="p-edit-part-4">
       <div>
         <p class="m-0 p-0">📍 Bnd</p>
       </div>
     </div>
 
-    <!-- Setting Modal -->
-    <setting-modal v-if="show_hide_modal"></setting-modal>
+    <!-- Setting Modal Cause v-show render element in document but v-if is not please check profile.css-->
+    <setting-modal v-show="show_hide_modal" class="profile-setting-modal"></setting-modal>
   </div>
 </template>
