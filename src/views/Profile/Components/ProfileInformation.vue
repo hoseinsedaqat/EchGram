@@ -69,8 +69,8 @@ export default Vue.extend({
         <p class="m-0 p-0">📍 Bnd</p>
       </div>
     </div>
+
+    <!-- Setting Modal -->
     <setting-modal v-if="show_hide_modal"></setting-modal>
   </div>
-
-  <!-- Modal -->
 </template>
