@@ -1,7 +1,18 @@
 <script lang="ts">
 import Vue from "vue";
+import SettingModal from "./SettingModal.vue";
+import {mapActions,mapGetters} from 'vuex'
 export default Vue.extend({
   name: "ProfileInformation",
+  components: {
+    SettingModal,
+  },
+  methods: {
+    ...mapActions(['showModal'])
+  },
+  computed:{
+    ...mapGetters(['show_hide_modal'])
+  }
 });
 </script>
 
@@ -17,6 +28,10 @@ export default Vue.extend({
       </div>
       <div>
         <svg
+          @click="showModal()"
+          type="button"
+          data-toggle="modal"
+          data-target="#exampleModal"
           xmlns="http://www.w3.org/2000/svg"
           width="25"
           height="25"
@@ -54,5 +69,8 @@ export default Vue.extend({
         <p class="m-0 p-0">📍 Bnd</p>
       </div>
     </div>
+    <setting-modal v-if="show_hide_modal"></setting-modal>
   </div>
+
+  <!-- Modal -->
 </template>

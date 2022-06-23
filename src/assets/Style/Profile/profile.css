@@ -21,6 +21,10 @@
     margin: 1.2rem 0 0 0;
 }
 
+.p-profile-information div:last-child {
+    margin: auto;
+}
+
 .p-edit-part {
     display: flex;
     flex-direction: row;
@@ -39,11 +43,11 @@
 }
 
 .p-edit-part-2 div {
-    margin: 0 1.4rem 0 0.5rem ;
+    margin: 0 1.4rem 0 0.5rem;
 }
 
-.p-image-post{
-    width:100%;
+.p-image-post {
+    width: 100%;
     height: 250px;
 }
 
@@ -70,15 +74,15 @@
     position: relative;
     width: 100%;
     height: 250px;
-  }
-  
-  .image {
+}
+
+.image {
     display: block;
     width: 100%;
     height: auto;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -89,14 +93,14 @@
     opacity: 0;
     transition: .5s ease;
     background-color: #3333;
-  }
-  
-  .img-post-overlay:hover .overlay {
+}
+
+.img-post-overlay:hover .overlay {
     opacity: 1;
     cursor: pointer;
-  }
-  
-  .text-overlay {
+}
+
+.text-overlay {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -106,4 +110,21 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
+
+.modal-content ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-content ul li {
+    border-bottom: 1px solid #9999;
+    width: 100%;
+    padding: 0.7rem 0;
+    cursor: pointer;
+ }
