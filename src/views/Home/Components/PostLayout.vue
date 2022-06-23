@@ -43,7 +43,7 @@ export default Vue.extend({
         <!-- Post -->
         <div class="mt-2">
           <img
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            src="@/assets/Images/Header/NewHoseinSedaqat.jpg"
             alt="Post"
             width="100%"
             height="100%"

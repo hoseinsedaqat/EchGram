@@ -63,6 +63,11 @@ const routes: Array<RouteConfig> = [
     path:'/p/test',
     name: 'ProfilePostSingle',
     component: () => import('@/views/Profile/Components/ProfilePostSingle.vue')
+  },
+  {
+    path: '/accounts/edit',
+    name: 'AccountsEditView',
+    component: () => import('@/views/AccountEdit/AccountEditView.vue')
   }
 ]
 

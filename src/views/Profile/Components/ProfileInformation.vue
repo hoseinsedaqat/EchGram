@@ -1,18 +1,18 @@
 <script lang="ts">
 import Vue from "vue";
 import SettingModal from "./SettingModal.vue";
-import {mapActions,mapGetters} from 'vuex'
+import { mapActions, mapGetters } from "vuex";
 export default Vue.extend({
   name: "ProfileInformation",
   components: {
     SettingModal,
   },
   methods: {
-    ...mapActions(['showModal'])
+    ...mapActions(["showModal"]),
   },
-  computed:{
-    ...mapGetters(['show_hide_modal'])
-  }
+  computed: {
+    ...mapGetters(["show_hide_modal"]),
+  },
 });
 </script>
 
@@ -24,7 +24,9 @@ export default Vue.extend({
         <p class="h4 m-0 p-0">HoseinSedaqat</p>
       </div>
       <div>
-        <button class="p-edit-profile">Edit profile</button>
+        <router-link to="/accounts/edit">
+          <button class="p-edit-profile">Edit profile</button>
+        </router-link>
       </div>
       <div>
         <svg
