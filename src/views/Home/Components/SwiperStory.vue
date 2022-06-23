@@ -1,112 +1,186 @@
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
 
 export default Vue.extend({
-    name:"SwiperStory",
-     data() {
-        return {
-        // swiperOption: {
-        //     slidesPerView: 7,
-        //     spaceBetween: 2,
-        //     loop: false,
-        //     loopFillGroupWithBlank: true,
-        //     navigation: {
-        //         nextEl: ".swiper-button-next",
-        //         prevEl: ".swiper-button-prev",
-        //     },
-        // },
-        swiperOption: {
-              slidesPerView: 5,
-    spaceBetween: 50,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        1300: {
+  name: "SwiperStory",
+  data() {
+    return {
+      // swiperOption: {
+      //     slidesPerView: 7,
+      //     spaceBetween: 2,
+      //     loop: false,
+      //     loopFillGroupWithBlank: true,
+      //     navigation: {
+      //         nextEl: ".swiper-button-next",
+      //         prevEl: ".swiper-button-prev",
+      //     },
+      // },
+      swiperOption: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1300: {
             slidesPerView: 6,
             spaceBetween: 20,
-        },
-        1000: {
+          },
+          1000: {
             slidesPerView: 6,
             spaceBetween: 5,
-        },
-        768: {
+          },
+          768: {
             slidesPerView: 6,
             spaceBetween: 5,
-        },
-        640: {
+          },
+          640: {
             slidesPerView: 6,
             spaceBetween: 5,
-        },
-        320: {
+          },
+          320: {
             slidesPerGroup: 1,
             slidesPerView: 4,
             spaceBetween: 15,
+          },
         },
-    },
-        },
+      },
     };
   },
   components: {
     Swiper,
     SwiperSlide,
   },
-})
+});
 </script>
-
-
 
 <template>
   <div class="card mt-4">
-              <!-- Swiper Story -->
-              <div>
-                <swiper class="swiper" :options="swiperOption">
-                  <swiper-slide>
-                    <!-- <router-link to="/test"> -->
-                    <img v-img:name class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                    <img v-img:name class="ho_cp ho_bcs d-none" src="../../../assets/Images/Main/PostEight.jpg" alt="" width="65px" style="border-radius:50%;">
-                    <!-- </router-link> -->
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img v-img:nice class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                    <img v-img:nice class="ho_cp ho_bcs d-none" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                    <img v-img:nice class="ho_cp ho_bcs d-none" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                  </swiper-slide>
-                  <swiper-slide>
-                    <img class="ho_cp ho_bcs" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="" width="65px" style="border-radius:50%;">
-                  </swiper-slide>
-                  <div class="swiper-button-prev" slot="button-prev"></div>
-                  <div class="swiper-button-next" slot="button-next"></div>
-                </swiper>
-              </div>
-            </div>
+    <!-- Swiper Story -->
+    <div>
+      <swiper class="swiper" :options="swiperOption">
+        <swiper-slide>
+          <!-- <router-link to="/test"> -->
+          <img
+            v-img:name
+            class="ho_cp ho_bcs"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+          <img
+            v-img:name
+            class="ho_cp ho_bcs d-none"
+            src="../../../assets/Images/Main/PostEight.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+          <!-- </router-link> -->
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            v-img:nice
+            class="ho_cp ho_bcs"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+          <img
+            v-img:nice
+            class="ho_cp ho_bcs d-none"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+          <img
+            v-img:nice
+            class="ho_cp ho_bcs d-none"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            class="ho_cp ho_bcs"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            class="ho_cp ho_bcs"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            class="ho_cp ho_bcs"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            class="ho_cp ho_bcs"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            class="ho_cp ho_bcs"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            class="ho_cp ho_bcs"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+        </swiper-slide>
+        <swiper-slide>
+          <img
+            class="ho_cp ho_bcs"
+            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+        </swiper-slide>
+        <div class="swiper-button-prev" slot="button-prev"></div>
+        <div class="swiper-button-next" slot="button-next"></div>
+      </swiper>
+    </div>
+  </div>
 </template>
-
 
 <style scoped>
 .swiper {
