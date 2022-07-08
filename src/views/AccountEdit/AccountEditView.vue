@@ -47,6 +47,9 @@
             <label for="bio" class="font-weight-bold">Bio</label>
             <textarea name="" id="" class="form-control"></textarea>
           </div>
+          <div class="ars">
+            <button class="btn btn-primary text-white">Submit</button>
+          </div>
         </div>
       </div>
     </div>

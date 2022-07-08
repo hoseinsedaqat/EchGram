@@ -2,19 +2,23 @@
 import Vue from "vue";
 import HeaderIcons from "./Components/HeaderIcons.vue";
 import MagnifireSvg from "./Components/MagnifireSvg.vue";
+import MobileHeader from './Components/MobileHeader.vue';
+import MobileSticky from './Components/MobileSticky.vue'
 
 export default Vue.extend({
   name: "HeaderLayout",
   components: {
     MagnifireSvg,
     HeaderIcons,
+    MobileHeader,
+    MobileSticky
   },
 });
 </script>
 
 <template>
   <header class="bg-white py-1 h_lb" id="h_bh">
-    <div class="container">
+    <div class="container desktop-menu">
       <div class="row mt-1">
         <!-- Logo -->
         <div class="col-md-4 align-self-center">
@@ -44,6 +48,12 @@ export default Vue.extend({
           </div>
         </div>
       </div>
+    </div>
+    <div class="mobile-menu">
+      <mobile-header></mobile-header>
+    </div>
+    <div class="mobile-sticky">
+      <mobile-sticky></mobile-sticky>
     </div>
   </header>
 </template>

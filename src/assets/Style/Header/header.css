@@ -75,10 +75,40 @@
     overflow-y: scroll;
 }
 
+.mobile-headers {
+    display: none;
+}
+
+.mobile-sticky {
+    display: none;
+}
+
 
 
 @media(max-width:800px) {
+
+    .mobile-sticky {
+        display: block;
+        overflow: hidden;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
     #ownDropDownContent {
         display: none;
+    }
+
+    #h_bh .desktop-menu {
+        display: none;
+    }
+
+    .mobile-headers {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0.5rem;
     }
 }
