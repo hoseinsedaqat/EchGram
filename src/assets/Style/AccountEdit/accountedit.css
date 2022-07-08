@@ -1,0 +1,21 @@
+.accounts-route-info li {
+    margin: 0.7rem 0;
+    padding: 0.5rem 0;
+}
+
+.accounts-route-info li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.abl {
+    border: 1px solid #e9e9e9;
+}
+
+.ars {
+    margin: 1rem 3rem;
+}
+
+#account-edit textarea {
+    resize: none !important;
+}
