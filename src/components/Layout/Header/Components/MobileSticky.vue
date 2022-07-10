@@ -1,14 +1,14 @@
 <template>
-  <ul class="d-flex align-items-end justify-content-around">
+  <ul class="d-flex align-items-end justify-content-around" id="mobile-sticky-bottom">
     <!-- Main Icons -->
     <router-link to="/" class="mr-3">
       <home-svg v-if="homeNav"></home-svg>
       <home-svg-dark v-if="!homeNav"></home-svg-dark>
     </router-link>
-    <router-link to="/direct/inbox" class="mr-3">
+    <!-- <router-link to="/direct/inbox" class="mr-3">
       <direct-svg v-if="directNav"></direct-svg>
       <direct-svg-dark v-if="!directNav"></direct-svg-dark>
-    </router-link>
+    </router-link> -->
     <router-link to="/create/post" class="mr-3">
       <file-svg v-if="postNav"></file-svg>
       <file-svg-dark v-if="!postNav"></file-svg-dark>
@@ -87,7 +87,7 @@
         </div>
       </div>
     </router-link>
-    <li class="mr-3">
+    <router-link class="mr-3" to="/hoseinsedaqat">
       <!-- Icons User Profile -->
       <div class="dropdown">
         <img
@@ -101,39 +101,8 @@
           style="border-radius: 50%"
           alt="Hosein Sedaqat"
         />
-        <div
-          class="dropdown-menu dropdown-menu-right mt-3"
-          aria-labelledby="dropdownMenuButton"
-        >
-          <dropdown-angle></dropdown-angle>
-          <router-link to="/hoseinsedaqat" class="dropdown-item h_lcp">
-            <div class="d-flex align-self-center align-items-center">
-              <profile-svg></profile-svg>
-              <span class="align-self-center">Profile</span>
-            </div>
-          </router-link>
-          <router-link to="/saved" class="dropdown-item">
-            <div class="d-flex align-self-center align-items-center">
-              <save-svg></save-svg>
-              <span>Saved</span>
-            </div>
-          </router-link>
-          <router-link to="/" class="dropdown-item">
-            <div class="d-flex align-self-center align-items-center">
-              <setting-svg></setting-svg>
-              <span>Setting</span>
-            </div>
-          </router-link>
-          <router-link to="/" class="dropdown-item" style="border-bottom: 2px solid #eee">
-            <div class="d-flex align-self-center align-items-center">
-              <switch-svg></switch-svg>
-              <span>Switch Accounts</span>
-            </div>
-          </router-link>
-          <router-link to="/" class="dropdown-item">Log Out</router-link>
-        </div>
       </div>
-    </li>
+    </router-link>
   </ul>
 </template>
 

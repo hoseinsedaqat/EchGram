@@ -165,7 +165,7 @@ export default Vue.extend({
         </div>
       </div>
     </div>
-    <div class="card my-4">
+    <div class="card my-4 mb-5">
       <div class="py-2">
         <!-- Header -->
         <div class="ho_ch d-flex align-items-center justify-content-between mx-3">
