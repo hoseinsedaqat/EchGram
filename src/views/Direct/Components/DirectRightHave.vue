@@ -1,17 +1,17 @@
 <script lang="ts">
 import Vue from 'vue'
-import { mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 
 export default Vue.extend({
     name:'DirectRightHave',
     computed:{
-        ...mapState(['directOne'])
+        ...mapGetters(['returnDirectOne'])
     },
 })
 </script>
 
 <template>
-  <div v-if="directOne">
+  <div v-if="returnDirectOne">
               <div class="w-100 h-100 d_bp">
               <!-- Direct Msg Header -->
                 <div class="d-flex align-items-center justify-content-between d_mfhm mx-5">
