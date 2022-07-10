@@ -6,7 +6,7 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div class="row">
+  <div class="row" id="profile-footer">
     <div class="col-md-12">
       <ul class="p-footer">
         <li class="text-muted">

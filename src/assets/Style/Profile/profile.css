@@ -137,3 +137,10 @@
     padding: 0.7rem 0;
     cursor: pointer;
 }
+
+
+@media screen and (max-width:830px){
+    #profile-footer{
+        display: none;
+    }
+}

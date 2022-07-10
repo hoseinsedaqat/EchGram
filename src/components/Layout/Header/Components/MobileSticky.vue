@@ -91,10 +91,6 @@
       <!-- Icons User Profile -->
       <div class="dropdown">
         <img
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-expanded="false"
           src="@/assets/Images/Header/HoseinSedaqat.jpg"
           width="24px"
           height="24px"

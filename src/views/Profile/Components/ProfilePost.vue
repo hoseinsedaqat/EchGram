@@ -85,7 +85,7 @@ export default Vue.extend({
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 mb-5">
       <div class="img-post-overlay my-3">
         <img
           src="@/assets/Images/Main/PostEight.jpg"

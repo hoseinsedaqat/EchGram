@@ -52,17 +52,23 @@ export default Vue.extend({
           },
         },
       },
+      swiperSwitch: false
     };
   },
   components: {
     Swiper,
     SwiperSlide,
   },
+  mounted(){
+    if(window.innerWidth < 678){
+      this.swiperSwitch = true
+    }
+  }
 });
 </script>
 
 <template>
-  <div class="card mt-4">
+  <div class="card" :class="swiperSwitch ? '' : 'mt-4'">
     <!-- Swiper Story -->
     <div>
       <swiper class="swiper" :options="swiperOption">
