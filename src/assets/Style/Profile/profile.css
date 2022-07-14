@@ -36,6 +36,10 @@
     margin: 0 0.5rem;
 }
 
+.p-informarion-sm-block {
+    display: flex;
+}
+
 .p-edit-part-2 {
     display: flex;
     flex-direction: row;
@@ -138,9 +142,32 @@
     cursor: pointer;
 }
 
+.profile-detail-photo img {
+    width: 650px;
+    height: 500px
+}
 
-@media screen and (max-width:830px){
-    #profile-footer{
+
+@media screen and (max-width:830px) {
+    #profile-footer {
         display: none;
+    }
+
+    .p-main-image {
+        text-align: center;
+    }
+
+    .p-edit-part {
+        display: block;
+        margin: auto !important;
+    }
+
+    .p-edit-part div {
+        margin: 0.5rem 0;
+    }
+
+    .profile-detail-photo img {
+        width: 100%;
+        height: auto;
     }
 }
