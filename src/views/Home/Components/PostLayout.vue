@@ -1,11 +1,17 @@
 <script lang="ts">
 import Vue from "vue";
+import { mapActions, mapGetters } from "vuex";
+import PostModal from './PostModal.vue'
 export default Vue.extend({
   name: "PostLayout",
+  components:{
+    PostModal
+  },
   methods: {
     test() {
       alert("New Comment!😃");
     },
+    ...mapActions(['showModal'])
   },
   computed: {
     subStringText() {
@@ -15,6 +21,7 @@ export default Vue.extend({
       let result = text.slice(0, 20) + " ...";
       return result;
     },
+    ...mapGetters(['show_hide_modal'])
   },
 });
 </script>
@@ -37,7 +44,7 @@ export default Vue.extend({
             <span class="ho_ffsc font-weight-bold">HoseinSedaqat</span>
           </span>
           <span class="ho_cp">
-            <p>...</p>
+             <p @click="showModal()" type="button" data-toggle="modal" data-target="#exampleModal">...</p>
           </span>
         </div>
         <!-- Post -->
@@ -180,7 +187,7 @@ export default Vue.extend({
             <span class="ho_ffsc font-weight-bold">HoseinSedaqat</span>
           </span>
           <span class="ho_cp">
-            <p>...</p>
+            <p @click="showModal()" type="button" data-toggle="modal" data-target="#exampleModal">...</p>
           </span>
         </div>
         <!-- Post -->
@@ -303,5 +310,6 @@ export default Vue.extend({
         </div>
       </div>
     </div>
+    <post-modal v-show="show_hide_modal"></post-modal>
   </section>
 </template>
