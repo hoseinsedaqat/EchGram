@@ -1,12 +1,18 @@
 <script lang="ts">
 import Vue from 'vue'
-import { mapGetters } from 'vuex'
+import { mapGetters,mapActions } from 'vuex'
 
 export default Vue.extend({
     name:'DirectRightHave',
     computed:{
         ...mapGetters(['returnDirectOne'])
     },
+    methods:{
+      ...mapActions(['showDirectTest'])
+    },
+    mounted(){
+      this.showDirectTest()
+    }
 })
 </script>
 

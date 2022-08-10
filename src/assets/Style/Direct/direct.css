@@ -78,6 +78,11 @@
     margin: 0 0.5rem;
 }
 
+.d_mvl {
+    text-decoration: none !important;
+    color: #333;
+}
+
 /* .d_mg {
     position: absolute;
     left: 530px;
