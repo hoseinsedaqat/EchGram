@@ -2,68 +2,25 @@
 import Vue from "vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
+import swiperOption from "@/constant/SwiperOption";
 
 export default Vue.extend({
   name: "SwiperStory",
   data() {
     return {
-      // swiperOption: {
-      //     slidesPerView: 7,
-      //     spaceBetween: 2,
-      //     loop: false,
-      //     loopFillGroupWithBlank: true,
-      //     navigation: {
-      //         nextEl: ".swiper-button-next",
-      //         prevEl: ".swiper-button-prev",
-      //     },
-      // },
-      swiperOption: {
-        slidesPerView: 5,
-        spaceBetween: 50,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          1300: {
-            slidesPerView: 6,
-            spaceBetween: 20,
-          },
-          1000: {
-            slidesPerView: 6,
-            spaceBetween: 5,
-          },
-          768: {
-            slidesPerView: 6,
-            spaceBetween: 5,
-          },
-          640: {
-            slidesPerView: 6,
-            spaceBetween: 5,
-          },
-          320: {
-            slidesPerGroup: 1,
-            slidesPerView: 4,
-            spaceBetween: 15,
-          },
-        },
-      },
-      swiperSwitch: false
+      swiperOption,
+      swiperSwitch: false,
     };
   },
   components: {
     Swiper,
     SwiperSlide,
   },
-  mounted(){
-    if(window.innerWidth < 678){
-      this.swiperSwitch = true
+  mounted() {
+    if (window.innerWidth < 678) {
+      this.swiperSwitch = true;
     }
-  }
+  },
 });
 </script>
 
@@ -75,17 +32,17 @@ export default Vue.extend({
         <swiper-slide>
           <!-- <router-link to="/test"> -->
           <img
-            v-img:name
+            v-img:Hosein
             class="ho_cp ho_bcs"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
             alt=""
             width="65px"
             style="border-radius: 50%"
           />
           <img
-            v-img:name
+            v-img:Hosein
             class="ho_cp ho_bcs d-none"
-            src="../../../assets/Images/Main/PostEight.jpg"
+            src="@/assets/Images/Main/PostEight.jpg"
             alt=""
             width="65px"
             style="border-radius: 50%"
@@ -94,8 +51,16 @@ export default Vue.extend({
         </swiper-slide>
         <swiper-slide>
           <img
-            v-img:nice
+            v-img:Zoheir
             class="ho_cp ho_bcs"
+            src="@/assets/Images/User/Zoheir_instagram_Picture.jpg"
+            alt=""
+            width="65px"
+            style="border-radius: 50%"
+          />
+          <!-- <img
+            v-img:nice
+            class="ho_cp ho_bcs d-none"
             src="@/assets/Images/Header/HoseinSedaqat.jpg"
             alt=""
             width="65px"
@@ -108,11 +73,13 @@ export default Vue.extend({
             alt=""
             width="65px"
             style="border-radius: 50%"
-          />
+          /> -->
+        </swiper-slide>
+        <swiper-slide>
           <img
-            v-img:nice
-            class="ho_cp ho_bcs d-none"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            v-img:Bahador
+            class="ho_cp ho_bcs"
+            src="@/assets/Images/User/Bahador_instagram_Picture.jpg"
             alt=""
             width="65px"
             style="border-radius: 50%"
@@ -120,8 +87,9 @@ export default Vue.extend({
         </swiper-slide>
         <swiper-slide>
           <img
+            v-img:MohammdReza
             class="ho_cp ho_bcs"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            src="@/assets/Images/User/MohammadReza_instagram_Picture.jpg"
             alt=""
             width="65px"
             style="border-radius: 50%"
@@ -129,8 +97,9 @@ export default Vue.extend({
         </swiper-slide>
         <swiper-slide>
           <img
+            v-img:Nima
             class="ho_cp ho_bcs"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            src="@/assets/Images/User/Nima_instagram_Picture.jpg"
             alt=""
             width="65px"
             style="border-radius: 50%"
@@ -138,8 +107,9 @@ export default Vue.extend({
         </swiper-slide>
         <swiper-slide>
           <img
+            v-img:Pouya
             class="ho_cp ho_bcs"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            src="@/assets/Images/User/Pouya_instagram_Picture.jpg"
             alt=""
             width="65px"
             style="border-radius: 50%"
@@ -147,8 +117,9 @@ export default Vue.extend({
         </swiper-slide>
         <swiper-slide>
           <img
+            v-img:Jadi
             class="ho_cp ho_bcs"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            src="@/assets/Images/User/Jadi_instagram_Picture.jpg"
             alt=""
             width="65px"
             style="border-radius: 50%"
@@ -156,8 +127,9 @@ export default Vue.extend({
         </swiper-slide>
         <swiper-slide>
           <img
+            v-img:Farzad
             class="ho_cp ho_bcs"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            src="@/assets/Images/User/Farzad_instagram_Picture.jpg"
             alt=""
             width="65px"
             style="border-radius: 50%"
@@ -165,17 +137,9 @@ export default Vue.extend({
         </swiper-slide>
         <swiper-slide>
           <img
+            v-img:Avicii
             class="ho_cp ho_bcs"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
-            alt=""
-            width="65px"
-            style="border-radius: 50%"
-          />
-        </swiper-slide>
-        <swiper-slide>
-          <img
-            class="ho_cp ho_bcs"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            src="@/assets/Images/User/Avicii_instagram_Picture.jpg"
             alt=""
             width="65px"
             style="border-radius: 50%"
@@ -189,6 +153,7 @@ export default Vue.extend({
 </template>
 
 <style scoped>
+/* Swiper Style Just Work in Scoped Style 😎 */
 .swiper {
   height: 100px;
   width: 100%;
@@ -214,9 +179,6 @@ export default Vue.extend({
   color: #333;
   transition: all 0.4s ease;
 }
-/* .swiper-button-next:hover {
-  transform: translate(-2px);
-} */
 .swiper-button-next::after {
   font-size: 9px;
   font-weight: 500;
@@ -233,9 +195,6 @@ export default Vue.extend({
   color: #333;
   transition: all 0.4s ease;
 }
-/* .swiper-button-prev:hover {
-  transform: translate(2px);
-} */
 .swiper-button-prev::after {
   font-size: 9px;
   font-weight: 500;

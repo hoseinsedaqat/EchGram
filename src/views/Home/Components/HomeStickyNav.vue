@@ -32,15 +32,15 @@ export default {
     <div class="d-flex flex-row align-items-center justify-content-between">
       <div class="d-flex align-items-center">
         <img
-          src="@/assets/Images/Header/HoseinSedaqat.jpg"
+          src="@/assets/Images/Suggestion/KygoMusic.jpg"
           alt="HoseinSedaqatMain"
           class="border border-secondary mr-4"
           width="35px"
           style="border-radius: 50%"
         />
         <span class="d-flex flex-column ho_pdfz">
-          <span>Hosein Sedaqat</span>
-          <span class="text-muted">Followed by Zoheir</span>
+          <span>KygoMusic</span>
+          <span class="text-muted">Followed by Hosein</span>
         </span>
       </div>
       <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
@@ -48,15 +48,15 @@ export default {
     <div class="d-flex flex-row align-items-center justify-content-between mt-3">
       <div class="d-flex align-items-center">
         <img
-          src="@/assets/Images/Header/HoseinSedaqat.jpg"
+          src="@/assets/Images/Suggestion/Bts.jpg"
           alt="HoseinSedaqatMain"
           class="border border-secondary mr-4"
           width="35px"
           style="border-radius: 50%"
         />
         <span class="d-flex flex-column ho_pdfz">
-          <span>Hosein Sedaqat</span>
-          <span class="text-muted">Followed by Zoheir</span>
+          <span>bts.bighitofficial</span>
+          <span class="text-muted">Followed by Hosein</span>
         </span>
       </div>
       <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
@@ -64,15 +64,15 @@ export default {
     <div class="d-flex flex-row align-items-center justify-content-between mt-3">
       <div class="d-flex align-items-center">
         <img
-          src="@/assets/Images/Header/HoseinSedaqat.jpg"
+          src="@/assets/Images/Suggestion/Casey.jpg"
           alt="HoseinSedaqatMain"
           class="border border-secondary mr-4"
           width="35px"
           style="border-radius: 50%"
         />
         <span class="d-flex flex-column ho_pdfz">
-          <span>Hosein Sedaqat</span>
-          <span class="text-muted">Followed by Zoheir</span>
+          <span>caseyneistat</span>
+          <span class="text-muted">Followed by Hosein</span>
         </span>
       </div>
       <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
@@ -80,15 +80,15 @@ export default {
     <div class="d-flex flex-row align-items-center justify-content-between mt-3">
       <div class="d-flex align-items-center">
         <img
-          src="@/assets/Images/Header/HoseinSedaqat.jpg"
+          src="@/assets/Images/Suggestion/Cristiano.jpg"
           alt="HoseinSedaqatMain"
           class="border border-secondary mr-4"
           width="35px"
           style="border-radius: 50%"
         />
         <span class="d-flex flex-column ho_pdfz">
-          <span>Hosein Sedaqat</span>
-          <span class="text-muted">Followed by Zoheir</span>
+          <span>cristiano</span>
+          <span class="text-muted">Followed by Hosein</span>
         </span>
       </div>
       <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
@@ -96,15 +96,15 @@ export default {
     <div class="d-flex flex-row align-items-center justify-content-between mt-3">
       <div class="d-flex align-items-center">
         <img
-          src="@/assets/Images/Header/HoseinSedaqat.jpg"
+          src="@/assets/Images/Suggestion/Mahdi.jpg"
           alt="HoseinSedaqatMain"
           class="border border-secondary mr-4"
           width="35px"
           style="border-radius: 50%"
         />
         <span class="d-flex flex-column ho_pdfz">
-          <span>Hosein Sedaqat</span>
-          <span class="text-muted">Followed by Zoheir</span>
+          <span>mehditaremiofficial9</span>
+          <span class="text-muted">Followed by Hosein</span>
         </span>
       </div>
       <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
