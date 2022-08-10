@@ -1,17 +1,31 @@
 <script lang="ts">
 import Vue from "vue";
 import { mapActions, mapGetters } from "vuex";
-import PostModal from './PostModal.vue'
+import PostModal from "./PostModal.vue";
 export default Vue.extend({
   name: "PostLayout",
-  components:{
-    PostModal
+  data() {
+    return {
+      like: true,
+      unlike: false,
+    };
+  },
+  components: {
+    PostModal,
   },
   methods: {
     test() {
       alert("New Comment!😃");
     },
-    ...mapActions(['showModal'])
+    ...mapActions(["showModal"]),
+    Like() {
+      this.like = true;
+      this.unlike = false;
+    },
+    unLike() {
+      this.like = false;
+      this.unlike = true;
+    },
   },
   computed: {
     subStringText() {
@@ -21,7 +35,7 @@ export default Vue.extend({
       let result = text.slice(0, 20) + " ...";
       return result;
     },
-    ...mapGetters(['show_hide_modal'])
+    ...mapGetters(["show_hide_modal"]),
   },
 });
 </script>
@@ -36,7 +50,7 @@ export default Vue.extend({
           <span class="d-flex align-items-center">
             <img
               class="mr-3"
-              src="@/assets/Images/Header/HoseinSedaqat.jpg"
+              src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
               alt="Hosein Sedaqat Post"
               width="40px"
               style="border-radius: 50%"
@@ -44,7 +58,14 @@ export default Vue.extend({
             <span class="ho_ffsc font-weight-bold">HoseinSedaqat</span>
           </span>
           <span class="ho_cp">
-             <p @click="showModal()" type="button" data-toggle="modal" data-target="#exampleModal">...</p>
+            <p
+              @click="showModal()"
+              type="button"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              ...
+            </p>
           </span>
         </div>
         <!-- Post -->
@@ -60,7 +81,26 @@ export default Vue.extend({
         <div class="m-2 d-flex align-items-center justify-content-between">
           <!-- Hi -->
           <span>
+            <!-- This Place -->
             <svg
+            v-if="unlike"
+            @click="Like"
+              aria-label="Unlike"
+              class="_ab6- mr-2 ho_cp"
+              color="#ed4956"
+              fill="#ed4956"
+              height="24"
+              role="img"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+              ></path>
+            </svg>
+            <svg
+            v-if="like"
+            @click="unLike"
               aria-label="Like"
               class="_8-yf5 mr-2 ho_cp"
               height="24"
@@ -179,7 +219,7 @@ export default Vue.extend({
           <span class="d-flex align-items-center">
             <img
               class="mr-3"
-              src="@/assets/Images/Header/HoseinSedaqat.jpg"
+              src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
               alt="Hosein Sedaqat Post"
               width="40px"
               style="border-radius: 50%"
@@ -187,7 +227,14 @@ export default Vue.extend({
             <span class="ho_ffsc font-weight-bold">HoseinSedaqat</span>
           </span>
           <span class="ho_cp">
-            <p @click="showModal()" type="button" data-toggle="modal" data-target="#exampleModal">...</p>
+            <p
+              @click="showModal()"
+              type="button"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              ...
+            </p>
           </span>
         </div>
         <!-- Post -->
@@ -198,7 +245,26 @@ export default Vue.extend({
         <div class="m-2 d-flex align-items-center justify-content-between">
           <!-- Hi -->
           <span>
+            <!-- This Place -->
             <svg
+            v-if="unlike"
+            @click="Like"
+              aria-label="Unlike"
+              class="_ab6- mr-2 ho_cp"
+              color="#ed4956"
+              fill="#ed4956"
+              height="24"
+              role="img"
+              viewBox="0 0 48 48"
+              width="24"
+            >
+              <path
+                d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+              ></path>
+            </svg>
+            <svg
+            v-if="like"
+            @click="unLike"
               aria-label="Like"
               class="_8-yf5 mr-2 ho_cp"
               height="24"

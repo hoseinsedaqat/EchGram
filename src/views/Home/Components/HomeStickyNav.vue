@@ -10,7 +10,7 @@ export default {
     <div class="d-flex flex-row align-items-center justify-content-between">
       <div class="d-flex align-items-center">
         <img
-          src="@/assets/Images/Header/HoseinSedaqat.jpg"
+          src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
           alt="HoseinSedaqatMain"
           class="border border-secondary mr-4"
           width="60px"
