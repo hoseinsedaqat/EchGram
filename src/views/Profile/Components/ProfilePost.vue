@@ -8,7 +8,7 @@ export default Vue.extend({
 <template>
   <div class="row mt-5">
     <div class="col-md-4">
-      <router-link to="/p/test">
+      <router-link to="/post/hoseinsedaqat-p137820002022">
         <div class="img-post-overlay my-3">
           <img
             src="@/assets/Images/Main/PostOne.jpg"

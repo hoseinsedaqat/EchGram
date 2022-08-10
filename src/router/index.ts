@@ -22,7 +22,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'home',
-    component: () => import('@/views/Home/HomeView.vue'),
+    component: async () => await import('@/views/Home/HomeView.vue'),
   },
   {
     path: '/about',
@@ -31,43 +31,43 @@ const routes: Array<RouteConfig> = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '@/views/AboutView.vue'),
+    component: async () => await import(/* webpackChunkName: "about" */ '@/views/AboutView.vue'),
   },
   {
     path:'/direct/inbox',
     name:'DirectView',
-    component: () => import('@/views/Direct/DirectView.vue'),
+    component: async () => await import('@/views/Direct/DirectView.vue'),
   },
   {
     path:'/create/post',
     name:'PostView',
-    component: () => import('@/views/Post/PostView.vue'),
+    component: async () => await import('@/views/Post/PostView.vue'),
   },
   {
     path: '/explore',
     name: 'ExploreView',
-    component: () => import('@/views/Explore/ExploreView.vue'),
+    component: async () => await import('@/views/Explore/ExploreView.vue'),
   },
   {
     path: '/accounts/activity',
     name:'ActivityView',
     beforeEnter:activityRouter,
-    component: () => import('@/views/Activity/ActivityView.vue')
+    component: async () => await import('@/views/Activity/ActivityView.vue'),
   },
   {
     path: '/hoseinsedaqat',
     name: 'ProfileView',
-    component: () => import('@/views/Profile/ProfileView.vue')
+    component: async () => await import('@/views/Profile/ProfileView.vue'),
   },
   {
-    path:'/p/test',
+    path:'/post/hoseinsedaqat-p137820002022',
     name: 'ProfilePostSingle',
-    component: () => import('@/views/Profile/Components/ProfilePostSingle.vue')
+    component: async () => await import('@/views/Profile/Components/ProfilePostSingle.vue'),
   },
   {
     path: '/accounts/edit',
     name: 'AccountsEditView',
-    component: () => import('@/views/AccountEdit/AccountEditView.vue')
+    component: async () => await import('@/views/AccountEdit/AccountEditView.vue'),
   }
 ]
 
