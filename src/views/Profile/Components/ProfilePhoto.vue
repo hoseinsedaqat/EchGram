@@ -8,7 +8,7 @@ export default Vue.extend({
 <template>
   <div class="col-md-3 mt-5">
     <div class="p-main-image">
-      <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinSedaqat" />
+      <img src="@/assets/Images/User/Hosein_instagram_Picture.jpg" alt="HoseinSedaqat" />
     </div>
   </div>
 </template>

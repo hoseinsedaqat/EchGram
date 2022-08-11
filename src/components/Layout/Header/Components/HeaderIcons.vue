@@ -105,7 +105,7 @@ export default Vue.extend({
           id="dropdownMenuButton"
           data-toggle="dropdown"
           aria-expanded="false"
-          src="@/assets/Images/Header/HoseinSedaqat.jpg"
+          src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
           width="24px"
           height="24px"
           style="border-radius: 50%"
