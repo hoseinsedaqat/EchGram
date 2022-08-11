@@ -8,17 +8,21 @@ import PostLayout from "./Components/PostLayout.vue";
 import HomeStickyNav from "./Components/HomeStickyNav.vue";
 
 export default Vue.extend({
+  
   name: "HomeView",
+
   data() {
     return {
       swiperSwitch: false,
     };
   },
+  
   components: {
     SwiperStory,
     PostLayout,
     HomeStickyNav,
   },
+
   methods: {
     checkWidth() {
       if (window.innerWidth < 678) {
@@ -26,9 +30,11 @@ export default Vue.extend({
       }
     },
   },
+
   mounted() {
     this.checkWidth();
   },
+  
 });
 </script>
 

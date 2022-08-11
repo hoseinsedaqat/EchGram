@@ -1,25 +1,37 @@
 <script lang="ts">
 import Vue from "vue";
+
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+
 import "swiper/css/swiper.css";
+
 import swiperOption from "@/constant/SwiperOption";
 
 export default Vue.extend({
   name: "SwiperStory",
+
   data() {
     return {
       swiperOption,
       swiperSwitch: false,
     };
   },
+
   components: {
     Swiper,
     SwiperSlide,
   },
+
+  methods: {
+    checkWidth() {
+      if (window.innerWidth < 678) {
+        this.swiperSwitch = true;
+      }
+    },
+  },
+
   mounted() {
-    if (window.innerWidth < 678) {
-      this.swiperSwitch = true;
-    }
+    this.checkWidth();
   },
 });
 </script>
@@ -30,12 +42,10 @@ export default Vue.extend({
     <div>
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide>
-          <!-- <router-link to="/test"> -->
           <img
             v-img:Hosein
             class="ho_cp ho_bcs"
             src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
-            alt=""
             width="65px"
             style="border-radius: 50%"
           />
@@ -47,7 +57,6 @@ export default Vue.extend({
             width="65px"
             style="border-radius: 50%"
           />
-          <!-- </router-link> -->
         </swiper-slide>
         <swiper-slide>
           <img
@@ -58,22 +67,6 @@ export default Vue.extend({
             width="65px"
             style="border-radius: 50%"
           />
-          <!-- <img
-            v-img:nice
-            class="ho_cp ho_bcs d-none"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
-            alt=""
-            width="65px"
-            style="border-radius: 50%"
-          />
-          <img
-            v-img:nice
-            class="ho_cp ho_bcs d-none"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
-            alt=""
-            width="65px"
-            style="border-radius: 50%"
-          /> -->
         </swiper-slide>
         <swiper-slide>
           <img
