@@ -26,7 +26,7 @@ export default Vue.extend({
 <template>
   <div class="d_bp d_of d_dfb">
     <!-- Create Two Mode for That One From Mobile And Twp From Lg Screen -->
-            <div class="d-flex py-3 d_ph" @click="showDirectTest">
+            <div class="d-flex py-3 d_ph" @click="showDirectTest" v-if="!mobileView">
                 <span class="mx-2">
                   <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
                 </span>
@@ -35,7 +35,7 @@ export default Vue.extend({
                   <span class="text-muted">Liked a message . 1d</span>
                 </span>
             </div>
-            <router-link class="d-flex py-3 d_ph d_mvl" to="/direct/inbox/2365415895475269">
+            <router-link class="d-flex py-3 d_ph d_mvl" to="/direct/inbox/2365415895475269" v-if="mobileView">
                 <span class="mx-2">
                   <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
                 </span>

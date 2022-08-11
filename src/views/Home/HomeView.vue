@@ -1,26 +1,34 @@
 <script lang="ts">
 import Vue from "vue";
+
 import SwiperStory from "./Components/SwiperStory.vue";
+
 import PostLayout from "./Components/PostLayout.vue";
+
 import HomeStickyNav from "./Components/HomeStickyNav.vue";
 
 export default Vue.extend({
-  data(){
+  name: "HomeView",
+  data() {
     return {
-      swiperSwitch: false
-    }
+      swiperSwitch: false,
+    };
   },
   components: {
     SwiperStory,
     PostLayout,
     HomeStickyNav,
   },
-  name: "HomeView",
-  mounted(){
-    if(window.innerWidth < 678){
-      this.swiperSwitch = true
-    }
-  }
+  methods: {
+    checkWidth() {
+      if (window.innerWidth < 678) {
+        this.swiperSwitch = true;
+      }
+    },
+  },
+  mounted() {
+    this.checkWidth();
+  },
 });
 </script>
 
