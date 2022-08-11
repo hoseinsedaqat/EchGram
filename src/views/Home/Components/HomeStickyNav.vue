@@ -1,6 +1,12 @@
 <script lang="ts">
+import suggestionData from "@/data/suggestionData";
 export default {
   name: "HomeStickyNav",
+  data() {
+    return {
+      suggestionData,
+    };
+  },
 };
 </script>
 
@@ -29,86 +35,27 @@ export default {
       <a href="#" class="ho_pdfz font-weight-bold">See All</a>
     </div>
     <!-- You Should Follows -->
-    <div class="d-flex flex-row align-items-center justify-content-between">
+    <div
+      class="d-flex flex-row align-items-center justify-content-between mb-2"
+      v-for="suggestion in suggestionData"
+      :key="suggestion"
+    >
       <div class="d-flex align-items-center">
         <img
-          src="@/assets/Images/Suggestion/KygoMusic.jpg"
+          :src="suggestion.suggestionImg"
           alt="HoseinSedaqatMain"
           class="border border-secondary mr-4"
           width="35px"
           style="border-radius: 50%"
         />
         <span class="d-flex flex-column ho_pdfz">
-          <span>KygoMusic</span>
-          <span class="text-muted">Followed by Hosein</span>
+          <span>{{ suggestion.suggestionName }}</span>
+          <span class="text-muted">{{ suggestion.suggestionFollow }}</span>
         </span>
       </div>
       <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
     </div>
-    <div class="d-flex flex-row align-items-center justify-content-between mt-3">
-      <div class="d-flex align-items-center">
-        <img
-          src="@/assets/Images/Suggestion/Bts.jpg"
-          alt="HoseinSedaqatMain"
-          class="border border-secondary mr-4"
-          width="35px"
-          style="border-radius: 50%"
-        />
-        <span class="d-flex flex-column ho_pdfz">
-          <span>bts.bighitofficial</span>
-          <span class="text-muted">Followed by Hosein</span>
-        </span>
-      </div>
-      <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
-    </div>
-    <div class="d-flex flex-row align-items-center justify-content-between mt-3">
-      <div class="d-flex align-items-center">
-        <img
-          src="@/assets/Images/Suggestion/Casey.jpg"
-          alt="HoseinSedaqatMain"
-          class="border border-secondary mr-4"
-          width="35px"
-          style="border-radius: 50%"
-        />
-        <span class="d-flex flex-column ho_pdfz">
-          <span>caseyneistat</span>
-          <span class="text-muted">Followed by Hosein</span>
-        </span>
-      </div>
-      <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
-    </div>
-    <div class="d-flex flex-row align-items-center justify-content-between mt-3">
-      <div class="d-flex align-items-center">
-        <img
-          src="@/assets/Images/Suggestion/Cristiano.jpg"
-          alt="HoseinSedaqatMain"
-          class="border border-secondary mr-4"
-          width="35px"
-          style="border-radius: 50%"
-        />
-        <span class="d-flex flex-column ho_pdfz">
-          <span>cristiano</span>
-          <span class="text-muted">Followed by Hosein</span>
-        </span>
-      </div>
-      <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
-    </div>
-    <div class="d-flex flex-row align-items-center justify-content-between mt-3">
-      <div class="d-flex align-items-center">
-        <img
-          src="@/assets/Images/Suggestion/Mahdi.jpg"
-          alt="HoseinSedaqatMain"
-          class="border border-secondary mr-4"
-          width="35px"
-          style="border-radius: 50%"
-        />
-        <span class="d-flex flex-column ho_pdfz">
-          <span>mehditaremiofficial9</span>
-          <span class="text-muted">Followed by Hosein</span>
-        </span>
-      </div>
-      <a href="#" class="ho_pdfz font-weight-bold">Follow</a>
-    </div>
+
     <!-- Footer -->
     <div class="mt-4">
       <span class="ho_ffs text-muted mx-1 ho_cp">About </span>
