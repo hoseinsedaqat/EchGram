@@ -1,3 +1,7 @@
+#post-photo-single{
+    overflow: hidden;
+}
+
 .po_ic {
     cursor: pointer;
 }

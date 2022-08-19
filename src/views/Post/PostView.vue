@@ -1,12 +1,15 @@
 <script lang="ts">
 import Vue from "vue";
 
+import profilePost from '@/data/profilePost'
+
 export default Vue.extend({
   name: "PostView",
   data(){
       return {
         // eslint-disable-next-line
-        img: "" as any
+        img: "" as any,
+        profilePost
       }
   },
   methods:{
@@ -25,6 +28,9 @@ export default Vue.extend({
         alert('Image Size is Large')
       }
     },
+    addPost(){
+      this.profilePost.unshift({postImg:this.img,like:23})
+    }
   }
 });
 </script>
@@ -48,7 +54,7 @@ export default Vue.extend({
                   <label for="Caption">Write Caption:</label>
                   <input type="text" name="Caption" id="Caption" class="form-control" />
                 </div>
-                <button class="btn btn-primary">Share</button>
+                <button class="btn btn-primary" @click.prevent="addPost">Share</button>
               </form>
             </div>
           </div>

@@ -1,27 +1,33 @@
 <script lang="ts">
 import Vue from "vue";
+import profilePost from '@/data/profilePost'
 export default Vue.extend({
   name: "ProfilePost",
+  data(){
+    return {
+      profilePost
+    }
+  }
 });
 </script>
 
 <template>
   <div class="row mt-5">
-    <div class="col-md-4">
+    <div v-for="(post,idx) in profilePost" :key="(post,idx)" class="col-md-4">
       <router-link to="/post/hoseinsedaqat-p137820002022">
         <div class="img-post-overlay my-3">
           <img
-            src="@/assets/Images/Main/PostOne.jpg"
-            alt="PostOne"
+            :src="post.postImg"
+            :alt="`PostOne ${idx + 1}`"
             class="p-image-post"
           />
           <div class="overlay">
-            <div class="text-overlay"><i class="fa fa-heart"></i> 52</div>
+            <div class="text-overlay"><i class="fa fa-heart"></i> {{ post.like }}</div>
           </div>
         </div>
       </router-link>
     </div>
-    <div class="col-md-4">
+    <!-- <div class="col-md-4">
       <div class="img-post-overlay my-3">
         <img src="@/assets/Images/Main/PostTwo.jpg" alt="PostTwo" class="p-image-post" />
         <div class="overlay">
@@ -96,6 +102,6 @@ export default Vue.extend({
           <div class="text-overlay"><i class="fa fa-heart"></i> 9000</div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>

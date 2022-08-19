@@ -7,11 +7,11 @@ export default Vue.extend({
 
 <template>
   <section id="post-photo-single">
-    <div class="container my-5" style="border: 1px solid #a1a1a0">
-      <div class="row">
-        <div class="col-md-8 py-2 profile-detail-photo">
+    <div class="container my-5">
+      <div class="row no-gutters">
+        <div class="col-md-8 profile-detail-photo">
           <img
-            class="mr-3 img-fluid"
+            class="img-fluid"
             src="@/assets/Images/Header/HoseinSedaqat.jpg"
             alt="Hosein Sedaqat Post"
           />

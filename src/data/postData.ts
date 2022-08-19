@@ -7,6 +7,9 @@ import EvanPost from '@/assets/Images/Posts/Evan_Post.jpg';
 import BradImage from '@/assets/Images/User/Brad_instagram_Picture.jpg';
 import BradPost from '@/assets/Images/Posts/Brad_Post.jpg';
 
+import MaxImage from '@/assets/Images/User/Max_instagram_Picture.jpg';
+import MaxPost from '@/assets/Images/Posts/Max_Post.jpg';
+
 
 const postData:{userName: string, userImage: string, userPost: string, userLike: boolean, userUnlike: boolean}[] = [
     {
@@ -27,6 +30,13 @@ const postData:{userName: string, userImage: string, userPost: string, userLike:
         userName: 'traversymedia',
         userImage: BradImage,
         userPost:  BradPost,
+        userLike: true,
+        userUnlike: false,
+    },
+    {
+        userName: 'academind_real',
+        userImage: MaxImage,
+        userPost:  MaxPost,
         userLike: true,
         userUnlike: false,
     },
