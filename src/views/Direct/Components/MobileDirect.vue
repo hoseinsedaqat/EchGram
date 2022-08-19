@@ -2,6 +2,7 @@
 import Vue from "vue";
 
 import DirectRightNone from "./DirectRightNone.vue";
+
 import DirectRightHave from "./DirectRightHave.vue";
 
 export default Vue.extend({

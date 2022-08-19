@@ -1,16 +1,20 @@
 <script>
-import Vue from 'vue'
-import {mapActions} from 'vuex'
+import Vue from 'vue';
+
+import { mapActions } from 'vuex';
+
+import directData from '@/data/directData'
 
 export default Vue.extend({
     name:'DirectLeftUsers',
     data(){
       return {
-        mobileView: false
+        mobileView: false,
+        directData
       }
     },
     methods:{
-      ...mapActions(['showDirectTest']),
+      ...mapActions(['showDirectTest','findDirect']),
       checkWidth(){
         if(window.innerWidth < 678) {
           this.mobileView = true
@@ -26,7 +30,17 @@ export default Vue.extend({
 <template>
   <div class="d_bp d_of d_dfb">
     <!-- Create Two Mode for That One From Mobile And Twp From Lg Screen -->
-            <div class="d-flex py-3 d_ph" @click="showDirectTest" v-if="!mobileView">
+            <div v-if="!mobileView">
+              <div v-for="(userDirect,idx) in directData" :key="(userDirect,idx)" class="d-flex py-3 d_ph" @click="findDirect(userDirect.findDirect)">
+                <span class="mx-2">
+                  <img :src="userDirect.img" alt="DirectHosein" width="50px" style="border-radius:50%;">
+                </span>
+                <span class="d-flex flex-column mx-2">
+                  <span class="font-weight-bold">{{ userDirect.name }}</span>
+                  <span class="text-muted">Liked a message . 1d</span>
+                </span>
+              </div>
+              <!-- <div class="d-flex py-3 d_ph" @click="findDirect(2)">
                 <span class="mx-2">
                   <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
                 </span>
@@ -34,16 +48,28 @@ export default Vue.extend({
                   <span class="font-weight-bold">Hosein</span>
                   <span class="text-muted">Liked a message . 1d</span>
                 </span>
+              </div> -->
             </div>
-            <router-link class="d-flex py-3 d_ph d_mvl" to="/direct/inbox/2365415895475269" v-if="mobileView">
+            <div v-if="mobileView">
+               <router-link v-for="(userDirect,idx) in directData" :key="(userDirect,idx)"  class="d-flex py-3 d_ph d_mvl" :to="`/direct/inbox/${userDirect.findDirect}`" >
                 <span class="mx-2">
-                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
+                  <img :src="userDirect.img" alt="DirectHosein" width="50px" style="border-radius:50%;">
                 </span>
                 <span class="d-flex flex-column mx-2">
-                  <span class="font-weight-bold">Hosein</span>
+                  <span class="font-weight-bold">{{ userDirect.name }}</span>
                   <span class="text-muted">Liked a message . 1d</span>
                 </span>
             </router-link>
+            <!-- <router-link class="d-flex py-3 d_ph d_mvl" to="/direct/inbox/2" >
+                <span class="mx-2">
+                  <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">
+                </span>
+                <span class="d-flex flex-column mx-2">
+                  <span class="font-weight-bold">Hosein</span>
+                  <span class="text-muted">Liked a message . 1d</span>
+                </span>
+            </router-link> -->
+            </div>
             <!-- <div class="d-flex py-3 d_ph">
                 <span class="mx-2">
                   <img src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="DirectHosein" width="50px" style="border-radius:50%;">

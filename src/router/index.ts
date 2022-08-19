@@ -70,7 +70,7 @@ const routes: Array<RouteConfig> = [
     component: async () => await import('@/views/AccountEdit/AccountEditView.vue'),
   },
   {
-    path:'/direct/inbox/2365415895475269',
+    path:'/direct/inbox/:id',
     name: 'DirectMobile',
     beforeEnter:activityRouter,
     component: async () => await import('@/views/Direct/Components/MobileDirect.vue'),

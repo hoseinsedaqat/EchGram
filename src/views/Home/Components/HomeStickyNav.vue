@@ -37,8 +37,8 @@ export default {
     <!-- You Should Follows -->
     <div
       class="d-flex flex-row align-items-center justify-content-between mb-2"
-      v-for="suggestion in suggestionData"
-      :key="suggestion"
+      v-for="(suggestion,idx) in suggestionData"
+      :key="(suggestion,idx)"
     >
       <div class="d-flex align-items-center">
         <img

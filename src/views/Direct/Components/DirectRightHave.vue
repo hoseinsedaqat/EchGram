@@ -5,13 +5,18 @@ import { mapGetters,mapActions } from 'vuex'
 export default Vue.extend({
     name:'DirectRightHave',
     computed:{
-        ...mapGetters(['returnDirectOne'])
+        ...mapGetters(['returnDirectOne','returnEachDirect'])
     },
     methods:{
-      ...mapActions(['showDirectTest'])
+      ...mapActions(['showDirectTest','findDirect'])
     },
-    mounted(){
-      this.showDirectTest()
+    async created(){
+      if(window.innerWidth < 678){
+        if(this.$route.params.id){
+          await this.findDirect(Number(this.$route.params.id))
+        }
+        await this.showDirectTest()
+      }
     }
 })
 </script>
@@ -19,11 +24,12 @@ export default Vue.extend({
 <template>
   <div v-if="returnDirectOne">
               <div class="w-100 h-100 d_bp">
-              <!-- Direct Msg Header -->
+                <!-- {{ returnEachDirect.chats }} -->
+                <!-- Direct Msg Header -->
                 <div class="d-flex align-items-center justify-content-between d_mfhm mx-5">
                 <span>
                   <img class="mr-3" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinMessage"  width="30px" style="border-radius:50%;">
-                  <small class="font-weight-bold">Hosein</small>
+                  <!-- <small class="font-weight-bold">{{ returnEachDirect.whichDirect }}</small> -->
                 </span>
                 <span class="h_lcp">
                   <svg aria-label="View Thread Details" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><circle cx="11.819" cy="7.709" r="1.25"></circle><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="10.569" x2="13.432" y1="16.777" y2="16.777"></line><polyline fill="none" points="10.569 11.05 12 11.05 12 16.777" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polyline></svg>
@@ -32,10 +38,11 @@ export default Vue.extend({
               </div>
               <div style="height:65vh;" class="d_of">
               <!-- Direct Msg Header -->
-              <p class="text-left people-message-margin">
-                <span class="people-message">Hi Hosein</span>
+              <!-- Im Should use Class right and left in Data -->
+              <p v-for="(pm,idx) in returnEachDirect.chats" :key="(pm,idx)" :class="pm.Left ? 'text-left people-message-margin' : 'text-right you-message-margin'">
+                <span :class="pm.Left ? 'people-message' : 'you-message'">{{ pm.Left ? pm.Left : pm.Right }}</span>
               </p>
-              <p class="text-right you-message-margin">
+              <!-- <p class="text-right you-message-margin">
                 <span class="you-message">Hi Man How are you ?</span>
               </p>
               <p class="text-left people-message-margin">
@@ -67,7 +74,7 @@ export default Vue.extend({
               </p>
               <p class="text-right you-message-margin">
                 <span class="you-message">Hi Man How are you ?</span>
-              </p>
+              </p> -->
                 <!-- <div class="d-flex align-items-center justify-content-between d_mfhm mx-5">
                 <span>
                   <img class="mr-3" src="@/assets/Images/Header/HoseinSedaqat.jpg" alt="HoseinMessage"  width="30px" style="border-radius:50%;">
