@@ -11,13 +11,15 @@ import MaxImage from '@/assets/Images/User/Max_instagram_Picture.jpg';
 import MaxPost from '@/assets/Images/Posts/Max_Post.jpg';
 
 
-const postData:{userName: string, userImage: string, userPost: string, userLike: boolean, userUnlike: boolean}[] = [
+const postData:{userName: string, userImage: string, userPost: string, userLike: boolean, userUnlike: boolean, userSave: boolean, userUnsave: boolean}[] = [
     {
         userName: 'HoseinSedaqat',
         userImage: HoseinImage,
         userPost:  HoseinPost,
         userLike: true,
         userUnlike: false,
+        userSave: true,
+        userUnsave: false,
     },
     {
         userName: 'yyx990803',
@@ -25,6 +27,8 @@ const postData:{userName: string, userImage: string, userPost: string, userLike:
         userPost:  EvanPost,
         userLike: true,
         userUnlike: false,
+        userSave: true,
+        userUnsave: false,
     },
     {
         userName: 'traversymedia',
@@ -32,6 +36,8 @@ const postData:{userName: string, userImage: string, userPost: string, userLike:
         userPost:  BradPost,
         userLike: true,
         userUnlike: false,
+        userSave: true,
+        userUnsave: false,
     },
     {
         userName: 'academind_real',
@@ -39,6 +45,8 @@ const postData:{userName: string, userImage: string, userPost: string, userLike:
         userPost:  MaxPost,
         userLike: true,
         userUnlike: false,
+        userSave: true,
+        userUnsave: false,
     },
 ]
 

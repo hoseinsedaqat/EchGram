@@ -1,22 +1,10 @@
-import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
+import Vue from 'vue';
 
-Vue.use(VueRouter)
+import VueRouter, { RouteConfig } from 'vue-router';
 
+Vue.use(VueRouter);
 
-// for responsive mobile design pages
-// eslint-disable-next-line
-// test show activity for difrent devices
-// eslint-disable-next-line
-function activityRouter(to:any,from:any,next:any){
-  if(innerWidth > 800){
-    return
-  }else{
-    next()
-    // const test = (document.getElementById('ownDropDownContent')! as HTMLElement);
-    // test.remove()
-  }
-}
+import activityRouter from '@/utils/checkRouteWidth';
 
 const routes: Array<RouteConfig> = [
   {
@@ -80,7 +68,11 @@ const routes: Array<RouteConfig> = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
+  // eslint-disable-next-line
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0 , y: 0, behavior: 'smooth'}
+  },
   routes
 })
 
-export default router
+export default router;

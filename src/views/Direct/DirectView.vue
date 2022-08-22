@@ -34,7 +34,7 @@ export default Vue.extend({
 
 <template>
   <div class="container">
-    <div class="row my-3 bg-white no-gutters">
+    <div class="row my-3 bg-white no-gutters mb-5">
       <!-- Define my Id -->
       <div class="col-md-4 d_hvh w-100 h-100">
         <direct-left-header></direct-left-header>

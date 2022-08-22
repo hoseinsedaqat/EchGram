@@ -1,17 +1,20 @@
 <script lang="ts">
+
 import Vue from "vue";
+
 import ProfilePhoto from "./Components/ProfilePhoto.vue";
+
 import ProfileInformation from "./Components/ProfileInformation.vue";
+
 import ProfilePost from "./Components/ProfilePost.vue";
+
 import ProfileFooter from './Components/ProfileFooter.vue'
+
 export default Vue.extend({
+
   name: "ProfileView",
-  components: {
-    ProfilePhoto,
-    ProfileInformation,
-    ProfilePost,
-    ProfileFooter
-  },
+
+  components: { ProfilePhoto, ProfileInformation, ProfilePost, ProfileFooter },
 });
 </script>
 <template>
@@ -21,7 +24,7 @@ export default Vue.extend({
         <profile-photo></profile-photo>
         <profile-information></profile-information>
       </div>
-      <profile-post></profile-post>
+      <profile-post class="mb-5"></profile-post>
       <profile-footer></profile-footer>
     </div>
   </section>

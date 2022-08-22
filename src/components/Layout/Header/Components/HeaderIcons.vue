@@ -128,7 +128,7 @@ export default Vue.extend({
               <span>Saved</span>
             </div>
           </router-link>
-          <router-link to="/" class="dropdown-item">
+          <router-link to="/accounts/edit" class="dropdown-item">
             <div class="d-flex align-self-center align-items-center">
               <setting-svg></setting-svg>
               <span>Setting</span>

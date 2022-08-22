@@ -16,7 +16,7 @@ export default Vue.extend({
 
 <template>
   <div class="container">
-    <div class="row my-3 bg-white no-gutters">
+    <div class="row my-3 bg-white no-gutters mb-5">
       <div class="col-md-8">
         <div class="d_bp w-100 h-100 text-center">
           <!-- When We are have no Direct Select -->

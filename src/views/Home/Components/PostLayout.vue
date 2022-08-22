@@ -1,4 +1,5 @@
 <script lang="ts">
+
 import Vue from "vue";
 
 import { mapActions, mapGetters } from "vuex";
@@ -13,9 +14,12 @@ import ShareSvg from "./svg/ShareSvg.vue";
 
 import SaveSvg from "./svg/SaveSvg.vue";
 
+import UnsaveSvg from "./svg/UnsaveSvg.vue";
+
 import UnlikeSvg from "./svg/UnlikeSvg.vue";
 
 import LikeSvg from "./svg/LikeSvg.vue";
+
 
 export default Vue.extend({
   name: "PostLayout",
@@ -33,6 +37,7 @@ export default Vue.extend({
     SaveSvg,
     UnlikeSvg,
     LikeSvg,
+    UnsaveSvg,
   },
 
   methods: {
@@ -78,6 +83,7 @@ export default Vue.extend({
               type="button"
               data-toggle="modal"
               data-target="#exampleModal"
+              class="font-weight-bold"
             >
               ...
             </p>
@@ -98,7 +104,8 @@ export default Vue.extend({
             <share-svg></share-svg>
           </span>
           <span>
-            <save-svg></save-svg>
+            <save-svg v-if="post.userSave" :post="post"></save-svg>
+            <unsave-svg v-if="post.userUnsave" :post="post"></unsave-svg>
           </span>
         </div>
         <!-- Liked by and title author -->

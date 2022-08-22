@@ -1,5 +1,6 @@
 <template>
   <svg
+    @click="save()"
     aria-label="Save"
     class="_8-yf5 ho_cp"
     height="24"
@@ -19,8 +20,17 @@
 </template>
 
 <script>
+import postData from "@/data/postData";
 export default {
   name: "SaveSvg",
+  props: ["post"],
+  methods: {
+    save() {
+      let findPost = postData.find((post) => post.userName === this.post.userName);
+      findPost.userSave = false;
+      findPost.userUnsave = true;
+    },
+  },
 };
 </script>
 

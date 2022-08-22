@@ -3,7 +3,7 @@
     <div class="ars d-flex">
       <span>
         <img
-          src="@/assets/Images/Header/HoseinSedaqat.jpg"
+          src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
           alt=""
           width="50px"
           style="border-radius: 50%"
