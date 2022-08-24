@@ -12,7 +12,7 @@ export default Vue.extend({
         <div class="col-md-8 profile-detail-photo">
           <img
             class="img-fluid"
-            src="@/assets/Images/Header/HoseinSedaqat.jpg"
+            src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
             alt="Hosein Sedaqat Post"
           />
         </div>
@@ -21,7 +21,7 @@ export default Vue.extend({
             <span class="d-flex align-items-center">
               <img
                 class="mr-4"
-                src="@/assets/Images/Header/HoseinSedaqat.jpg"
+                src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
                 alt="Hosein Sedaqat Post"
                 width="40px"
                 style="border-radius: 50%"
@@ -29,11 +29,26 @@ export default Vue.extend({
               <span class="ho_ffsc font-weight-bold">HoseinSedaqat</span>
             </span>
             <span class="ho_cp">
-              <p>...</p>
+              <p class="font-weight-bold">...</p>
             </span>
           </div>
           <hr />
           <!-- Like Comment and Saved -->
+          <div class="d-flex flex-column">
+          <div class="m-2 d-flex align-items-center justify-content-between" v-for="(x,idx) in 7" :key="(x,idx)">
+            <div>
+              <span>
+                <img src="@/assets/Images/User/Hosein_instagram_Picture.jpg" alt="CoomentImage" width="20px" style="border-radius:50%;">
+              </span>
+              <span class="ml-1 mt-1 font-weight-bold" style="font-size:11px;"> RandomGuy_3256 </span>
+              <span class="ml-1 mt-1" style="font-size:10px;"> You Look Beautiful Hosein </span>
+            </div>
+            <div>
+              <i class="fa fa-heart ho_ffs text-secondary ho_cp"></i>
+            </div>
+          </div>
+        </div>
+        <hr>
           <div class="m-2 d-flex align-items-center justify-content-between">
             <!-- Hi -->
             <span>

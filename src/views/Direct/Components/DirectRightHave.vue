@@ -4,11 +4,20 @@ import { mapGetters,mapActions } from 'vuex'
 
 export default Vue.extend({
     name:'DirectRightHave',
+    data(){
+      return {
+        message: ''
+      }
+    },
     computed:{
         ...mapGetters(['returnDirectOne','returnEachDirect'])
     },
     methods:{
-      ...mapActions(['showDirectTest','findDirect'])
+      ...mapActions(['showDirectTest','findDirect','addDirectMessage']),
+      addDM(){
+        this.addDirectMessage({right:this.message,whichDirect:this.returnEachDirect.whichDirect})
+        this.message = ''
+      }
     },
     async created(){
       if(window.innerWidth < 678){
@@ -40,7 +49,7 @@ export default Vue.extend({
               <!-- Direct Msg Header -->
               <!-- Im Should use Class right and left in Data -->
               <p v-for="(pm,idx) in returnEachDirect.chats" :key="(pm,idx)" :class="pm.Left ? 'text-left people-message-margin' : 'text-right you-message-margin'">
-                <span :class="pm.Left ? 'people-message' : 'you-message'">{{ pm.Left ? pm.Left : pm.Right }}</span>
+                <span :class="pm.Left ? 'people-message' : 'you-message my-2'">{{ pm.Left ? pm.Left : pm.Right }}</span>
               </p>
               <!-- <p class="text-right you-message-margin">
                 <span class="you-message">Hi Man How are you ?</span>
@@ -89,7 +98,7 @@ export default Vue.extend({
               <!-- Direct Msg Header -->
                 <div class="mx-5">
                   <span class="d-flex align-items-center justify-content-center d_my">
-                    <input type="text" class="d_idm" placeholder="Message...">
+                    <input type="text" class="d_idm" placeholder="Message..." @keyup.enter="addDM()" v-model="message">
 
                     <svg aria-label="Emoji" class="_8-yf5 d_ms h_lcp" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"></path></svg>
 

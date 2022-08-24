@@ -12,5 +12,12 @@ export const mutations:MutationTree<directState> = {
         state.noneDirect = false;
         state.directOne = true;
         console.log(findMsg);
+    },
+    addDirectMessage: (state,data) => {
+      
+      const findDirect = state.allDirects.find(direct => direct.whichDirect === data.whichDirect)
+      if(findDirect){
+        findDirect.chats.push({ Right:data.right })
       }
+    }
 }
