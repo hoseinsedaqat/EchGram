@@ -29,37 +29,37 @@ const directData:{name:string, findDirect:number, img:string}[] = [
     },
     {
         name: 'Nima',
-        findDirect: 2,
+        findDirect: 3,
         img: Nima
     },
     {
         name: 'Zoheir',
-        findDirect: 2,
+        findDirect: 4,
         img: Zoheir
     },
     {
         name: 'Evan',
-        findDirect: 2,
+        findDirect: 5,
         img: Evan
     },
     {
         name: 'MohammadReza',
-        findDirect: 2,
+        findDirect: 6,
         img: MohammadReza
     },
     {
         name: 'Jadi',
-        findDirect: 2,
+        findDirect: 7,
         img: Jadi
     },
     {
         name: 'Pouya',
-        findDirect: 2,
+        findDirect: 8,
         img: Pouya
     },
     {
         name: 'Farzad',
-        findDirect: 2,
+        findDirect: 9,
         img: Farzad
     },
 ]
