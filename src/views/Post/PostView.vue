@@ -30,6 +30,8 @@ export default Vue.extend({
     },
     addPost(){
       this.profilePost.unshift({postImg:this.img,like:23})
+      this.$toast.success('Upload Post')
+      this.$router.push('/hoseinsedaqat')
     }
   }
 });
