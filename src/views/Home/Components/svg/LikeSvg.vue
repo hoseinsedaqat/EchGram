@@ -26,9 +26,10 @@ export default {
   },
   methods: {
     Like() {
-        let findPost = postData.find(post => post.userName === this.post.userName);
-        findPost.userUnlike = true;
-        findPost.userLike = false;
+      let findPost = postData.find((post) => post.userName === this.post.userName);
+      findPost.userUnlike = true;
+      findPost.userLike = false;
+      this.$toast.success(`You Like ${findPost.userName} Post`);
     },
   },
 };

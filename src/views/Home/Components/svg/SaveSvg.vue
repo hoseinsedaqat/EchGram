@@ -29,6 +29,7 @@ export default {
       let findPost = postData.find((post) => post.userName === this.post.userName);
       findPost.userSave = false;
       findPost.userUnsave = true;
+      this.$toast.success(`You Save ${findPost.userName} Post`);
     },
   },
 };

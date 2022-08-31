@@ -11,10 +11,14 @@ import VueProgressBar from 'vue-progressbar';
 import VueImg from 'v-img';
 import vueImgConfig from '@/constant/VimgOption';
 import VPBOption from '@/constant/VPBOption';
+import Toast from 'vue-toastification';
+import 'vue-toastification/dist/index.css';
+import VToastNotification from '@/constant/VToastNotification';
 
 
-Vue.use(VueImg,vueImgConfig);
-Vue.use(VueProgressBar,VPBOption);
+Vue.use(VueImg , vueImgConfig);
+Vue.use(VueProgressBar , VPBOption);
+Vue.use(Toast , VToastNotification)
 
 Vue.config.productionTip = false;
 
