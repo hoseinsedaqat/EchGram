@@ -2,7 +2,7 @@
   <svg
     @click="unSave()"
     aria-label="Remove"
-    class="_ab6-"
+    class="_ab6- ho_cp"
     color="#262626"
     fill="#262626"
     height="24"

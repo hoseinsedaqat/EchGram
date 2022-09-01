@@ -37,7 +37,7 @@ export default Vue.extend({
                 </span>
                 <span class="d-flex flex-column mx-2">
                   <span class="font-weight-bold">{{ userDirect.name }}</span>
-                  <span class="text-muted">Liked a message . 1d</span>
+                  <span class="text-muted">Liked a message . {{ userDirect.msgLike }}</span>
                 </span>
               </div>
             </div>

@@ -5,6 +5,24 @@ import { getters } from './getters';
 import { mutations } from './mutations';
 import { actions } from './actions';
 
+import Hosein from '@/assets/Images/User/Hosein_instagram_Picture.jpg';
+
+import Avicii from '@/assets/Images/User/Avicii_instagram_Picture.jpg';
+
+import Nima from '@/assets/Images/User/Nima_instagram_Picture.jpg';
+
+import Zoheir from '@/assets/Images/User/Zoheir_instagram_Picture.jpg';
+
+import Evan from '@/assets/Images/User/Evan_instagram_Picture.jpg';
+
+import MohammadReza from '@/assets/Images/User/MohammadReza_instagram_Picture.jpg';
+
+import Jadi from '@/assets/Images/User/Jadi_instagram_Picture.jpg';
+
+import Pouya from '@/assets/Images/User/Pouya_instagram_Picture.jpg';
+
+import Farzad from '@/assets/Images/User/Farzad_instagram_Picture.jpg';
+
 const state:directState = {
     noneDirect: true,
     directOne: false,
@@ -18,7 +36,9 @@ const state:directState = {
                 Right: 'Hello Man',
             }
         ],
-        whichDirect: 1
+        whichDirect: 1,
+        directImg: Hosein,
+        userName: 'Hosein'
         },
         {
         chats:[
@@ -29,7 +49,9 @@ const state:directState = {
                 Right: 'Ohuum',
             }
         ],
-        whichDirect: 2
+        whichDirect: 2,
+        directImg: Avicii,
+        userName: 'Avicii'
         },
         {
         chats:[
@@ -40,7 +62,9 @@ const state:directState = {
                 Right: 'Ohuum',
             }
         ],
-        whichDirect: 3
+        whichDirect: 3,
+        directImg: Nima,
+        userName: 'Nima'
         },
         {
         chats:[
@@ -51,7 +75,9 @@ const state:directState = {
                 Right: 'Ohuum',
             }
         ],
-        whichDirect: 4
+        whichDirect: 4,
+        directImg: Zoheir,
+        userName: 'Zoheir'
         },
         {
         chats:[
@@ -62,7 +88,9 @@ const state:directState = {
                 Right: 'Ohuum',
             }
         ],
-        whichDirect: 5
+        whichDirect: 5,
+        directImg: Evan,
+        userName: 'Evan'
         },
         {
         chats:[
@@ -73,7 +101,9 @@ const state:directState = {
                 Right: 'Ohuum',
             }
         ],
-        whichDirect: 6
+        whichDirect: 6,
+        directImg: MohammadReza,
+        userName: 'MohammadReza'
         },
         {
         chats:[
@@ -84,7 +114,9 @@ const state:directState = {
                 Right: 'Ohuum',
             }
         ],
-        whichDirect: 7
+        whichDirect: 7,
+        directImg: Jadi,
+        userName: 'Jadi'
         },
         {
         chats:[
@@ -95,7 +127,9 @@ const state:directState = {
                 Right: 'Ohuum',
             }
         ],
-        whichDirect: 8
+        whichDirect: 8,
+        directImg: Pouya,
+        userName: 'Pouya'
         },
         {
         chats:[
@@ -106,7 +140,9 @@ const state:directState = {
                 Right: 'Ohuum',
             }
         ],
-        whichDirect: 9
+        whichDirect: 9,
+        directImg: Farzad,
+        userName: 'Farzad'
         },
     ],
     getEachDirect:{}

@@ -30,7 +30,7 @@ export default Vue.extend({
     },
     addPost(){
       this.profilePost.unshift({postImg:this.img,like:23})
-      this.$toast.success('Upload Post')
+      this.$toast.success('Post is Uploaded')
       this.$router.push('/hoseinsedaqat')
     }
   }
@@ -44,7 +44,7 @@ export default Vue.extend({
         <div class="col-md-12">
           <div class="card my-5">
             <div class="card-body text-center">
-                <img :src="img" alt="Preview Image" v-if="img !== '' " style="border-radius:10px" width="300px" height="300px" class="mb-2">
+                <img :src="img" alt="Preview Image" v-if="img !== '' " style="border:1px solid #e9e9e9;border-radius:3px" width="210px" height="200px" class="mb-2">
               <form>
                 <div class="form-group text-center">
                   <label for="Image" class="po_ic">
