@@ -1,15 +1,17 @@
 <script lang="ts">
-import Vue from 'vue'
-import ExploreLayout from './Components/ExploreLayout.vue'
+import Vue from "vue";
+
+import ExploreLayout from "./Components/ExploreLayout.vue";
 
 export default Vue.extend({
   components: { ExploreLayout },
-    name:"ExploreView"
-})
+
+  name: "ExploreView",
+});
 </script>
 
 <template>
- <section id="exploreView">
+  <section id="exploreView">
     <explore-layout></explore-layout>
- </section>
+  </section>
 </template>
