@@ -21,6 +21,7 @@
     "register-service-worker": "^1.7.2",
     "swiper": "^5.4.5",
     "ts-loader": "^8.2.0",
+    "uuid": "^9.0.0",
     "v-img": "^0.2.0",
     "vue": "^2.6.14",
     "vue-awesome-swiper": "^4.1.1",

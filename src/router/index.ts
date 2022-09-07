@@ -48,7 +48,7 @@ const routes: Array<RouteConfig> = [
     component: async () => await import('@/views/Profile/ProfileView.vue'),
   },
   {
-    path:'/post/hoseinsedaqat-p137820002022',
+    path:'/post/hoseinsedaqat/:id',
     name: 'ProfilePostSingle',
     component: async () => await import('@/views/Profile/Components/ProfilePostSingle.vue'),
   },

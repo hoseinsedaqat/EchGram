@@ -1,7 +1,9 @@
 <script lang="ts">
 import Vue from "vue";
 
-import profilePost from '@/data/profilePost'
+import profilePost from '@/data/profilePost';
+
+import { v4 as uuidv4 } from 'uuid';
 
 export default Vue.extend({
   name: "PostView",
@@ -29,9 +31,13 @@ export default Vue.extend({
       }
     },
     addPost(){
-      this.profilePost.unshift({postImg:this.img,like:23})
-      this.$toast.success('Post is Uploaded')
-      this.$router.push('/hoseinsedaqat')
+      if(this.img !== '') {
+        this.profilePost.unshift({id: uuidv4(), postImg: this.img ,like: 23})
+        this.$router.push('/hoseinsedaqat')
+        this.$toast.success('Post is Uploaded')
+      }else{
+        this.$toast.error('Please Upload a Image ✌😀')
+      }
     }
   }
 });
@@ -56,7 +62,7 @@ export default Vue.extend({
                   <label for="Caption">Write Caption:</label>
                   <input type="text" name="Caption" id="Caption" class="form-control" />
                 </div>
-                <button class="btn btn-primary" @click.prevent="addPost">Share</button>
+                <button class="btn btn-primary w-100" @click.prevent="addPost">Share</button>
               </form>
             </div>
           </div>

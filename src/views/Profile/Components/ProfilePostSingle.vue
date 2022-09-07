@@ -1,7 +1,21 @@
 <script lang="ts">
 import Vue from "vue";
+
+import profilePost from "@/data/profilePost";
+
 export default Vue.extend({
   name: "ProfilePostSingle",
+  data() {
+    return {
+      profilePost,
+      // eslint-disable-next-line
+      fetchPost: {} as any
+    };
+  },
+  created(){
+    let findPost = profilePost.find(post => post.id === this.$route.params.id);
+    this.fetchPost = findPost
+  }
 });
 </script>
 
@@ -12,7 +26,7 @@ export default Vue.extend({
         <div class="col-md-8 profile-detail-photo">
           <img
             class="img-fluid"
-            src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
+            :src="fetchPost.postImg"
             alt="Hosein Sedaqat Post"
           />
         </div>
@@ -32,23 +46,37 @@ export default Vue.extend({
               <p class="font-weight-bold">...</p>
             </span>
           </div>
+          <p class="mt-2 mx-3" style="font-size:13px;">Namaste</p>
           <hr />
           <!-- Like Comment and Saved -->
           <div class="d-flex flex-column">
-          <div class="m-2 d-flex align-items-center justify-content-between" v-for="(x,idx) in 7" :key="(x,idx)">
-            <div>
-              <span>
-                <img src="@/assets/Images/User/Hosein_instagram_Picture.jpg" alt="CoomentImage" width="20px" style="border-radius:50%;">
-              </span>
-              <span class="ml-1 mt-1 font-weight-bold" style="font-size:11px;"> RandomGuy_3256 </span>
-              <span class="ml-1 mt-1" style="font-size:10px;"> You Look Beautiful Hosein </span>
-            </div>
-            <div>
-              <i class="fa fa-heart ho_ffs text-secondary ho_cp"></i>
+            <div
+              class="m-2 d-flex align-items-center justify-content-between"
+              v-for="(x, idx) in 7"
+              :key="(x, idx)"
+            >
+              <div>
+                <span>
+                  <img
+                    src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
+                    alt="CoomentImage"
+                    width="20px"
+                    style="border-radius: 50%"
+                  />
+                </span>
+                <span class="ml-1 mt-1 font-weight-bold" style="font-size: 11px">
+                  RandomGuy_3256
+                </span>
+                <span class="ml-1 mt-1" style="font-size: 10px">
+                  You Look Beautiful Hosein
+                </span>
+              </div>
+              <div>
+                <i class="fa fa-heart ho_ffs text-secondary ho_cp"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <hr>
+          <hr />
           <div class="m-2 d-flex align-items-center justify-content-between">
             <!-- Hi -->
             <span>
@@ -130,7 +158,9 @@ export default Vue.extend({
           <!-- Liked by and title author -->
           <div class="mx-2 d-flex">
             <div>
-              <span class="mr-1 mt-1 font-weight-bold ho_ffsc"> Hosein and Misa and Lissa Liked Your Photo </span>
+              <span class="mr-1 mt-1 font-weight-bold ho_ffsc">
+                Hosein and Misa and Lissa Liked Your Photo
+              </span>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default Vue.extend({
 <template>
   <div class="row mt-5">
     <div v-for="(post,idx) in profilePost" :key="(post,idx)" class="col-md-4">
-      <router-link to="/post/hoseinsedaqat-p137820002022">
+      <router-link :to="`/post/hoseinsedaqat/${post.id}`">
         <div class="img-post-overlay my-3">
           <img
             :src="post.postImg"
