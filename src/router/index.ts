@@ -62,6 +62,11 @@ const routes: Array<RouteConfig> = [
     name: 'DirectMobile',
     beforeEnter:activityRouter,
     component: async () => await import('@/views/Direct/Components/MobileDirect.vue'),
+  },
+  {
+    path: '/qr',
+    name: 'QrcodeView',
+    component: async () => await import('@/views/Qrcode/QrcodeView.vue')
   }
 ]
 

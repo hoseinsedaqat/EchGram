@@ -17,8 +17,16 @@ export default Vue.extend({
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <ul>
-          <li>Change password</li>
-          <li>QR Code</li>
+          <li>
+            <router-link to="/accounts/edit" class="qr_link" data-dismiss="modal"
+              >Change password</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/qr" class="qr_link" data-dismiss="modal"
+              >QR Code</router-link
+            >
+          </li>
           <li>Apps and Websites</li>
           <li>Notifications</li>
           <li>Privacy and security</li>
