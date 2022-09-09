@@ -27,6 +27,7 @@ export default Vue.extend({
   data() {
     return {
       postData,
+      postComment: ''
     };
   },
 
@@ -41,8 +42,22 @@ export default Vue.extend({
   },
 
   methods: {
-    test() {
-      alert("New Comment!😃");
+    addComment(userName: string) {
+      if(this.postComment !== ''){
+          let findUser = postData.find(comment => comment.userName === userName);
+          if(findUser?.postComment.length > 1){
+            findUser?.postComment.pop();
+            findUser?.postComment.push({ cName: 'HoseinSedaqat', cText: this.postComment }) 
+            this.postComment = ''
+            this.$toast.success('Comment added ✌😃')
+          }else{
+            findUser?.postComment.push({ cName: 'HoseinSedaqat', cText: this.postComment }) 
+            this.postComment = ''
+            this.$toast.success('Comment added ✌😃')
+          }
+        }else{
+          this.$toast.info('Please Write Comment 🙏')
+        }
     },
     ...mapActions(["showModal"]),
   },
@@ -124,13 +139,13 @@ export default Vue.extend({
         </div>
         <div class="d-flex flex-column">
           <small class="text-muted ml-2">View All Comments</small>
-          <div class="mx-2 d-flex align-items-center justify-content-between">
+          <div class="mx-2 d-flex align-items-center justify-content-between" v-for="(pC,idx) in post.postComment" :key="(pC,idx)">
             <div>
-              <span class="mr-1 mt-1 font-weight-bold ho_ffsc"> RandomGuy_3256 </span>
-              <span class="mt-1 ho_ffs"> You Look Beautiful Hosein </span>
+              <span class="mr-1 mt-1 font-weight-bold ho_ffsc"> {{ pC.cName }} </span>
+              <span class="mt-1 ho_ffs"> {{ pC.cText }} </span>
             </div>
             <div>
-              <i class="fa fa-heart ho_ffs text-secondary ho_cp"></i>
+              <i class="fa fa-heart text-secondary ho_ffs ho_cp"></i>
             </div>
           </div>
           <div class="mx-2">
@@ -138,8 +153,8 @@ export default Vue.extend({
           </div>
           <div style="border-top: 1px solid #999999" class="p-2 mt-3">
             <div class="mx-2">
-              <input type="text" placeholder="Add a commnet..." class="ho_bfc ho_iw" />
-              <button class="text-primary ho_btnfc ho_bw" @click="test()">Post</button>
+              <input type="text" placeholder="Add a commnet..." class="ho_bfc ho_iw" v-model="postComment" />
+              <button class="text-primary ho_btnfc ho_bw" @click="addComment(post.userName)">Post</button>
             </div>
           </div>
         </div>

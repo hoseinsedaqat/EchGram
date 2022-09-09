@@ -10,8 +10,8 @@ import BradPost from '@/assets/Images/Posts/Brad_Post.jpg';
 import MaxImage from '@/assets/Images/User/Max_instagram_Picture.jpg';
 import MaxPost from '@/assets/Images/Posts/Max_Post.jpg';
 
-
-const postData:{userName: string, userImage: string, userPost: string, userLike: boolean, userUnlike: boolean, userSave: boolean, userUnsave: boolean}[] = [
+//eslint-disable-next-line
+const postData:{userName: string, userImage: string, userPost: string, userLike: boolean, userUnlike: boolean, userSave: boolean, userUnsave: boolean,postComment:any}[] = [
     {
         userName: 'HoseinSedaqat',
         userImage: HoseinImage,
@@ -20,6 +20,12 @@ const postData:{userName: string, userImage: string, userPost: string, userLike:
         userUnlike: false,
         userSave: true,
         userUnsave: false,
+        postComment: [
+            {
+                cName: 'RandomGuy_3256',
+                cText: 'You Look Beautiful Hosein',
+            }
+        ],
     },
     {
         userName: 'yyx990803',
@@ -29,6 +35,12 @@ const postData:{userName: string, userImage: string, userPost: string, userLike:
         userUnlike: false,
         userSave: true,
         userUnsave: false,
+        postComment: [
+            {
+                cName: 'RandomGuy_3256',
+                cText: 'You Look Beautiful Hosein',
+            }
+        ],
     },
     {
         userName: 'traversymedia',
@@ -38,6 +50,12 @@ const postData:{userName: string, userImage: string, userPost: string, userLike:
         userUnlike: false,
         userSave: true,
         userUnsave: false,
+        postComment: [
+            {
+                cName: 'RandomGuy_3256',
+                cText: 'You Look Beautiful Hosein',
+            }
+        ],
     },
     {
         userName: 'academind_real',
@@ -47,6 +65,12 @@ const postData:{userName: string, userImage: string, userPost: string, userLike:
         userUnlike: false,
         userSave: true,
         userUnsave: false,
+        postComment: [
+            {
+                cName: 'RandomGuy_3256',
+                cText: 'You Look Beautiful Hosein',
+            }
+        ],
     },
 ]
 
