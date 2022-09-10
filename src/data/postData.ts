@@ -1,5 +1,5 @@
 import HoseinImage from '@/assets/Images/User/Hosein_instagram_Picture.jpg';
-import HoseinPost from '@/assets/Images/Header/NewHoseinSedaqat.jpg';
+import HoseinPost from '@/assets/Images/Posts/Hosein_Post.jpg';
 
 import EvanImage from '@/assets/Images/User/Evan_instagram_Picture.jpg';
 import EvanPost from '@/assets/Images/Posts/Evan_Post.jpg';
