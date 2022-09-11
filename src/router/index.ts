@@ -67,6 +67,11 @@ const routes: Array<RouteConfig> = [
     path: '/qr',
     name: 'QrcodeView',
     component: async () => await import('@/views/Qrcode/QrcodeView.vue')
+  },
+  {
+    path: '/saved',
+    name: 'SavedView',
+    component: async () => await import('@/views/Saved/SavedView.vue')
   }
 ]
 
