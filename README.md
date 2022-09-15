@@ -1,7 +1,7 @@
 # EchGram
 
 <div align="center">
-  <img width=100% height="100%" src="https://user-images.githubusercontent.com/71232870/189347755-b6ecc2e7-70ec-4deb-a6a7-24edf1f04658.png" />
+  <img width=100% height="100%" src="https://user-images.githubusercontent.com/71232870/190462623-02015263-d638-4956-9734-826caf921ee0.png" />
 </div>
 
 ## Project setup
