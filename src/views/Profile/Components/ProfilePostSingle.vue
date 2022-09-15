@@ -3,11 +3,14 @@ import Vue from "vue";
 
 import profilePost from "@/data/profilePost";
 
+import commentData from '@/data/commentData'
+
 export default Vue.extend({
   name: "ProfilePostSingle",
   data() {
     return {
       profilePost,
+      commentData,
       // eslint-disable-next-line
       fetchPost: {} as any
     };
@@ -52,23 +55,23 @@ export default Vue.extend({
           <div class="d-flex flex-column">
             <div
               class="m-2 d-flex align-items-center justify-content-between"
-              v-for="(x, idx) in 7"
-              :key="(x, idx)"
+              v-for="(comment,idx) in commentData"
+              :key="(comment, idx)"
             >
               <div>
                 <span>
                   <img
-                    src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
+                    :src="comment.imgUser"
                     alt="CoomentImage"
                     width="20px"
                     style="border-radius: 50%"
                   />
                 </span>
                 <span class="ml-1 mt-1 font-weight-bold" style="font-size: 11px">
-                  RandomGuy_3256
+                  {{ comment.name }}
                 </span>
                 <span class="ml-1 mt-1" style="font-size: 10px">
-                  You Look Beautiful Hosein
+                  {{ comment.comment }}
                 </span>
               </div>
               <div>
