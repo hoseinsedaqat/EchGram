@@ -18,14 +18,17 @@
 
 <script>
 import postData from "@/data/postData";
+import { mapActions } from 'vuex'
 export default {
   name: "UnsaveSvg",
   props: ["post"],
   methods: {
+    ...mapActions(['removeSaved']),
     unSave() {
       let findPost = postData.find((post) => post.userName === this.post.userName);
       findPost.userSave = true;
       findPost.userUnsave = false;
+      this.removeSaved(findPost.userPost)
       this.$toast.error(`You Unsave ${findPost.userName} Post`);
     },
   },
