@@ -21,14 +21,17 @@
 
 <script>
 import postData from "@/data/postData";
+import { mapActions } from 'vuex'
 export default {
   name: "SaveSvg",
   props: ["post"],
   methods: {
+    ...mapActions(['addSaved']),
     save() {
       let findPost = postData.find((post) => post.userName === this.post.userName);
       findPost.userSave = false;
       findPost.userUnsave = true;
+      this.addSaved({ imgSave: findPost.userPost })
       this.$toast.success(`You Save ${findPost.userName} Post`);
     },
   },
