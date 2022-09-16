@@ -27,7 +27,11 @@ export default Vue.extend({
               >QR Code</router-link
             >
           </li>
-          <li>Apps and Websites</li>
+          <li>
+            <router-link to="/saved" class="qr_link" data-dismiss="modal"
+              >Saved</router-link
+            >
+          </li>
           <li>Notifications</li>
           <li>Privacy and security</li>
           <li>Login activity</li>

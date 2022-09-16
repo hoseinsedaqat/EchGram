@@ -1,0 +1,5 @@
+@media screen and (max-width:678px){
+    .s_mts:last-child {
+        margin: 0 0 4rem 0 !important;
+    }
+}
