@@ -1,4 +1,4 @@
-const VToastNotification ={
+const VToastNotification = {
     // You can set your default options here
     position: "top-center",
     timeout: 2000,
@@ -14,4 +14,4 @@ const VToastNotification ={
     rtl: false,
  };
 
- export default VToastNotification
+ export default VToastNotification;

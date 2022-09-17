@@ -11,7 +11,7 @@ import MaxImage from '@/assets/Images/User/Max_instagram_Picture.jpg';
 import MaxPost from '@/assets/Images/Posts/Max_Post.jpg';
 
 //eslint-disable-next-line
-const postData:{userName: string, userImage: string, userPost: string, userLike: boolean, userUnlike: boolean, userSave: boolean, userUnsave: boolean,postComment:any}[] = [
+const postData:{userName:string, userImage:string, userPost:string, userLike:boolean, userUnlike:boolean, userSave:boolean, userUnsave:boolean, postComment:any}[] = [
     {
         userName: 'HoseinSedaqat',
         userImage: HoseinImage,

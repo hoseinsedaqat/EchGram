@@ -12,7 +12,7 @@ import MohammadReza from '@/assets/Images/User/MohammadReza_instagram_Picture.jp
 
 import Jadi from '@/assets/Images/User/Jadi_instagram_Picture.jpg';
 
-const commentData:{name:string,imgUser:string,comment:string}[] = [
+const commentData:{name:string, imgUser:string, comment:string}[] = [
     {
         name: 'HoseinSedaqat',
         imgUser: Hosein,

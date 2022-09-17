@@ -34,4 +34,4 @@ const swiperOption: Record<string,unknown> = {
     },
 }
 
-export default swiperOption
+export default swiperOption;

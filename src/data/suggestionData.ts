@@ -8,7 +8,7 @@ import Cristiano from '@/assets/Images/Suggestion/Cristiano.jpg';
 
 import Mahdi from '@/assets/Images/Suggestion/Mahdi.jpg';
 
-const suggestionData: {suggestionName: string, suggestionFollow: string, suggestionImg: string}[] = [
+const suggestionData: {suggestionName:string, suggestionFollow:string, suggestionImg:string}[] = [
     {
         suggestionName: 'KygoMusic',
         suggestionFollow: 'Followed by Hosein',

@@ -7,6 +7,6 @@ const vueImgConfig = {
     openOn: 'click',
     // Show thumbnails for all groups with more than 1 image
     thumbnails: true,
-  }
+};
 
   export default vueImgConfig;

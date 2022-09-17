@@ -18,7 +18,7 @@ import VToastNotification from '@/constant/VToastNotification';
 
 Vue.use(VueImg , vueImgConfig);
 Vue.use(VueProgressBar , VPBOption);
-Vue.use(Toast , VToastNotification)
+Vue.use(Toast , VToastNotification);
 
 Vue.config.productionTip = false;
 

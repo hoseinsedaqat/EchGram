@@ -10,6 +10,6 @@ const VPBOption = {
     autoRevert: true,
     location: 'top',
     inverse: false
-  }
+};
 
   export default VPBOption;
