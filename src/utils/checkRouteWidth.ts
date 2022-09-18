@@ -7,5 +7,4 @@ function activityRouter(to:any,from:any,next:any) {
     }
 }
 
-
 export default activityRouter;
