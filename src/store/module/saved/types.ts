@@ -1,3 +1,3 @@
-export interface savedState{
-    savedData:{ imgSave: string }[]
+export interface savedState {
+    savedData: { imgSave: string }[]
 }
