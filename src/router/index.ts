@@ -13,14 +13,6 @@ const routes: Array<RouteConfig> = [
     component: async () => await import('@/views/Home/HomeView.vue'),
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: async () => await import(/* webpackChunkName: "about" */ '@/views/AboutView.vue'),
-  },
-  {
     path:'/direct/inbox',
     name:'DirectView',
     component: async () => await import('@/views/Direct/DirectView.vue'),
@@ -65,12 +57,17 @@ const routes: Array<RouteConfig> = [
   {
     path: '/qr',
     name: 'QrcodeView',
-    component: async () => await import('@/views/Qrcode/QrcodeView.vue')
+    component: async () => await import('@/views/Qrcode/QrcodeView.vue'),
   },
   {
     path: '/saved',
     name: 'SavedView',
-    component: async () => await import('@/views/Saved/SavedView.vue')
+    component: async () => await import('@/views/Saved/SavedView.vue'),
+  },
+  {
+    path: '*',
+    name: 'ErrorPage',
+    component: async () => await import('@/views/ErrorView/ErrorPage.vue'),
   }
 ]
 
