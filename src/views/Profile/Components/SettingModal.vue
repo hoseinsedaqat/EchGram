@@ -36,7 +36,11 @@ export default Vue.extend({
           <li>Privacy and security</li>
           <li>Login activity</li>
           <li>Emails from Echgram</li>
-          <li>Report a Problem</li>
+          <li>
+            <router-link to="/report/problem" class="qr_link" data-dismiss="modal"
+              >Report a Problem</router-link
+            >
+          </li>
           <li>Log Out</li>
           <li data-dismiss="modal" aria-label="Close">Cancel</li>
         </ul>

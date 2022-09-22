@@ -1,3 +1,10 @@
+<script lang="ts">
+import Vue from "vue";
+export default Vue.extend({
+  name: "ReportProblemSvg",
+});
+</script>
+
 <template>
   <svg
     aria-label="Report a problem"
@@ -14,10 +21,3 @@
     ></path>
   </svg>
 </template>
-
-<script lang="ts">
-import Vue from "vue";
-export default Vue.extend({
-  name: "ReportProblemSvg",
-});
-</script>
