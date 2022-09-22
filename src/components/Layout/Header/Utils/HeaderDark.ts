@@ -14,6 +14,7 @@ import DirectSvgDark from "../Components/DirectSvgDark.vue";
 import FileSvgDark from "../Components/FileSvgDark.vue";
 import ExploreSvgDark from "../Components/ExploreSvgDark.vue";
 import ActivitySvgDark from "../Components/ActivitySvgDark.vue";
+import ReportProblemSvg from '../Components/ReportProblemSvg.vue';
 
 export const headerDarker = Vue.extend({
     data() {
@@ -42,6 +43,7 @@ export const headerDarker = Vue.extend({
       FileSvgDark,
       ExploreSvgDark,
       ActivitySvgDark,
+      ReportProblemSvg
     },
     watch:{
     // eslint-disable-next-line

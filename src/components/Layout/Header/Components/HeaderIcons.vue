@@ -1,8 +1,10 @@
 <script lang="ts">
 import Vue from "vue";
 import { headerDarker } from "../Utils/HeaderDark";
+import ReportProblemSvg from "./ReportProblemSvg.vue";
 
 export default Vue.extend({
+  components: { ReportProblemSvg },
   name: "HeaderIcons",
   mixins: [headerDarker],
 });
@@ -132,6 +134,12 @@ export default Vue.extend({
             <div class="d-flex align-self-center align-items-center">
               <setting-svg></setting-svg>
               <span>Setting</span>
+            </div>
+          </router-link>
+          <router-link to="/report/problem" class="dropdown-item">
+            <div class="d-flex align-self-center align-items-center">
+              <report-problem-svg></report-problem-svg>
+              <span>Report a Problem</span>
             </div>
           </router-link>
           <router-link to="/" class="dropdown-item" style="border-bottom: 2px solid #eee">
