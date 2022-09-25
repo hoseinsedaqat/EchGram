@@ -1,18 +1,20 @@
 <template>
   <section id="report-a-problem">
     <div class="container">
+      <h3 class="text-center mt-5">Report a Porblem</h3>
       <div class="row mt-5">
         <div class="col-md-6 mx-auto">
           <div class="card p-3">
             <textarea
-              name=""
-              id=""
+              name="problem"
+              id="problem"
               cols="30"
               rows="10"
+              v-model="problemData"
               class="form-control"
               placeholder="please briefly write the problem"
             ></textarea>
-            <button class="btn btn-primary w-100 my-2">Send</button>
+            <button class="btn btn-primary w-100 my-2" @click="sendProblem">Send</button>
           </div>
         </div>
       </div>
@@ -28,6 +30,11 @@ export default Vue.extend({
     return {
       problemData: "",
     };
+  },
+  methods: {
+    sendProblem() {
+      console.log(this.problemData);
+    },
   },
 });
 </script>
