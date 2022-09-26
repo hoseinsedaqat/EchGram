@@ -126,7 +126,7 @@ export default Vue.extend({
         <!-- Liked by and title author -->
         <div class="mx-2 d-flex">
           <div>
-            <span class="mr-1 mt-1 font-weight-bold ho_ffsc"> 78 Likes </span>
+            <span class="mr-1 mt-1 font-weight-bold ho_ffsc"> {{ post.likeNumber }} Likes </span>
           </div>
         </div>
         <div class="mx-2 d-flex">

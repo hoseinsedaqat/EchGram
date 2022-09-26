@@ -11,7 +11,7 @@ import MaxImage from '@/assets/Images/User/Max_instagram_Picture.jpg';
 import MaxPost from '@/assets/Images/Posts/Max_Post.jpg';
 
 //eslint-disable-next-line
-const postData:{userName:string, userImage:string, userPost:string, userLike:boolean, userUnlike:boolean, userSave:boolean, userUnsave:boolean, postComment:any}[] = [
+const postData:{userName:string, userImage:string, userPost:string, userLike:boolean, userUnlike:boolean, userSave:boolean, userUnsave:boolean, postComment:any, likeNumber:number}[] = [
     {
         userName: 'HoseinSedaqat',
         userImage: HoseinImage,
@@ -26,6 +26,7 @@ const postData:{userName:string, userImage:string, userPost:string, userLike:boo
                 cText: 'You Look Beautiful Hosein',
             }
         ],
+        likeNumber: 36
     },
     {
         userName: 'yyx990803',
@@ -41,6 +42,7 @@ const postData:{userName:string, userImage:string, userPost:string, userLike:boo
                 cText: 'You Look Beautiful Hosein',
             }
         ],
+        likeNumber: 48
     },
     {
         userName: 'traversymedia',
@@ -56,6 +58,7 @@ const postData:{userName:string, userImage:string, userPost:string, userLike:boo
                 cText: 'You Look Beautiful Hosein',
             }
         ],
+        likeNumber: 560
     },
     {
         userName: 'academind_real',
@@ -71,6 +74,7 @@ const postData:{userName:string, userImage:string, userPost:string, userLike:boo
                 cText: 'You Look Beautiful Hosein',
             }
         ],
+        likeNumber: 223
     },
 ]
 
