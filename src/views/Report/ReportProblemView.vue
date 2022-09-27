@@ -33,7 +33,12 @@ export default Vue.extend({
   },
   methods: {
     sendProblem() {
-      console.log(this.problemData);
+      if(this.problemData.trim() !== ""){
+        console.log(this.problemData);
+        alert('we work on this features')
+      }else{
+        this.$toast.error('Please Write the Problem ✌😀');
+      }
     },
   },
 });
