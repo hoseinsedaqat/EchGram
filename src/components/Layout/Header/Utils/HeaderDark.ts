@@ -1,20 +1,20 @@
 import Vue from 'vue'
-import HomeSvg from "../Components/HomeSvg.vue";
-import DirectSvg from "../Components/DirectSvg.vue";
-import FileSvg from "../Components/FileSvg.vue";
-import ExploreSvg from "../Components/ExploreSvg.vue";
-import ActivitySvg from "../Components/ActivitySvg.vue";
-import ProfileSvg from "../Components/ProfileSvg.vue";
-import SaveSvg from "../Components/SaveSvg.vue";
-import SettingSvg from "../Components/SettingSvg.vue";
-import SwitchSvg from "../Components/SwitchSvg.vue";
+import HomeSvg from "../Components/svg/HomeSvg.vue";
+import DirectSvg from "../Components/svg/DirectSvg.vue";
+import FileSvg from "../Components/svg/FileSvg.vue";
+import ExploreSvg from "../Components/svg/ExploreSvg.vue";
+import ActivitySvg from "../Components/svg/ActivitySvg.vue";
+import ProfileSvg from "../Components/svg/ProfileSvg.vue";
+import SaveSvg from "../Components/svg/SaveSvg.vue";
+import SettingSvg from "../Components/svg/SettingSvg.vue";
+import SwitchSvg from "../Components/svg/SwitchSvg.vue";
 import DropdownAngle from "../Components/DropdownAngle.vue";
-import HomeSvgDark from "../Components/HomeSvgDark.vue";
-import DirectSvgDark from "../Components/DirectSvgDark.vue";
-import FileSvgDark from "../Components/FileSvgDark.vue";
-import ExploreSvgDark from "../Components/ExploreSvgDark.vue";
-import ActivitySvgDark from "../Components/ActivitySvgDark.vue";
-import ReportProblemSvg from '../Components/ReportProblemSvg.vue';
+import HomeSvgDark from "../Components/svg/HomeSvgDark.vue";
+import DirectSvgDark from "../Components/svg/DirectSvgDark.vue";
+import FileSvgDark from "../Components/svg/FileSvgDark.vue";
+import ExploreSvgDark from "../Components/svg/ExploreSvgDark.vue";
+import ActivitySvgDark from "../Components/svg/ActivitySvgDark.vue";
+import ReportProblemSvg from '../Components/svg/ReportProblemSvg.vue';
 
 export const headerDarker = Vue.extend({
     data() {
@@ -85,6 +85,13 @@ export const headerDarker = Vue.extend({
             this.activityNav = false
             break
           case "/hoseinsedaqat":
+            this.homeNav = true
+            this.directNav = true
+            this.postNav = true
+            this.exploreNav = true
+            this.activityNav = true
+            break
+          default:
             this.homeNav = true
             this.directNav = true
             this.postNav = true

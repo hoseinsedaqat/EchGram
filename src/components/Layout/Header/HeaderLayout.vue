@@ -1,7 +1,7 @@
 <script lang="ts">
 import Vue from "vue";
 import HeaderIcons from "./Components/HeaderIcons.vue";
-import MagnifireSvg from "./Components/MagnifireSvg.vue";
+import MagnifireSvg from "./Components/svg/MagnifireSvg.vue";
 import MobileHeader from './Components/MobileHeader.vue';
 import MobileSticky from './Components/MobileSticky.vue'
 

@@ -44,7 +44,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import DirectSvg from "./DirectSvg.vue";
+import DirectSvg from "./svg/DirectSvg.vue";
 export default Vue.extend({
   name: "MobileHeader",
   components: {
