@@ -23,6 +23,7 @@
 </template>
 
 <script lang="ts">
+import axios from 'axios';
 import Vue from "vue";
 export default Vue.extend({
   name: "ReportProblemView",
@@ -34,8 +35,11 @@ export default Vue.extend({
   methods: {
     sendProblem() {
       if(this.problemData.trim() !== ""){
-        console.log(this.problemData);
-        alert('we work on this features')
+        axios.post(`https://www.actionforms.io/e/r/echgram`,{ reportBug: this.problemData }).finally(() => {
+          this.$toast.success('Thank You for the Report Problem to us ❤✌');
+          this.$router.push('/');
+          this.problemData = "";
+        })
       }else{
         this.$toast.error('Please Write the Problem ✌😀');
       }
