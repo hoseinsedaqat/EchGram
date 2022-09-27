@@ -1,10 +1,8 @@
 <script lang="ts">
 import Vue from "vue";
 import { headerDarker } from "../Utils/HeaderDark";
-import ReportProblemSvg from "./svg/ReportProblemSvg.vue";
 
 export default Vue.extend({
-  components: { ReportProblemSvg },
   name: "HeaderIcons",
   mixins: [headerDarker],
 });

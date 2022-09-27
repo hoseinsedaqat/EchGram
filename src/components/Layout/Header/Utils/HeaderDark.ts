@@ -14,7 +14,7 @@ import DirectSvgDark from "../Components/svg/DirectSvgDark.vue";
 import FileSvgDark from "../Components/svg/FileSvgDark.vue";
 import ExploreSvgDark from "../Components/svg/ExploreSvgDark.vue";
 import ActivitySvgDark from "../Components/svg/ActivitySvgDark.vue";
-import ReportProblemSvg from '../Components/svg/ReportProblemSvg.vue';
+import ReportProblemSvg from "../Components/svg/ReportProblemSvg.vue";
 
 export const headerDarker = Vue.extend({
     data() {
