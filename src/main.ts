@@ -14,11 +14,13 @@ import VPBOption from '@/constant/VPBOption';
 import Toast from 'vue-toastification';
 import 'vue-toastification/dist/index.css';
 import VToastNotification from '@/constant/VToastNotification';
+import Vuelidate from 'vuelidate';
 
 
 Vue.use(VueImg , vueImgConfig);
 Vue.use(VueProgressBar , VPBOption);
 Vue.use(Toast , VToastNotification);
+Vue.use(Vuelidate);
 
 Vue.config.productionTip = false;
 
