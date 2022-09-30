@@ -35,10 +35,10 @@ export default Vue.extend({
         <div v-if="forActivity" id="ownDropDownContent">
           <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center" style="font-size:12px;">
-              <img src="@/assets/Images/Header/HoseinSedaqat.jpg" class="mr-2" alt="" width="40px" style="border-radius:50%;">
+              <img src="@/assets/Images/User/Hosein_instagram_Picture.jpg" class="mr-2" alt="" width="40px" style="border-radius:50%;">
               <span class="d-flex flex-column">
                  <span class="text-dark">Follow Requests</span>
-              <span>Hosein and + 7 others</span>
+              <span>Jason and + 7 others</span>
               </span>
             </div>
             <i class="fas fa-angle-right"></i>

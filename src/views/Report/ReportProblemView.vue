@@ -51,10 +51,10 @@ export default {
         })
       }else{
         this.$toast.error('Please Write the Problem ✌😀');
-        this.showError.problemData = true
+        this.showError.problemData = true;
 
         setTimeout(() => {
-          this.showError.problemData = false
+          this.showError.problemData = false;
         }, 2000);
       }
     },

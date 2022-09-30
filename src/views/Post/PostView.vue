@@ -27,7 +27,7 @@ export default Vue.extend({
       reader.readAsDataURL(e.target.files[0]);
       }catch(e){
         console.log(e);
-        alert('Image Size is Large')
+        alert('Image Size is Large');
       }
     },
     addPost(){
