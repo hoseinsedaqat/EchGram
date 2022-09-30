@@ -15,6 +15,7 @@ import FileSvgDark from "../Components/svg/FileSvgDark.vue";
 import ExploreSvgDark from "../Components/svg/ExploreSvgDark.vue";
 import ActivitySvgDark from "../Components/svg/ActivitySvgDark.vue";
 import ReportProblemSvg from "../Components/svg/ReportProblemSvg.vue";
+import activityLgScreen from '@/data/activityLgScreen';
 
 export const headerDarker = Vue.extend({
     data() {
@@ -24,7 +25,8 @@ export const headerDarker = Vue.extend({
           postNav:true,
           exploreNav:true,
           activityNav:true,
-          forActivity:false
+          forActivity:false,
+          activityLgScreen
         };
     },
     components: {

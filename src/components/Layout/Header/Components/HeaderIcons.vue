@@ -44,52 +44,12 @@ export default Vue.extend({
             <i class="fas fa-angle-right"></i>
           </div>
           <hr>
-          <div class="my-3 d-flex align-items-center justify-content-between">
+          <div class="my-3 d-flex align-items-center justify-content-between" v-for="(activityUser,idx) in activityLgScreen" :key="(activityUser,idx)">
             <div class="d-flex align-items-center" style="font-size:12px;">
-              <img src="@/assets/Images/Header/HoseinSedaqat.jpg" class="mr-2" alt="" width="40px" style="border-radius:50%;">
+              <img :src="activityUser.img" class="mr-2" alt="" width="40px" style="border-radius:50%;">
               <span class="d-flex flex-column">
                  <span class="text-dark">Follow Requests</span>
-              <span>Hosein and + 7 others</span>
-              </span>
-            </div>
-            <i class="fas fa-angle-right"></i>
-          </div>
-          <div class="my-3 d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center" style="font-size:12px;">
-              <img src="@/assets/Images/Header/HoseinSedaqat.jpg" class="mr-2" alt="" width="40px" style="border-radius:50%;">
-              <span class="d-flex flex-column">
-                 <span class="text-dark">Follow Requests</span>
-              <span>Hosein and + 7 others</span>
-              </span>
-            </div>
-            <i class="fas fa-angle-right"></i>
-          </div>
-          <div class="my-3 d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center" style="font-size:12px;">
-              <img src="@/assets/Images/Header/HoseinSedaqat.jpg" class="mr-2" alt="" width="40px" style="border-radius:50%;">
-              <span class="d-flex flex-column">
-                 <span class="text-dark">Follow Requests</span>
-              <span>Hosein and + 7 others</span>
-              </span>
-            </div>
-            <i class="fas fa-angle-right"></i>
-          </div>
-          <div class="my-3 d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center" style="font-size:12px;">
-              <img src="@/assets/Images/Header/HoseinSedaqat.jpg" class="mr-2" alt="" width="40px" style="border-radius:50%;">
-              <span class="d-flex flex-column">
-                 <span class="text-dark">Follow Requests</span>
-              <span>Hosein and + 7 others</span>
-              </span>
-            </div>
-            <i class="fas fa-angle-right"></i>
-          </div>
-          <div class="my-3 d-flex align-items-center justify-content-between">
-            <div class="d-flex align-items-center" style="font-size:12px;">
-              <img src="@/assets/Images/Header/HoseinSedaqat.jpg" class="mr-2" alt="" width="40px" style="border-radius:50%;">
-              <span class="d-flex flex-column">
-                 <span class="text-dark">Follow Requests</span>
-              <span>Hosein and + 7 others</span>
+              <span>{{ activityUser.name }} and + 7 others</span>
               </span>
             </div>
             <i class="fas fa-angle-right"></i>
