@@ -8,26 +8,31 @@ import Zoheir from '@/assets/Images/User/Zoheir_instagram_Picture.jpg';
 
 import Evan from '@/assets/Images/User/Evan_instagram_Picture.jpg';
 
-const activityLgScreen:{name:string, img:string,}[]=[
+const activityLgScreen:{name:string, img:string, numberOfOther: number}[]=[
     {
         name: 'Zoheir',
-        img: Zoheir
+        img: Zoheir,
+        numberOfOther: 26
     },
     {
         name: 'Hosein',
-        img: Hosein
+        img: Hosein,
+        numberOfOther: 8
     },
     {
         name: 'Avicii',
-        img: Avicii
+        img: Avicii,
+        numberOfOther: 15
     },
     {
         name: 'Nima',
-        img: Nima
+        img: Nima,
+        numberOfOther: 4
     },
     {
         name: 'Evan',
-        img: Evan
+        img: Evan,
+        numberOfOther: 3
     },
 ]
 

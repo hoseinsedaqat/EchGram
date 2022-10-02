@@ -49,7 +49,7 @@ export default Vue.extend({
               <img :src="activityUser.img" class="mr-2" alt="" width="40px" style="border-radius:50%;">
               <span class="d-flex flex-column">
                  <span class="text-dark">Follow Requests</span>
-              <span>{{ activityUser.name }} and + 7 others</span>
+              <span>{{ activityUser.name }} and + {{ activityUser.numberOfOther }} others</span>
               </span>
             </div>
             <i class="fas fa-angle-right"></i>
