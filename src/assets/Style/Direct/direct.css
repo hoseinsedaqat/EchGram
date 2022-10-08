@@ -11,6 +11,8 @@
 
 .d_of {
     overflow-y: scroll;
+    overflow-x: hidden;
+    word-break: break-all;
     height: 75vh;
 }
 

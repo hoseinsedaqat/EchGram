@@ -55,7 +55,7 @@ export default Vue.extend({
             <img
                 :src="user.userImageLiked"
                 class="mr-2"
-                alt=""
+                :alt="user.name"
                 width="40px"
                 height="30px"
               />
