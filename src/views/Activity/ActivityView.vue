@@ -53,10 +53,11 @@ export default Vue.extend({
             </div>
             <!-- Change each photo -->
             <img
-                src="@/assets/Images/Header/HoseinSedaqat.jpg"
+                :src="user.userImageLiked"
                 class="mr-2"
                 alt=""
                 width="40px"
+                height="30px"
               />
           </div>
         </div>
