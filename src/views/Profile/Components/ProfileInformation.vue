@@ -1,9 +1,19 @@
 <script lang="ts">
 import Vue from "vue";
+
 import SettingModal from "./SettingModal.vue";
+
 import { mapActions, mapGetters } from "vuex";
+
+import profilePost from '@/data/profilePost'
+
 export default Vue.extend({
   name: "ProfileInformation",
+  data(){
+    return {
+      profilePost
+    }
+  },
   components: {
     SettingModal,
   },
@@ -52,7 +62,7 @@ export default Vue.extend({
     <!-- Second Row -->
     <div class="p-edit-part-2">
       <div>
-        <p class="m-0 p-0">8 posts</p>
+        <p class="m-0 p-0">{{ profilePost.length }} posts</p>
       </div>
       <div>
         <p class="m-0 p-0">181 followers</p>

@@ -18,17 +18,17 @@ import Farzad from '@/assets/Images/User/Farzad_instagram_Picture.jpg';
 
 // post One
 import postOne from '@/assets/Images/Main/PostOne.jpg'
-// post One
+// post Two
 import postTwo from '@/assets/Images/Main/PostTwo.jpg'
-// post One
+// post Three
 import postThree from '@/assets/Images/Main/PostThree.jpg'
-// post One
+// post Four
 import postFour from '@/assets/Images/Main/PostFour.jpg'
-// post One
+// post Five
 import postFive from '@/assets/Images/Main/PostFive.jpg'
-// post One
+// post Six
 import postSix from '@/assets/Images/Main/PostSix.jpg'
-// post One
+// post Seven
 import postSeven from '@/assets/Images/Main/PostSeven.jpg'
 
 const activityLgScreen:{name:string, img:string, numberOfWeek: number,userImageLiked:string}[]=[
