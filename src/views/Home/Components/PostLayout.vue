@@ -63,13 +63,6 @@ export default Vue.extend({
   },
 
   computed: {
-    subStringText() {
-      let text =
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tempora accusamus nobis id consequatur. Eius sint accusantium, nemo voluptas dicta tempora, sed explicabo doloremque laborum ducimus mollitia fugit adipisci labore";
-
-      let result = text.slice(0, 20) + " ...";
-      return result;
-    },
     ...mapGetters(["show_hide_modal"]),
   },
 });
@@ -133,7 +126,7 @@ export default Vue.extend({
           <div>
             <span class="mr-1 mt-1 font-weight-bold ho_ffsc"> {{ post.userName }} </span>
             <span class="mt-1 ho_ffs">
-              {{ subStringText }}
+              {{ post.title }}
             </span>
           </div>
         </div>
