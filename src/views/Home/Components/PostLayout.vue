@@ -142,7 +142,7 @@ export default Vue.extend({
             </div>
           </div>
           <div class="mx-2">
-            <small class="text-muted">3 Hours Ago</small>
+            <small class="text-muted">{{ post.hourNumber }} Hours Ago</small>
           </div>
           <div style="border-top: 1px solid #999999" class="p-2 mt-3">
             <div class="mx-2">

@@ -11,7 +11,7 @@ import MaxImage from '@/assets/Images/User/Max_instagram_Picture.jpg';
 import MaxPost from '@/assets/Images/Posts/Max_Post.jpg';
 
 //eslint-disable-next-line
-const postData:{userName:string,title:string, userImage:string, userPost:string, userLike:boolean, userUnlike:boolean, userSave:boolean, userUnsave:boolean, postComment:any, likeNumber:number}[] = [
+const postData:{userName:string,title:string, userImage:string, userPost:string, userLike:boolean, userUnlike:boolean, userSave:boolean, userUnsave:boolean, postComment:any, likeNumber:number,hourNumber:number}[] = [
     {
         userName: 'HoseinSedaqat',
         userImage: HoseinImage,
@@ -27,7 +27,8 @@ const postData:{userName:string,title:string, userImage:string, userPost:string,
                 cText: 'You Look Beautiful Hosein',
             }
         ],
-        likeNumber: 36
+        likeNumber: 36,
+        hourNumber: 1
     },
     {
         userName: 'yyx990803',
@@ -40,11 +41,12 @@ const postData:{userName:string,title:string, userImage:string, userPost:string,
         userUnsave: false,
         postComment: [
             {
-                cName: 'RandomGuy_3256',
-                cText: 'You Look Beautiful Hosein',
+                cName: 'the_guy_from_internet',
+                cText: 'Amazing',
             }
         ],
-        likeNumber: 48
+        likeNumber: 48,
+        hourNumber: 3
     },
     {
         userName: 'traversymedia',
@@ -57,11 +59,12 @@ const postData:{userName:string,title:string, userImage:string, userPost:string,
         userUnsave: false,
         postComment: [
             {
-                cName: 'RandomGuy_3256',
-                cText: 'You Look Beautiful Hosein',
+                cName: 'John_doe',
+                cText: '❤',
             }
         ],
-        likeNumber: 560
+        likeNumber: 560,
+        hourNumber: 7
     },
     {
         userName: 'academind_real',
@@ -74,11 +77,12 @@ const postData:{userName:string,title:string, userImage:string, userPost:string,
         userUnsave: false,
         postComment: [
             {
-                cName: 'RandomGuy_3256',
-                cText: 'You Look Beautiful Hosein',
+                cName: 'Saul_Goodman',
+                cText: 'do you need a lawyer ?',
             }
         ],
-        likeNumber: 223
+        likeNumber: 223,
+        hourNumber: 20
     },
 ]
 
