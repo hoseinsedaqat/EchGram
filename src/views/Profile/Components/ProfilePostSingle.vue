@@ -3,7 +3,9 @@ import Vue from "vue";
 
 import profilePost from "@/data/profilePost";
 
-import commentData from '@/data/commentData'
+import commentData from '@/data/commentData';
+
+import { staticStyle } from '@/static/staticStyle';
 
 export default Vue.extend({
   name: "ProfilePostSingle",
@@ -15,6 +17,7 @@ export default Vue.extend({
       fetchPost: {} as any,
       likePost: false,
       unLikePost: true,
+      staticStyle
     };
   },
   methods:{
@@ -52,8 +55,8 @@ export default Vue.extend({
                 class="mr-4"
                 src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
                 alt="Hosein Sedaqat Post"
-                width="40px"
-                style="border-radius: 50%"
+                :width="staticStyle.width + 'px'"
+                :style="{'border-radius': staticStyle.borderRadius + '%'}"
               />
               <span class="ho_ffsc font-weight-bold">HoseinSedaqat</span>
             </span>
@@ -61,7 +64,7 @@ export default Vue.extend({
               <p class="font-weight-bold">...</p>
             </span>
           </div>
-          <p class="mt-2 mx-3" style="font-size:13px;">Namaste</p>
+          <p class="mt-2 mx-3" :style="{'font-size': staticStyle.fontSize + 'px'}">Namaste</p>
           <hr />
           <!-- Like Comment and Saved -->
           <div class="d-flex flex-column">
@@ -75,14 +78,14 @@ export default Vue.extend({
                   <img
                     :src="comment.imgUser"
                     alt="CoomentImage"
-                    width="20px"
-                    style="border-radius: 50%"
+                    :width="staticStyle.width / 2 + 'px'"
+                    :style="{'border-radius': staticStyle.borderRadius + '%'}"
                   />
                 </span>
-                <span class="ml-1 mt-1 font-weight-bold" style="font-size: 11px">
+                <span class="ml-1 mt-1 font-weight-bold" :style="{'font-size': staticStyle.fontSize - 2 + 'px'}">
                   {{ comment.name }}
                 </span>
-                <span class="ml-1 mt-1" style="font-size: 10px">
+                <span class="ml-1 mt-1" :style="{'font-size': staticStyle.fontSize - 3 + 'px'}">
                   {{ comment.comment }}
                 </span>
               </div>
