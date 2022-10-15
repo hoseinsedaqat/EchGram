@@ -20,10 +20,10 @@ const directMessageData = [
     {
         chats:[
             {
-                Left: 'Hi Hosein',
+                Left: 'Hi Hosein man is awesome app',
             },
             {
-                Right: 'Hello Man',
+                Right: 'Hello Man thanks man',
             }
         ],
         whichDirect: 1,
@@ -36,7 +36,7 @@ const directMessageData = [
                 Left: 'Wow where are You ?',
             },
             {
-                Right: 'Im in Japan',
+                Right: 'Im in london',
             }
         ],
         whichDirect: 2,
@@ -46,7 +46,7 @@ const directMessageData = [
     {
         chats:[
             {
-                Left: 'Yes wanna going to gym',
+                Left: 'Yes I wanna going to gym are you come ?',
             },
             {
                 Right: 'okay',
@@ -59,10 +59,10 @@ const directMessageData = [
     {
         chats:[
             {
-                Left: 'where is the plan',
+                Left: 'where is the plan for tonight ?',
             },
             {
-                Right: 'i have no idea man',
+                Right: 'honestly i have no idea man',
             }
         ],
         whichDirect: 4,
@@ -88,7 +88,7 @@ const directMessageData = [
                 Left: 'is not problem',
             },
             {
-                Right: 'okay',
+                Right: 'thanks man',
             }
         ],
         whichDirect: 6,
@@ -98,7 +98,7 @@ const directMessageData = [
     {
         chats:[
             {
-                Left: 'anazing',
+                Left: 'amazing',
             },
             {
                 Right: '😉😍',
@@ -111,7 +111,7 @@ const directMessageData = [
     {
         chats:[
             {
-                Left: 'react is easy all about traning',
+                Left: 'react is easy all thing about traning and project',
             },
             {
                 Right: 'thank you',
