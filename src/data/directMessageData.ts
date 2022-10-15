@@ -20,7 +20,7 @@ const directMessageData = [
     {
         chats:[
             {
-                Left: 'Hi Hosein man is awesome app',
+                Left: 'Hi Hosein man wow is awesome app',
             },
             {
                 Right: 'Hello Man thanks man',
