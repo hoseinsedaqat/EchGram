@@ -1,33 +1,11 @@
-<template>
-  <section id="report-a-problem">
-    <div class="container">
-      <h3 class="text-center mt-5">Report a Porblem</h3>
-      <div class="row mt-5">
-        <div class="col-md-6 mx-auto">
-          <div class="card p-3">
-            <textarea
-              name="problem"
-              id="problem"
-              cols="30"
-              rows="10"
-              v-model.trim="$v.problemData.$model"
-              class="form-control"
-              placeholder="please briefly write the problem"
-            ></textarea>
-            <div class="alert alert-danger mt-3" v-if="showError.problemData">Problem Data is Required.</div>
-            <button class="btn btn-primary w-100 my-2" @click="sendProblem">Send</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</template>
-
 <script>
 import axios from 'axios';
+
 import { required } from 'vuelidate/lib/validators';
+
 export default {
   name: "ReportProblemView",
+
   data() {
     return {
       problemData: "",
@@ -61,6 +39,32 @@ export default {
   },
 };
 </script>
+
+
+<template>
+  <section id="report-a-problem">
+    <div class="container">
+      <h3 class="text-center mt-5">Report a Porblem</h3>
+      <div class="row mt-5">
+        <div class="col-md-6 mx-auto">
+          <div class="card p-3">
+            <textarea
+              name="problem"
+              id="problem"
+              cols="30"
+              rows="10"
+              v-model.trim="$v.problemData.$model"
+              class="form-control"
+              placeholder="please briefly write the problem"
+            ></textarea>
+            <div class="alert alert-danger mt-3" v-if="showError.problemData">Problem Data is Required.</div>
+            <button class="btn btn-primary w-100 my-2" @click="sendProblem">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
 
 <style scoped>
 textarea {

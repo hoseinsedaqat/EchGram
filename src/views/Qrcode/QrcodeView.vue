@@ -1,7 +1,10 @@
 <script lang="ts">
 import Vue from "vue";
+
 import QrcodeVue from "qrcode.vue";
-import ProfileFooter from '@/views/Profile/Components/ProfileFooter.vue'
+
+import ProfileFooter from '@/views/Profile/Components/ProfileFooter.vue';
+
 export default Vue.extend({
   name: "QrcodeView",
   data() {
