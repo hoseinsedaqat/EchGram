@@ -37,7 +37,7 @@ export default Vue.extend({
         this.$router.push('/hoseinsedaqat')
         this.$toast.success('Post is Uploaded')
       }else{
-        this.$toast.error(`Don't Miss Upload a Image and fill Caption ✌😀'`)
+        this.$toast.error(`Don't Miss Upload a Image and fill Caption ✌😀`)
       }
     }
   }
