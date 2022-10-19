@@ -68,7 +68,7 @@ export default Vue.extend({
               <p class="font-weight-bold">...</p>
             </span>
           </div>
-          <p class="mt-2 mx-3" :style="{'font-size': staticStyle.fontSize + 'px'}">Namaste</p>
+          <p class="mt-2 mx-3" :style="{'font-size': staticStyle.fontSize + 'px'}">{{ fetchPost.title }}</p>
           <hr />
           <!-- Like Comment and Saved -->
           <div class="d-flex flex-column">

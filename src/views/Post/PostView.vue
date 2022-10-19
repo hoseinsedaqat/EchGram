@@ -11,7 +11,8 @@ export default Vue.extend({
       return {
         // eslint-disable-next-line
         img: "" as any,
-        profilePost
+        profilePost,
+        caption: ""
       }
   },
   methods:{
@@ -31,12 +32,12 @@ export default Vue.extend({
       }
     },
     addPost(){
-      if(this.img !== '') {
-        this.profilePost.unshift({id: uuidv4(), postImg: this.img ,like: 23})
+      if(this.img !== '' && this.caption !== '') {
+        this.profilePost.unshift({id: uuidv4(), postImg: this.img ,like: 23,title: this.caption})
         this.$router.push('/hoseinsedaqat')
         this.$toast.success('Post is Uploaded')
       }else{
-        this.$toast.error('Please Upload a Image ✌😀')
+        this.$toast.error(`Don't Miss Upload a Image and fill Caption ✌😀'`)
       }
     }
   }
@@ -60,7 +61,7 @@ export default Vue.extend({
                 </div>
                 <div class="form-group">
                   <label for="Caption">Write Caption:</label>
-                  <input type="text" name="Caption" id="Caption" class="form-control" />
+                  <input type="text" name="Caption" id="Caption" class="form-control" v-model="caption"/>
                 </div>
                 <button class="btn btn-primary w-100" @click.prevent="addPost">Share</button>
               </form>

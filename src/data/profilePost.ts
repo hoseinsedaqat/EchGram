@@ -12,42 +12,49 @@ import PostSix from '@/assets/Images/Main/PostSix.jpg';
 
 import PostSeven from '@/assets/Images/Main/PostSeven.jpg';
 
-const profilePost:{id:string, postImg:string, like:number}[] = 
+const profilePost:{id:string, postImg:string, like:number,title: string}[] = 
 [
     {
         id: 'ecc5e665-7298-439d-9009-32fe7348ce16',
         postImg: PostOne,
-        like: 52
+        like: 52,
+        title: 'Post One'
     },
     {
         id: '7c2a93fd-ebbf-4394-ab2a-4e0a6721c17d',
         postImg: PostTwo,
-        like: 42
+        like: 42,
+        title: 'Post Two'
     },
     {
         id: 'a70a9b4b-4bf2-4a4a-bb82-bdcf9f8e3030',
         postImg: PostThree,
-        like: 23
+        like: 23,
+        title: 'Post Three'
     },
     {
         id: '83b72903-3f30-459d-873d-d75c5b17de12',
         postImg: PostFour,
-        like: 86
+        like: 86,
+        title: 'Post Four'
     },
     {
         id: '5f295fa7-6a8f-4f2a-996d-11c658202eac',
         postImg: PostFive,
-        like: 47
+        like: 47,
+        title: 'Post Five'
     },
     {
         id: '38eb4759-b7db-45d5-a0b3-11d9b74fa98f',
         postImg: PostSix,
-        like: 66
+        like: 66,
+        title: 'Post Six'
     },
     {
         id: 'dc84604b-d512-4716-a5fc-8851c59f3128',
         postImg: PostSeven,
-        like: 33
+        like: 33,
+        title: 'Post Seven'
     },
 ]
 
