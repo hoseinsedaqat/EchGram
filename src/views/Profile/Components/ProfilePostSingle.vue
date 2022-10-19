@@ -17,7 +17,8 @@ export default Vue.extend({
       fetchPost: {} as any,
       likePost: false,
       unLikePost: true,
-      staticStyle
+      staticStyle,
+      mobile_size: true,
     };
   },
   methods:{
@@ -33,6 +34,9 @@ export default Vue.extend({
   created(){
     let findPost = profilePost.find(post => post.id === this.$route.params.id);
     this.fetchPost = findPost
+    if(window.innerWidth < 678){
+      this.mobile_size = false
+    }
   }
 });
 </script>
@@ -49,7 +53,7 @@ export default Vue.extend({
           />
         </div>
         <div class="col-md-4 bg-white p-3">
-          <div class="ho_ch d-flex align-items-center justify-content-between mx-3">
+          <div class="ho_ch d-flex align-items-center justify-content-between mx-3" v-if="mobile_size">
             <span class="d-flex align-items-center">
               <img
                 class="mr-4"
