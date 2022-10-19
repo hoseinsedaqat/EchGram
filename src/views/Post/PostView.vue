@@ -33,7 +33,7 @@ export default Vue.extend({
     },
     addPost(){
       if(this.img !== '' && this.caption !== '') {
-        this.profilePost.unshift({id: uuidv4(), postImg: this.img ,like: 23,title: this.caption})
+        this.profilePost.unshift({id: uuidv4(), postImg: this.img ,like: 1,title: this.caption})
         this.$router.push('/hoseinsedaqat')
         this.$toast.success('Post is Uploaded')
       }else{

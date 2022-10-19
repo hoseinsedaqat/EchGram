@@ -1,4 +1,4 @@
-import Hosein from '@/assets/Images/User/Hosein_instagram_Picture.jpg';
+import Farzad from '@/assets/Images/User/Farzad_instagram_Picture.jpg';
 
 import Avicii from '@/assets/Images/User/Avicii_instagram_Picture.jpg';
 
@@ -15,8 +15,8 @@ const activityLgScreen:{name:string, img:string, numberOfOther: number}[]=[
         numberOfOther: 26
     },
     {
-        name: 'Hosein',
-        img: Hosein,
+        name: 'Farzad',
+        img: Farzad,
         numberOfOther: 8
     },
     {
