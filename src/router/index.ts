@@ -70,11 +70,6 @@ const routes: Array<RouteConfig> = [
     component: async () => await import('@/views/Report/ReportProblemView.vue'),
   },
   {
-    path: '/login',
-    name: 'LoginView',
-    component: async () => await import('@/views/Login/LoginView.vue'),
-  },
-  {
     path: '*',
     name: 'ErrorPage',
     component: async () => await import('@/views/ErrorView/ErrorPage.vue'),

@@ -106,7 +106,7 @@ export default Vue.extend({
               <span>Switch Accounts</span>
             </div>
           </router-link>
-          <router-link to="/login" class="dropdown-item">Log Out</router-link>
+          <router-link to="/" class="dropdown-item">Log Out</router-link>
         </div>
       </div>
     </li>
