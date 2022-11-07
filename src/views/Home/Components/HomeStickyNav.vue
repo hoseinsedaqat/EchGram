@@ -69,7 +69,7 @@ export default {
       <span class="ho_ffs text-muted mx-1 ho_cp">Top Accounts </span>
       <span class="ho_ffs text-muted mx-1 ho_cp">Hashtags </span>
       <span class="ho_ffs text-muted mx-1 ho_cp">Languages</span>
-      <p class="ho_ffsc mx-1 mt-2">&copy; 2022 INSTAGRAM Design By Hosein Sedaqat</p>
+      <p class="ho_ffsc mx-1 mt-2">&copy; 2022 ECHGRAM Design By Hosein Sedaqat</p>
     </div>
   </div>
 </template>

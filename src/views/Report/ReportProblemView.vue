@@ -28,7 +28,6 @@ export default {
           this.problemData = "";
         })
       }else{
-        this.$toast.error('Please Write the Problem ✌😀');
         this.showError.problemData = true;
 
         setTimeout(() => {
