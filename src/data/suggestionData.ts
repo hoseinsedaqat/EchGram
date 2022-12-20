@@ -11,12 +11,12 @@ import Mahdi from '@/assets/Images/Suggestion/Mahdi.jpg';
 const suggestionData: {suggestionName:string, suggestionFollow:string, suggestionImg:string}[] = [
     {
         suggestionName: 'KygoMusic',
-        suggestionFollow: 'Followed by Hosein',
+        suggestionFollow: 'Followed by Martin',
         suggestionImg: KygoMusic
     },
     {
         suggestionName: 'bts.bighitofficial',
-        suggestionFollow: 'Followed by Hosein',
+        suggestionFollow: 'Followed by Jimmy',
         suggestionImg: Bts
     },
     {
@@ -26,12 +26,12 @@ const suggestionData: {suggestionName:string, suggestionFollow:string, suggestio
     },
     {
         suggestionName: 'cristiano',
-        suggestionFollow: 'Followed by Hosein',
+        suggestionFollow: 'Followed by Pouya',
         suggestionImg: Cristiano
     },
     {
         suggestionName: 'mehditaremiofficial9',
-        suggestionFollow: 'Followed by Hosein',
+        suggestionFollow: 'Followed by Naeim',
         suggestionImg: Mahdi
     },
 ]
