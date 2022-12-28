@@ -68,7 +68,9 @@ export default Vue.extend({
               <p class="font-weight-bold">...</p>
             </span>
           </div>
-          <p class="mt-2 mx-3" :style="{'font-size': staticStyle.fontSize + 'px'}">{{ fetchPost.title }}</p>
+          <p class="mt-2 mx-3" :style="{'font-size': staticStyle.fontSize + 'px'}">
+            {{ fetchPost.title.length >= 15 ? fetchPost.title.substring(0,15) + '...' : fetchPost.title  }}
+          </p>
           <hr />
           <!-- Like Comment and Saved -->
           <div class="d-flex flex-column">
@@ -200,7 +202,7 @@ export default Vue.extend({
           <div class="mx-2 d-flex">
             <div>
               <span class="mr-1 mt-1 font-weight-bold ho_ffsc">
-                Hosein and Misa and Lissa Liked Your Photo
+                Hosein and 78 other people like this photo
               </span>
             </div>
           </div>
