@@ -22,7 +22,7 @@ export default Vue.extend({
           <div class="d-flex align-items-center justify-content-between a_bb">
             <div class="d-flex align-items-center" style="font-size: 12px">
               <img
-                src="@/assets/Images/Header/HoseinSedaqat.jpg"
+                src="@/assets/Images/User/Hosein_instagram_Picture.jpg"
                 class="mr-2"
                 alt=""
                 width="40px"
