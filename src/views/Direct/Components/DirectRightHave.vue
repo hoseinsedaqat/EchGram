@@ -15,8 +15,12 @@ export default Vue.extend({
     methods:{
       ...mapActions(['showDirectTest','findDirect','addDirectMessage']),
       addDM(){
-        this.addDirectMessage({right:this.message,whichDirect:this.returnEachDirect.whichDirect})
-        this.message = ''
+        if(this.message === "" || this.message.trim() === ""){
+          return
+        }else{
+          this.addDirectMessage({right:this.message,whichDirect:this.returnEachDirect.whichDirect})
+          this.message = ''
+        }
       }
     },
     async created(){
